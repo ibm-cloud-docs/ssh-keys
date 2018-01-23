@@ -14,6 +14,6 @@ Use the following procedure to enable IPv6 on a Linux server SSH:
 2. Locate the line that contains `ListenAddress`.
 3. Uncomment the `#ListenAddress ::` line:
    
-    ```ListenAddress ::```
+```ListenAddress ::```
 
 This binds `sshd` to every address on your device.
