@@ -28,7 +28,7 @@ wheel:x:10:root, user1
     
     Users added to the wheel group will have identical permissions to the root user, but they will use their unique user name when they access the system.
 3. Run the `:wq` command to save changes and exit the file.
-4. Open the ```/etc/ssh/sshd_config```.
+4. Open the `/etc/ssh/sshd_config`.
 5. Change the `PermitRootLogin yes` line to read `PermitRootLogin no`.
 6. Run the `:wq` command to save changes and exit the file.
 7. Type `visudo` at the **Command Line** to generate command permissions.
