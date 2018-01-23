@@ -13,11 +13,11 @@ Follow these steps to grant SSH access to one or more users. These steps demonst
 
 1. Locate the following OpenSSH file:
 
-  ```/etc/ssh/sshd_config```
+```/etc/ssh/sshd_config```
   
 2. Make a backup of this file so you can revert if necessary. For example:
 
-  ```cp /etc/ssh/sshd_config{,.'date +%s'}```
+```cp /etc/ssh/sshd_config{,.'date +%s'}```
   
 3. Edit the file by using the OpenSSH keywords.
 
@@ -51,31 +51,31 @@ To prepare for future expansion of users, you can create a Group on the server t
 
 1. In shell, add a user group, such as sshusers:
 
-  ```groupadd –r sshusers```
+```groupadd –r sshusers```
 
 2. In shell, add users to the group:
 
-  ```usermod –a –G sshusers admin```
+```usermod –a –G sshusers admin```
 
-  ```usermod -a -G sshusers user1```
+```usermod -a -G sshusers user1```
 
 3. In the sshd_config file, give access to the sshusers group:
 
-  ```AllowGroups sshusers```
+```AllowGroups sshusers```
 
 4. Verify that sshd reads the new configuration without breaking:
 
-  ```/usr/sbin/sshd –t```
+```/usr/sbin/sshd –t```
 
-  ```echo $?```
+```echo $?```
 
   If you get a `0` following the `echo $?` command, the new configuration is correct.
 
   You can also get error messages similar to the following examples:
 
-  ```sshd_config: line 112: Bad configuration option: allowuser```
+```sshd_config: line 112: Bad configuration option: allowuser```
 
-  ```sshd_config: terminating, 1 bad configuration options```
+```sshd_config: terminating, 1 bad configuration options```
 
 5. After you fix all errors and have a correct configuration, restart sshd. The following is an example command in a sysv-compatible system:
   /etc/init.d/sshd restart
