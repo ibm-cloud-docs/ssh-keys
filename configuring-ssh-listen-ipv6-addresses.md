@@ -9,7 +9,7 @@ lastupdated: "2017-11-28"
 
 # Configuring SSH to listen on IPv6 addresses
 
-Use the following procedure to enable IPv6 on a Linux server SSH:
+Use the following procedure to enable SSH on a Linux server to listen on IPv6:
 1. Locate the file: /etc/ssh/sshd_config.
 2. Locate the line that contains `ListenAddress`.
 3. Uncomment the `#ListenAddress ::` line:
