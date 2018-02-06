@@ -1,0 +1,37 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="ssh-keys" audience="compute" href=“/docs/infrastructure/ssh-keys/index.html”}
+Claves SSH
+
+    {: .navgroup id="learn"}
+    index.md
+    about.md
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    {: .topicgroup}
+    Gestión de claves SSH
+        add-ssh-key.md
+        edit-details-ssh-key.md
+        remove-ssh-key.md
+        
+    {: .topicgroup}
+    Configuración de SSH
+        how-do-i-force-ssh-run-non-standard-port.md
+        how-do-i-make-my-ssh-server-only-listen-private-network.md
+        configuring-ssh-listen-ipv6-addresses.md
+        
+    {: .topicgroup}
+    Restricción del acceso SSH
+        restrict-root-user-ssh-access.md
+        restrict-ssh-access-public-network.md
+        
+    how-do-i-permit-specific-users-ssh-access.md
+    generating-and-using-ssh-keys-remote-host-authentication.md
+    how-do-i-connect-redhat-server-ssh.md
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    ssh-keys-faqs.md
+    {: .navgroup-end
