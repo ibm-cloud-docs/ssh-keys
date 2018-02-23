@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-12"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2017-12-12"
 
 # Restricting SSH access on a public network
 
-SSH accessibility provides users with the ability to securely access a device though an internet connection. SSH is available on {{site.data.keyword.cloud}} devices on both the public and private network. However, you should restrict SSH accessibility over the public network unless it is necessary for a unique business need. By restricting SSH access on the public network, users can still access a device over the private network, but risk from unknown users accessing the device on the public network is mitigated. If SSH accessibility over the public network is necessary, it is recommended to transfer SSH to a custom port number for an added layer of security. 
+SSH accessibility provides users with the ability to securely access a device though an internet connection. SSH is available on {{site.data.keyword.cloud}} devices on both the public and private network. However, you should restrict SSH accessibility over the public network unless it is necessary for a unique business need. By restricting SSH access on the public network, users can still access a device over the private network, but risk from unknown users accessing the device on the public network is mitigated. If SSH accessibility over the public network is necessary, you can transfer SSH to a custom port number for an added layer of security. 
 {:shortdesc}
 
 Follow these steps to restrict SSH access on the public network.
@@ -22,8 +22,8 @@ Follow these steps to restrict SSH access on the public network.
 6. Run the `:wq` command to save the changes and exit the file.
 7. Restart the sshd service
   > `service sshd restart`
-8. Test the updates to SSH accessibility by attempting to access SSH over the Bare Metal Server's public IP address.<br><br><table border="1"><tr><th>If a connection...</th><th>Then...</th></tr><tr><td>Cannot be made</td><td>Changes made to SSH accessibility were successful. No further action is required.</td></tr><tr><td>Can be made</td><td>Changes made to SSH accessibility were unsuccessful. Repeat the steps above to retry SSH restriction. If issues persist, please [contact Support](https://control.softlayer.com/).</td></tr></table>
+8. Test the updates to SSH accessibility by attempting to access SSH over the Bare Metal Server's public IP address.<br><br><table border="1"><tr><th>If a connection...</th><th>Then...</th></tr><tr><td>Cannot be made</td><td>Changes made to SSH accessibility were successful. No further action is required.</td></tr><tr><td>Can be made</td><td>Changes made to SSH accessibility were unsuccessful. Repeat the previous steps to retry SSH restriction. If issues persist, contact Support.</td></tr></table>
 
 ## Next Steps
 
-After successfully restricting SSH access, users will be unable to access the device through SSH when they are not connecting through the private network. This action may be reversed at any time by adding the hash (#) back to the uncommented line, which returns the line to comments.
+After successfully restricting SSH access, users will be unable to access the device through SSH when they are not connecting through the private network. This action can be reversed at any time by adding the hash (#) back to the uncommented line, which returns the line to comments.
