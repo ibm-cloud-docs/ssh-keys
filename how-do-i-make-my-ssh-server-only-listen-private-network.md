@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2017-12-11"
 
 # Configuring SSH to listen only on a private network
 
-You can further secure your server by running SSHd only on the backend network. Therefore, you will need to connect to the VPN every time you need to access SSH.
+You can further secure your server by running SSHd only on the backend network. Therefore, you need to connect to the VPN every time you need to access SSH.
 
 1. Locate the following file. Use this file to define the IP address for `sshd`.
 ```
@@ -22,4 +22,4 @@ You can further secure your server by running SSHd only on the backend network. 
 # service sshd restart
 ```
 
-Your current shell window will not disconnect when you restart the service. Verify that you can connect to the server through the new SSH port before you exit your current shell window. If there is a problem, SSHd will fail to restart and you will need to connect to the server using an alternative method.
+Your current shell window will not disconnect when you restart the service. Verify that you can connect to the server through the new SSH port before you exit your current shell window. If there is a problem, SSHd fails to restart and you need to connect to the server by using an alternative method.
