@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -26,7 +26,7 @@ wheel:x:10:root
 wheel:x:10:root, user1
 ```
     
-    Users added to the wheel group will have identical permissions to the root user, but they will use their unique user name when they access the system.
+    Users added to the wheel group have identical permissions to the root user, but they use their unique user name when they access the system.
 3. Run the `:wq` command to save changes and exit the file.
 4. Open the `/etc/ssh/sshd_config`.
 5. Change the `PermitRootLogin yes` line to read `PermitRootLogin no`.
@@ -59,4 +59,4 @@ vi /etc/pam.d/su
 
 ## Next Steps
 
-After you restrict the root user from SSH access, the root user cannot log into SSH. If a user currently can access the server through SSH under the root user, the connection will fail after the restart of SSH in the previous procedure. All future attempts to connect to SSH through the root user will fail. To reverse these changes, repeat the steps and change `PermitRootLogin` no back to `PermitRootLogin` yes.
+After you restrict the root user from SSH access, the root user cannot log in to SSH. If a user currently can access the server through SSH under the root user, the connection will fail after the restart of SSH in the previous procedure. All future attempts to connect to SSH through the root user fail. To reverse these changes, repeat the steps and change `PermitRootLogin` no back to `PermitRootLogin` yes.
