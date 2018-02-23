@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-12"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -15,7 +15,7 @@ You can add SSH keys to your account if you are an authorized user. Each account
 
 Follow these steps to add an SSH key to your account.
 1. Access the **SSH Keys** screen. Refer to [Getting started with SSH Keys](index.html).
-2. Click the **Add** tab at the top of the screen.
+2. Click **Add**.
 3. Click **Browse** to locate the public key file or enter it manually in the **Key Contents** text box.
 4. Enter a **short name** for the SSH Key in the **Label** field.
 5. Enter any applicable notes in the **Notes** field, if necessary.
