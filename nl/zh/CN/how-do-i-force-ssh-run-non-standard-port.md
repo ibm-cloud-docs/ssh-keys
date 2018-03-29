@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -27,6 +27,8 @@ Port 2255
 ``` 
 （此值可设置为任何非标准端口）
 
+
+ 
 4. 保存并退出文件，然后重新启动 SSH。
 ```
 # /etc/init.d/sshd restart

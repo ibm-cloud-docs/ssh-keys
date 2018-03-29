@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-12"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,7 +13,7 @@ lastupdated: "2017-12-12"
 {:shortdesc}
 
 按照下列步骤从访问“SSH 密钥”屏幕开始。
-1. 使用您的唯一凭证来访问 [{{site.data.keyword.slportal}} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://control.softlayer.com/){: new_window}。
+1. 使用您的唯一凭证访问 [{{site.data.keyword.slportal}} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://control.softlayer.com/){: new_window}。
 2. 在导航栏中选择**设备 > 管理 > SSH 密钥**以访问“SSH 密钥”屏幕。
 
 

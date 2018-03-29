@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -26,7 +26,7 @@ wheel:x:10:root
 wheel:x:10:root, user1
 ```
     
-    被添加到 wheel 组的用户都将具有与 root 用户相同的权限，但他们在访问系统时会使用他们唯一的用户名。
+    添加到 wheel 组的用户具有与 root 用户相同的权限，但他们在访问系统时会使用其唯一的用户名。
 3. 运行 `:wq` 命令以保存更改并退出该文件。
 4. 打开 `/etc/ssh/sshd_config`。
 5. 将 `PermitRootLogin yes` 行的内容更改为 `PermitRootLogin no`。
@@ -59,4 +59,4 @@ vi /etc/pam.d/su
 
 ## 后续步骤
 
-在限制 root 用户进行 SSH 访问之后，root 用户将无法登录 SSH。如果用户当前可以在 root 用户下通过 SSH 访问服务器，那么在先前的过程中重新启动 SSH 后，连接会失败。未来尝试通过 root 用户连接 SSH 都会失败。要撤销这些更改，请重复上述步骤并将 `PermitRootLogin` no 更改回 `PermitRootLogin` yes。
+在禁止 root 用户进行 SSH 访问之后，root 用户将无法登录 SSH。如果用户当前可以在 root 用户下通过 SSH 访问服务器，那么在先前的过程中重新启动 SSH 后，连接会失败。未来尝试通过 root 用户连接 SSH 都会失败。要撤销这些更改，请重复上述步骤并将 `PermitRootLogin` no 更改回 `PermitRootLogin` yes。

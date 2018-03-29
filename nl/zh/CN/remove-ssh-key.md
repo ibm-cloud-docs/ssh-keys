@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-12"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2017-12-12"
 
 # 除去 SSH 密钥
 
-当存储在 {{site.data.keyword.slportal_full}} 中的 SSH 密钥过时或不再需要时，可以使用“SSH 密钥”屏幕将其除去。尽快除去过时的 SSH 密钥，这样可以确保有充足的空间容纳其他的有效密钥。
+当存储在 {{site.data.keyword.slportal_full}} 中的 SSH 密钥过时或不再需要时，可以使用“SSH 密钥”屏幕将其除去。尽快除去过时的 SSH 密钥，以确保有足够的空间容纳更多有效密钥。
 
 1. 使用您的唯一凭证在 [{{site.data.keyword.slportal}} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://control.softlayer.com/){: new_window} 中访问 **SSH 密钥**屏幕。
 2. 对于您要除去的 SSH 密钥，单击它旁边的**除去**图标。

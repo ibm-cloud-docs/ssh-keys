@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-28"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2017-11-28"
 
 # 配置 SSH 以侦听 IPv6 地址
 
-使用以下过程在 Linux 服务器 SSH 上启用 IPv6：
+使用以下过程在 Linux 服务器上启用 SSH 以侦听 IPv6：
 1. 找到文件：/etc/ssh/sshd_config。
 2. 找到包含 `ListenAddress` 的行。
 3. 取消注释 `#ListenAddress ::` 行：

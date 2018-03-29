@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -36,6 +36,8 @@ SSH 密钥是一种用于向使用公用密钥密码术和提问应答认证的 
     |      .o+ +      |
     |       +o.       |
     +----[SHA256]-----+
+
+
 
 ## 将公用密钥复制到远程主机
 
