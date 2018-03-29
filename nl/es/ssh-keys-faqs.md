@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-12"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -19,8 +19,8 @@ Puede asociar un máximo de 100 claves SSH a una cuenta. Los usuarios autorizado
 
 ## No veo mi clave SSH en la lista, en cambio veo una huella dactilar. ¿Qué significa?
 
-La huella dactilar que se muestra con los detalles para una clave SSH es una secuencia de bytes abreviada generada por el sistema. La huella dactilar es más corta que la propia clave SSH y se utiliza para autenticarse o para buscar la clave pública para el dispositivo asociado. 
+La huella dactilar que se muestra con los detalles para una clave SSH es una secuencia de bytes abreviada generada por el sistema. La huella dactilar es más corta que la propia clave SSH y se utiliza para autenticarse o para buscar la clave pública para el dispositivo asociado.
 
 ## Si creo o recargo un dispositivo que utiliza una plantilla de imagen, ¿se conservarán las claves SSH?
 
-Sí y no. Cada dispositivo tiene una clave SSH exclusiva, de modo que la clave del dispositivo recién suministrado o cargado será distinta a la de la imagen. Sin embargo, las claves SSH que están asociadas con una imagen Flex o una plantilla de imagen estándar están asociadas con el dispositivo cuando se suministra o se carga. También puede añadir claves durante el proceso de configuración.
+Sí y no. Cada dispositivo tiene una clave SSH exclusiva, de modo que la clave del dispositivo recién suministrado o cargado será distinta a la de la imagen.  Sin embargo, las claves SSH que están asociadas con una imagen Flex o una plantilla de imagen estándar están asociadas con el dispositivo cuando se suministra o se carga. También puede añadir claves durante el proceso de configuración.

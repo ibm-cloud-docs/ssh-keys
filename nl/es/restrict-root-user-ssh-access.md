@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,9 +9,10 @@ lastupdated: "2017-12-11"
 
 # Restricción del usuario root del acceso SSH
 
-Cada uno de los sistemas Linux en la red de {{site.data.keyword.cloud}} tiene un usuario root con permisos. En Linux, puede crear grupos wheel, que otorgan a los usuarios permisos similares a del usuario root mediante "sudo" sin necesidad de utilizar las credenciales de usuario root. Después de crear un grupo wheel con permisos sudo de root, puede restringir el acceso SSH de los usuarios de dicho. Al restringir a los usuarios de este modo, protege el dispositivo de vulnerabilidades que pertenecen a la accesibilidad de red. Los usuarios que forman parte del grupo wheel pueden seguir realizando funciones administrativas en el dispositivo en cualquier momento. {:shortdesc}
+Cada uno de los sistemas Linux en la red de {{site.data.keyword.cloud}} tiene un usuario root con permisos. En Linux, puede crear grupos wheel, que otorgan a los usuarios permisos similares a del usuario root mediante "sudo" sin necesidad de utilizar las credenciales de usuario root. Después de crear un grupo wheel con permisos sudo de root, puede restringir el acceso SSH de los usuarios de dicho. Al restringir a los usuarios de este modo, protege el dispositivo de vulnerabilidades que pertenecen a la accesibilidad de red. Los usuarios que forman parte del grupo wheel pueden seguir realizando funciones administrativas en el dispositivo en cualquier momento. 
+{:shortdesc}
 
-Siga estos pasos para restringir el usuario root del acceso SSH. 
+Siga estos pasos para restringir el usuario root del acceso SSH.
 
 1. Abra el archivo 'etc/group' y vea si contiene una línea que defina un grupo wheel:
 ```
@@ -25,7 +26,7 @@ wheel:x:10:root
 wheel:x:10:root, user1
 ```
     
-    Los usuarios añadidos al grupo wheel tendrán permisos idénticos a los del usuario root, pero utilizarán su nombre de usuario exclusivo cuando accedan al sistema.
+    Los usuarios añadidos al grupo wheel tienen permisos idénticos a los del usuario root, pero utilizan su nombre de usuario exclusivo cuando acceden al sistema.
 3. Ejecute el mandato `:wq` para guardar los cambios y salir del archivo.
 4. Abra `/etc/ssh/sshd_config`.
 5. Cambie la línea `PermitRootLogin yes` a `PermitRootLogin no`.
@@ -36,7 +37,7 @@ wheel:x:10:root, user1
 # %wheel ALL=(ALL) ALL
 ```
   
-    **Nota:** Descomentar esta línea permite a los usuarios del grupo wheel ejecutar todos los mandatos. 
+    **Nota:** Descomentar esta línea permite a los usuarios del grupo wheel ejecutar todos los mandatos.
     
 9. Ejecute el mandato `:wq` para guardar los cambios y salir del archivo.
 10. Ejecute el siguiente mandato en la línea de mandatos:

@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -21,7 +21,7 @@ Siga estos pasos para forzar a SSH para que se ejecute en un puerto no estándar
 # Port 22
 ```
  
-3. Elimine el comentario de la línea y edítela para reflejar el nuevo puerto. 
+3. Elimine el comentario de la línea y edítela para reflejar el nuevo puerto.
 ```
 Port 2255
 ``` 
@@ -32,4 +32,4 @@ Port 2255
 # /etc/init.d/sshd restart
 ```
 
-5. Si está conectado al servidor utilizando SSH en el puerto 22, la conexión caerá y deberá volver a conectar utilizando el puerto nuevo. 
+5. Si está conectado al servidor utilizando SSH en el puerto 22, la conexión caerá y deberá volver a conectar utilizando el puerto nuevo.

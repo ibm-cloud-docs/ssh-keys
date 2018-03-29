@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-12"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,10 +9,10 @@ lastupdated: "2017-12-12"
 
 # Eliminación de una clave SSH
 
-Cuando una clave SSH almacenada en {{site.data.keyword.slportal_full}} es obsoleta o ya no es necesaria, puede eliminar la clave utilizando la pantalla Claves SSH. Elimine claves SSH tan pronto como sea posible para garantizar que haya espacio suficiente para claves válidas adicionales. 
+Cuando una clave SSH almacenada en {{site.data.keyword.slportal_full}} es obsoleta o ya no es necesaria, puede eliminar la clave utilizando la pantalla Claves SSH. Elimine claves SSH tan pronto como sea posible para garantizar que haya espacio suficiente para claves válidas adicionales.
 
-1. Acceda a la pantalla **Claves SSH** en el [{{site.data.keyword.slportal}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo ")](https://control.softlayer.com/){: new_window} utilizando sus credenciales exclusivas. 
-2. Pulse el icono **Eliminar** situado al lado de la clave SSH que desee eliminar. 
+1. Acceda a la pantalla **Claves SSH** en el [{{site.data.keyword.slportal}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo ")](https://control.softlayer.com/){: new_window} utilizando sus credenciales exclusivas.
+2. Pulse el icono **Eliminar** situado al lado de la clave SSH que desee eliminar.
 3. Pulse **Sí** para confirmar. Pulse **No** para cancelar la acción.
 
 ## Pasos siguientes

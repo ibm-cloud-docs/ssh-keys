@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-28"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,10 +9,10 @@ lastupdated: "2017-11-28"
 
 # Configuración de SSH para que escuche en las direcciones IPv6
 
-Utilice el procedimiento siguiente para habilitar IPv6 en un SSH de servidor Linux:
+Utilice el procedimiento siguiente para habilitar SSH en un servidor Linux para que escuche en IPv6:
 1. Localice el archivo: /etc/ssh/sshd_config.
 2. Localice la línea que contiene `ListenAddress`.
-3. Elimine el comentario de la línea `#ListenAddress ::`: 
+3. Elimine el comentario de la línea `#ListenAddress ::`:
 ```
 ListenAddress ::
 ```

@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2017-12-11"
 
 # Configuración de SSH para que se escuche solo en una red privada
 
-Puede proteger el servidor ejecutando SSHd sólo en la red de fondo. Por lo tanto, deberá conectarse a la VPN cada vez que necesite acceder a SSH. 
+Puede proteger el servidor ejecutando SSHd sólo en la red de fondo. Por lo tanto, debe conectarse a la VPN cada vez que necesite acceder a SSH.
 
 1. Localice el archivo siguiente. Utilice este archivo para definir la dirección de IP para `sshd`.
 ```
@@ -22,4 +22,4 @@ Puede proteger el servidor ejecutando SSHd sólo en la red de fondo. Por lo tant
 # service sshd restart
 ```
 
-La ventana de shell actual no se desconectará cuando se reinicie el servicio. Verifique que puede conectarse al servidor a través del nuevo puerto SSH nueva antes de salir de la ventana de shell actual. Si hay algún problema, SSHd no se reiniciará y deberá conectarse al servidor mediante un método alternativo. 
+La ventana de shell actual no se desconectará cuando se reinicie el servicio. Verifique que puede conectarse al servidor a través del nuevo puerto SSH nueva antes de salir de la ventana de shell actual. Si hay algún problema, SSHd no se reiniciará y deberá conectarse al servidor mediante un método alternativo.
