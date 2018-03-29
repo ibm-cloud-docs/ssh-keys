@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -26,7 +26,7 @@ lastupdated: "2017-12-11"
 Port 2255
 ``` 
 (이는 임의 비표준 포트로 설정할 수 있음)
-
+ 
 4. 파일을 저장하고 종료한 후 SSH를 다시 시작하십시오.
 ```
 # /etc/init.d/sshd restart
