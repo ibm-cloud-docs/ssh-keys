@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2017-12-11"
 
 # Restriction de l'accès SSH pour l'utilisateur root
 
-Tout système Linux sur le réseau {{site.data.keyword.cloud}} a un utilisateur root doté de droits d'administration. Sous Linux, vous pouvez créer des groupes 'wheel', qui octroient aux utilisateurs des droits similaires à ceux de l'utilisateur root via la commande "sudo" sans nécessiter l'utilisation des données d'identification de l'utilisateur root. Après avoir créé un groupe wheel avec les droits sudo sur l'utilisateur root, vous pouvez refuser l'accès SSH aux utilisateurs figurant dans ce groupe. En limitant l'accès utilisateur ainsi, vous protégez l'appareil des vulnérabilités en matière de sécurité liées à l'accessibilité au réseau. Les utilisateurs faisant partie du groupe wheel peuvent toujours effectuer des fonctions d'administration sur l'appareil à tout moment.
+Tout système Linux sur le réseau {{site.data.keyword.cloud}} a un utilisateur root doté de droits d'administration. Sous Linux, vous pouvez créer des groupes 'wheel', qui octroient aux utilisateurs des droits similaires à ceux de l'utilisateur root via la commande "sudo" sans nécessiter l'utilisation des données d'identification de l'utilisateur root. Après avoir créé un groupe wheel avec les droits sudo sur l'utilisateur root, vous pouvez refuser l'accès SSH aux utilisateurs figurant dans ce groupe. En limitant l'accès utilisateur ainsi, vous protégez l'appareil des vulnérabilités en matière de sécurité liées à l'accessibilité au réseau. Les utilisateurs faisant partie du groupe wheel peuvent toujours effectuer des fonctions d'administration sur l'appareil à tout moment. 
 {:shortdesc}
 
 Suivez cette procédure pour empêcher l'accès SSH à l'utilisateur root.
@@ -26,7 +26,7 @@ wheel:x:10:root
 wheel:x:10:root, user1
 ```
     
-    Les utilisateurs ajoutés dans le groupe wheel auront des droits identiques à ceux de l'utilisateur root, mais ils utiliseront leur nom d'utilisateur unique pour accéder au système.
+    Les utilisateurs ajoutés dans le groupe wheel ont des droits identiques à ceux de l'utilisateur root, mais ils utilisent leur nom d'utilisateur unique pour accéder au système.
 3. Exécutez la commande `:wq` pour sauvegarder les modifications et quitter le fichier.
 4. Ouvrez le fichier `/etc/ssh/sshd_config`.
 5. Remplacez la ligne `PermitRootLogin yes` par `PermitRootLogin no`.

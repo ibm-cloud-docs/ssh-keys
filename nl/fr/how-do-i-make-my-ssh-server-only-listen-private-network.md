@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2017-12-11"
 
 # Configuration de SSH pour écouter uniquement sur un réseau privé
 
-Vous pouvez renforcer la sécurité de votre serveur en exécutant SSHd uniquement sur un réseau de back end. Par conséquent, il vous faudra vous connecter au réseau privé virtuel (VPN) chaque fois que vous aurez besoin d'accéder à SSH.
+Vous pouvez renforcer la sécurité de votre serveur en exécutant SSHd uniquement sur un réseau de back end. Par conséquent, vous devez vous connecter au réseau privé virtuel (VPN) chaque fois que vous avez besoin d'accéder à SSH.
 
 1. Localisez le fichier suivant. Utilisez ce fichier pour définir l'adresse IP de `sshd`.
 ```
@@ -22,4 +22,4 @@ Vous pouvez renforcer la sécurité de votre serveur en exécutant SSHd uniqueme
 # service sshd restart
 ```
 
-Votre fenêtre d'interpréteur de commandes actuelle ne se déconnectera pas lors du redémarrage du service. Vérifiez que vous pouvez vous connecter au serveur via le nouveau port SSH avant de quitter cette fenêtre. En cas de problème, SSHd ne parviendra pas à redémarrer et il vous faudra recourir à une autre méthode pour vous connecter au serveur.
+Votre fenêtre d'interpréteur de commandes actuelle ne se déconnectera pas lors du redémarrage du service. Vérifiez que vous pouvez vous connecter au serveur via le nouveau port SSH avant de quitter cette fenêtre. En cas de problème, SSHd ne parvient pas à redémarrer et vous devez recourir à une autre méthode pour vous connecter au serveur.

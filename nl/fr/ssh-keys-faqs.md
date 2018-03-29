@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-12"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -23,4 +23,4 @@ L'empreinte figurant avec les détails d'une clé SSH est une séquence abrégé
 
 ## Si je crée ou recharge un appareil qui utilise un modèle d'image, est-ce que les clés SSH suivent ?
 
-Oui et non. Chaque appareil dispose d'une clé SSH unique, donc la clé pour le nouvel appareil ou l'appareil rechargé sera différente de l'image.  Toutefois, les clés SSH associées à une image Flex ou à un modèle d'image standard sont associées à l'appareil lors de sa mise à disposition ou de son rechargement. Vous pouvez également ajouter des clés lors du processus de configuration. 
+Oui et non. Chaque appareil dispose d'une clé SSH unique, donc la clé pour le nouvel appareil ou l'appareil rechargé sera différente de l'image.  Toutefois, les clés SSH associées à une image Flex ou à un modèle d'image standard sont associées à l'appareil lors de sa mise à disposition ou de son rechargement. Vous pouvez également ajouter des clés lors du processus de configuration.

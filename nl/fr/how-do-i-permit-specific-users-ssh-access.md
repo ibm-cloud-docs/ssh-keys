@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -40,7 +40,7 @@ Après ce mot clé, insérez une liste de masques de nom de groupe. Séparez les
 
 ### DenyUsers 
 
-Après ce mot clé, insérez une liste de masques de nom d'utilisateur. Séparez les masques par des espaces. Si vous indiquez **Login**, la connexion est interdite aux noms d'utilisateur correspondant à l'un des masques. Vous pouvez utiliser `"*" et "?"` comme caractères génériques dans les masques. Seuls les noms d'utilisateur sont valides. Un ID utilisateur numérique n'est pas reconnu. Par défaut, la connexion est autorisée pour tous les utilisateurs. Si le masque prend la forme USER@HOST, l'utilisateur (USER) et l'hôte (HOST) sont vérifiés séparément, limitant les connexions à certains utilisateurs sur certains hôtes.
+Après ce mot clé, insérez une liste de masques de nom d'utilisateur. Séparez les masques par des espaces. Si vous indiquez **Login**, la connexion est interdite aux noms d'utilisateur correspondant à l'un des masques. Vous pouvez utiliser `"*" et "?"` comme caractères génériques dans les masques. Seuls les noms d'utilisateur sont valides. Un ID utilisateur numérique n'est pas reconnu. Par défaut, la connexion est autorisée pour tous les utilisateurs.  Si le masque prend la forme USER@HOST, l'utilisateur (USER) et l'hôte (HOST) sont vérifiés séparément, limitant les connexions à certains utilisateurs sur certains hôtes.
 
 ## Exemple
 

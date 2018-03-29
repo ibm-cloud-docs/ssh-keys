@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-12"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2017-12-12"
 
 # Restriction de l'accès SSH sur un réseau public
 
-L'accessibilité SSH fournit aux utilisateurs la possibilité d'accéder en toute sécurité à un appareil via une connexion Internet. SSH est disponible sur les appareils {{site.data.keyword.cloud}} sur le réseau public et privé. Toutefois, vous devez restreindre l'accessibilité de SSH sur le réseau public, sauf en cas de nécessité pour un besoin d'entreprise unique. En restreignant l'accès SSH sur le réseau public, les utilisateurs peuvent toujours accéder à un appareil via le réseau privé, mais les risques liés à l'accès potentiel d'utilisateurs inconnus à l'appareil sur le réseau public sera atténué. Si l'accessibilité SSH via le réseau public est nécessaire, il est recommandé de transférer SSH sur un numéro de port personnalisé pour ajouter une couche de sécurité supplémentaire.
+L'accessibilité SSH fournit aux utilisateurs la possibilité d'accéder en toute sécurité à un appareil via une connexion Internet. SSH est disponible sur les appareils {{site.data.keyword.cloud}} sur le réseau public et privé. Toutefois, vous devez restreindre l'accessibilité de SSH sur le réseau public, sauf en cas de nécessité pour un besoin d'entreprise unique. En restreignant l'accès SSH sur le réseau public, les utilisateurs peuvent toujours accéder à un appareil via le réseau privé, mais les risques liés à l'accès potentiel d'utilisateurs inconnus à l'appareil sur le réseau public sera atténué. Si l'accessibilité SSH via le réseau public est nécessaire, transférez SSH sur un numéro de port personnalisé pour ajouter une couche de sécurité supplémentaire.
 {:shortdesc}
 
 Suivez cette procédure pour limiter l'accès SSH sur le réseau public.
@@ -22,7 +22,7 @@ Suivez cette procédure pour limiter l'accès SSH sur le réseau public.
 6. Exécutez la commande `:wq` pour sauvegarder les modifications et quitter le fichier.
 7. Redémarrez le service sshd
   > `service sshd restart`
-8. Testez les mises à jour de l'accessibilité SSH en essayant d'accéder à SSH via l'adresse IP publique du serveur bare metal.<br><br><table border="1"><tr><th>Si une connexion...</th><th>Alors...</th></tr><tr><td>Ne peut pas être établie</td><td>Les modifications effectuées à l'accessibilité SSH ont été prises en compte. Aucune autre action n'est requise.</td></tr><tr><td>Peut être établie</td><td>Les modifications apportées à l'accessibilité SSH n'ont pas été prises en compte. Répétez les étapes ci-dessus pour limiter l'accès SSH. Si les problèmes persistent, veuillez [contacter le support](https://control.softlayer.com/).</td></tr></table>
+8. Testez les mises à jour de l'accessibilité SSH en essayant d'accéder à SSH via l'adresse IP publique du serveur bare metal.<br><br><table border="1"><tr><th>Si une connexion...</th><th>Alors...</th></tr><tr><td>Ne peut pas être établie</td><td>Les modifications effectuées à l'accessibilité SSH ont été prises en compte. Aucune autre action n'est requise.</td></tr><tr><td>Peut être établie</td><td>Les modifications apportées à l'accessibilité SSH n'ont pas été prises en compte. Répétez les étapes ci-dessus pour limiter l'accès SSH. Si les problèmes persistent, contactez le support.</td></tr></table>
 
 ## Etapes suivantes
 

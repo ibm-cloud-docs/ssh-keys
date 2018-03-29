@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-12"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,11 +9,11 @@ lastupdated: "2017-12-12"
 
 # Initiation aux clés SSH
 
-Vous pouvez ajouter, gérer et supprimer des clés SSH en utilisant l'écran Clés SSH dans le portail {{site.data.keyword.slportal_full}}. L'accès à cet écran est soumis à autorisation. Certains utilisateurs ne peuvent pas avoir accès ou interagir avec cet écran. Si vous devez utiliser cet écran et que vous n'y avez pas accès, contactez l'administrateur de votre compte.
+Vous pouvez ajouter, gérer et supprimer des clés SSH en utilisant l'écran Clés SSH dans le portail {{site.data.keyword.slportal_full}}. L'accès à cet écran est soumis à autorisation. Certains utilisateurs ne peuvent pas avoir accès ou interagir avec cet écran. Si vous devez utiliser cet écran et que vous n'y avez pas accès, contactez l'administrateur de votre compte. 
 {:shortdesc}
 
 Suivez cette procédure pour commencer par accéder à l'écran Clés SSH.
-1. Accédez au portail [{{site.data.keyword.slportal}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://control.softlayer.com/){: new_window} en utilisant vos données d'identification uniques.
+1. Accédez au portail {{site.data.keyword.slportal}} [ ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://control.softlayer.com/){: new_window} à l'aide de vos données d'identification uniques.
 2. Sélectionnez **Equipements > Gérer > Clés SSH** à partir de la barre de navigation pour accéder à l'écran Clés SSH.
 
 
