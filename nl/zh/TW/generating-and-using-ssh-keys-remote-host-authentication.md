@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -36,6 +36,8 @@ SSH 金鑰可以用來向使用公開金鑰加密法和盤查-回應鑑別的 SS
     |      .o+ +      |
     |       +o.       |
     +----[SHA256]-----+
+
+
 
 ## 將公開金鑰複製到遠端主機
 

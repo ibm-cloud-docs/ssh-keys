@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-28"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2017-11-28"
 
 # 配置 SSH 以接聽 IPv6 位址
 
-請使用下列程序在 Linux 伺服器 SSH 上啟用 IPv6：
+請使用下列程序在 Linux 伺服器上啟用 SSH，以接聽 IPv6：
 1. 找到檔案 /etc/ssh/sshd_config。
 2. 找到包含 `ListenAddress` 的行。
 3. 解除註解 `#ListenAddress ::` 行：
