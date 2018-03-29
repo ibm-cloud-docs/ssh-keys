@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -26,7 +26,7 @@ Siga estas etapas para forçar o SSH a executar em uma porta não padrão:
 Port 2255
 ``` 
 (isso pode ser configurado para qualquer porta não padrão)
-
+ 
 4. Salve e saia do arquivo e reinicie o SSH.
 ```
 # /etc/init.d/sshd restart

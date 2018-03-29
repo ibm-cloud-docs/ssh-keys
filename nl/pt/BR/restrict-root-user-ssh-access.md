@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -15,7 +15,7 @@ usuário raiz por meio de "sudo" sem requerer o uso de credenciais do usuário r
 roda com permissões sudo de raiz, é possível restringir os usuários nesse grupo do acesso SSH. Ao restringir
 os usuários dessa maneira, você protege o dispositivo contra vulnerabilidades de segurança
 referentes à acessibilidade de rede. Os usuários que fazem parte do grupo de roda ainda podem executar funções
-administrativas no dispositivo a qualquer momento.
+administrativas no dispositivo a qualquer momento. 
 {:shortdesc}
 
 Siga estas etapas para restringir o usuário raiz do acesso SSH.
@@ -32,8 +32,7 @@ wheel:x:10:root
 wheel:x:10:root, user1
 ```
     
-    Os usuários incluídos no grupo de roda terão permissões idênticas às do usuário raiz, mas eles usarão o seu
-nome de usuário exclusivo ao acessarem o sistema.
+    Os usuários incluídos no grupo de roda têm permissões idênticas às do usuário raiz, mas eles usam o seu nome de usuário exclusivo ao acessarem o sistema.
 3. Execute o comando `:wq` para salvar as mudanças e sair do arquivo.
 4. Abra o `/etc/ssh/sshd_config`.
 5. Mude a linha `PermitRootLogin yes` para ler `PermitRootLogin
@@ -70,7 +69,6 @@ grupo de roda e que também tenham permissão para executar todos os comandos.
 
 ## Próximas Etapas
 
-Após restringir o acesso do usuário raiz ao SSH, o usuário raiz não pode efetuar login no SSH. Se um
+Depois de restringir o usuário raiz do acesso SSH, o usuário raiz não poderá efetuar login no SSH. Se um
 usuário atualmente puder acessar o servidor por meio de SSH sob o usuário root, a conexão falhará após a
-reinicialização de SSH no procedimento anterior. Todas as tentativas futuras de conexão com o SSH no usuário
-raiz falharão. Para reverter essas mudanças, repita as etapas e mude `PermitRootLogin no` novamente para `PermitRootLogin yes`.
+reinicialização de SSH no procedimento anterior. Todas as tentativas futuras de conexão com o SSH por meio do usuário raiz falharão. Para reverter essas mudanças, repita as etapas e mude `PermitRootLogin no` novamente para `PermitRootLogin yes`.

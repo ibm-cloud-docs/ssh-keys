@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-12"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -10,9 +10,8 @@ lastupdated: "2017-12-12"
 # Introdução às chaves SSH
 
 É possível incluir, gerenciar e excluir chaves SSH usando a tela Chaves SSH no
-{{site.data.keyword.slportal_full}}. O acesso à tela Chaves SSH é baseado em permissão.
-Alguns usuários não podem acessar ou interagir com essa tela. Se você precisa de acesso, mas não o tem,
-entre em contato com o administrador da conta.
+{{site.data.keyword.slportal_full}}. O acesso à tela Chaves SSH é baseado em permissão. Alguns usuários não podem acessar ou interagir com essa tela. Se você precisa de acesso, mas não o tem,
+entre em contato com o administrador da conta. 
 {:shortdesc}
 
 Siga estas etapas para começar a usar o produto acessando a tela Chaves SSH.

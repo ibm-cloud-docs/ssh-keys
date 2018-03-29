@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-12"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2017-12-12"
 
 # Removendo uma Chave SSH
 
-Quando uma chave SSH armazenada no {{site.data.keyword.slportal_full}} está obsoleta ou não é mais necessária, é possível remover a chave usando a tela Chaves SSH. Remova as chaves SSH obsoletas assim que possível para assegurar que haja espaço suficiente para chaves adicionais válidas.
+Quando uma chave SSH armazenada no {{site.data.keyword.slportal_full}} está obsoleta ou não é mais necessária, é possível removê-la usando a tela Chaves SSH. Remova as chaves SSH obsoletas assim que possível para assegurar que haja espaço suficiente para chaves adicionais válidas.
 
 1. Acesse a tela **Chaves SSH** no [{{site.data.keyword.slportal}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://control.softlayer.com/){: new_window} usando suas credenciais exclusivas.
 2. Clique no ícone **Remover** ao lado da chave SSH que você deseja remover.

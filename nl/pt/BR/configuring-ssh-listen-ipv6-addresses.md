@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-28"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2017-11-28"
 
 # Configurando o SSH para atender endereços IPv6
 
-Use o procedimento a seguir para ativar o IPv6 em um SSH do servidor Linux:
+Use o procedimento a seguir para ativar o SSH em um servidor Linux para atender no IPv6:
 1. Localize o arquivo: /etc/ssh/sshd_config.
 2. Localize a linha que contém `ListenAddress`.
 3. Remova o comentário da linha `#ListenAddress ::`:

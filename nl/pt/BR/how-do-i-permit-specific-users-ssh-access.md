@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -31,32 +31,27 @@ cp /etc/ssh/sshd_config{,.'date +%s'}
 
 Após essa palavra-chave, inclua uma lista de padrões de nome de grupo. Separe os padrões com espaços. Se
 você especificar **Login**, será permitido apenas para usuários cujo grupo primário ou
-grupo complementar corresponde a um dos padrões. É possível usar `"*" e "?"` como curingas
-nos padrões. Apenas nomes de grupo são válidos; um ID do grupo numérico não é reconhecido. Por padrão,
-**Login** é permitido para todos os grupos.
+grupo complementar corresponde a um dos padrões. É possível usar `"*" e "?"` como curingas nos padrões. Apenas nomes de grupo são válidos; um ID do grupo numérico não é reconhecido. Por
+padrão, **Login** é permitido para todos os grupos.
 
 ### AllowUsers 
 
-Após essa palavra-chave, inclua uma lista de padrões de nomes de usuário. Separe os padrões com espaços. 
-Se você especificar **Login**, será permitido apenas para nomes de usuários que
-corresponderem a um dos padrões. É possível usar `"*" e "?"` como curingas nos padrões. 
-Apenas nomes de usuário são válidos; um ID do usuário numérico não é reconhecido. Por padrão,
-**Login** é permitido para todos os usuários. Se o padrão assume o formato USER@HOST,
-então USER e HOST são verificados separadamente, restringindo logins para usuários específicos de
-hosts específicos.
+Após essa palavra-chave, inclua uma lista de padrões de nomes de usuário. Separe os padrões com espaços. Se você especificar **Login**, será permitido apenas para nomes de usuários que
+corresponderem a um dos padrões. É possível usar `"*" e "?"` como curingas nos padrões. Apenas nomes de usuário
+são válidos; um ID do usuário numérico não é reconhecido. Por padrão,
+**Login** é permitido para todos os usuários. Se o padrão assume o formato USER@HOST, então USER e HOST são verificados
+separadamente, restringindo logins para usuários específicos de hosts específicos.
 
 ### DenyGroups 
 
 Após essa palavra-chave, inclua uma lista de padrões de nome de grupo. Separe os padrões com espaços. Se
 você especificar **Login**, será desaprovado para usuários cujo grupo primário ou
-grupo complementar corresponde a um dos padrões. É possível usar `"*" e "?"`
-como curingas nos padrões. Apenas nomes de grupo são válidos; um ID do grupo numérico não é reconhecido. Por
+grupo complementar corresponde a um dos padrões. É possível usar `"*" e "?"` como curingas nos padrões. Apenas nomes de grupo são válidos; um ID do grupo numérico não é reconhecido. Por
 padrão, **Login** é permitido para todos os grupos.
 
 ### DenyUsers 
 
-Após essa palavra-chave, inclua uma lista de padrões de nomes de usuário. Separe os padrões com espaços. 
-Se você especificar **Login**, será permitido para nomes de usuários que corresponderem a
+Após essa palavra-chave, inclua uma lista de padrões de nomes de usuário. Separe os padrões com espaços. Se você especificar **Login**, será permitido para nomes de usuários que corresponderem a
 um dos padrões. É possível usar`"*" e "?"` como curingas nos padrões. Apenas nomes de usuário
 são válidos; um ID do usuário numérico não é reconhecido. Por padrão, **Login** é permitido
 para todos os usuários.  Se o padrão assume o formato USER@HOST, então USER e HOST são verificados
@@ -115,8 +110,7 @@ sshd_config: line 112: Bad configuration option: allowuser
 sshd_config: terminating, 1 bad configuration options
 ```
 
-5. Depois de corrigir todos os erros e ter uma configuração correta, reinicie o sshd.
-A seguir está um comando de exemplo em um sistema compatível com sysv: /etc/init.d/sshd restart
+5. Depois de corrigir todos os erros e ter uma configuração correta, reinicie o sshd. A seguir está um comando de exemplo em um sistema compatível com sysv: /etc/init.d/sshd restart
 
 Certifique-se de que você cria uma nova sessão SSH sem desconectar a sessão existente. Verifique se é
 possível executar quaisquer ações com os usuários que você incluiu.

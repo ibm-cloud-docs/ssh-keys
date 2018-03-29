@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,8 +9,7 @@ lastupdated: "2017-12-11"
 
 # Configurando o SSH para atender apenas em uma rede privada
 
-É possível proteger ainda mais seu servidor executando SSHd apenas na rede de backend. Portanto, será
-necessário conectar-se à VPN toda vez que você precisar acessar o SSH.
+É possível proteger ainda mais seu servidor executando SSHd apenas na rede de backend. Portanto, será necessário se conectar à VPN toda vez que você precisar acessar o SSH.
 
 1. Localize o arquivo a seguir. Use este arquivo para definir o endereço IP para
 `sshd`.
@@ -27,5 +26,4 @@ seu endereço IP interno selecionando *Hardware* no {{site.data.keyword.slportal
 ```
 
 A janela shell atual não se desconecta quando você reinicia o serviço. Verifique se é possível
-conectar-se ao servidor por meio da nova porta SSH antes de sair da sua janela shell atual. Se houver um
-problema, o SSHd falhará ao reiniciar e será necessário conectar-se ao servidor usando um método alternativo.
+conectar-se ao servidor por meio da nova porta SSH antes de sair da sua janela shell atual. Se houver um problema, o SSHd falhará ao reiniciar e será necessário se conectar ao servidor usando um método alternativo.
