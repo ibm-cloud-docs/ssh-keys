@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-12"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -23,4 +23,4 @@ Der Fingerabdruck, der zusammen mit den Details für einen SSH-Schlüssel angeze
 
 ## Wenn ich ein Gerät erstelle oder neu lade, das eine Imagevorlage verwendet, werden die SSH-Schlüssel dann übernommen?
 
-Ja und nein. Jedes Gerät besitzt einen eindeutigen SSH-Schlüssel, weshalb der Schlüssel für das neu bereitgestellte oder neu geladene Gerät von dem Image abweichen wird. Allerdings werden SSH-Schlüssel, die entweder einem Flex Image oder einem Standard-Image zugehörig sind, dem Gerät zugeordnet, wenn dieses bereitgestellt oder neu geladen wird. Sie können auch Schlüssel während des Einrichtungsprozesses hinzufügen.
+Ja und nein. Jedes Gerät besitzt einen eindeutigen SSH-Schlüssel, weshalb der Schlüssel für das neu bereitgestellte oder neu geladene Gerät von dem Image abweichen wird.  Allerdings werden SSH-Schlüssel, die entweder einem Flex Image oder einem Standard-Image zugehörig sind, dem Gerät zugeordnet, wenn dieses bereitgestellt oder neu geladen wird. Sie können auch Schlüssel während des Einrichtungsprozesses hinzufügen.

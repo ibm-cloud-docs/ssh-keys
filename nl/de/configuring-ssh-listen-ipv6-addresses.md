@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-28"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2017-11-28"
 
 # SSH für die Empfangsbereitschaft für IPv6-Adresse konfigurieren
 
-Wenden Sie das folgende Verfahren an, um IPv6 für Linux-Server-SSH zu aktivieren:
+Wenden Sie das folgende Verfahren an, um SSH für die IPv6-Empfangsbereitschaft auf einem Linux-Server zu aktivieren:
 1. Suchen Sie nach der Datei: /etc/ssh/sshd_config.
 2. Suchen Sie nach der Zeile, die `ListenAddress` enthält.
 3. Entfernen Sie die Kommentarzeichen aus der Zeile `#ListenAddress ::`:

@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-12"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2017-12-12"
 
 # Einführung in SSH-Schlüssel
 
-Über den Bildschirm "SSH-Schlüssel" im {{site.data.keyword.slportal_full}} können Sie SSH-Schlüssel hinzufügen, verwalten und löschen. Der Zugriff auf den Bildschirm "SSH-Schlüssel" ist von den Berechtigungen abhängig. Einige Benutzer können nicht auf diesen Bildschirm zugreifen oder mit ihm interagieren. Wenn Sie den Zugriff benötigen, aber nicht darüber verfügen, wenden Sie sich an Ihren Kontoadministrator.
+Über den Bildschirm "SSH-Schlüssel" im {{site.data.keyword.slportal_full}} können Sie SSH-Schlüssel hinzufügen, verwalten und löschen. Der Zugriff auf den Bildschirm "SSH-Schlüssel" ist von den Berechtigungen abhängig. Einige Benutzer können nicht auf diesen Bildschirm zugreifen oder mit ihm interagieren. Wenn Sie den Zugriff benötigen, aber nicht darüber verfügen, wenden Sie sich an Ihren Kontoadministrator. 
 {:shortdesc}
 
 Befolgen Sie diese Schritte, um mit dem Zugriff auf den Bildschirm "SSH-Schlüssel" zu starten.

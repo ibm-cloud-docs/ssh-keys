@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-12"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2017-12-12"
 
 # SSH-Zugriff in einem öffentlichen Netz beschränken
 
-Der SSH-Zugriff ermöglicht Benutzern den sicheren Zugriff auf ein Gerät über eine Internetverbindung. SSH steht für {{site.data.keyword.cloud}}-Geräte sowohl im öffentlichen als auch im privaten Netz zur Verfügung. Allerdings sollten Sie den SSH-Zugriff über das öffentliche Netz einschränken, wenn er nicht für eine besondere Geschäftsanforderung benötigt wird. Bei Einschränkung des SSH-Zugriffs über das öffentliche Netz können Benutzer weiterhin über das private Netz auf ein Gerät zugreifen, aber das Risiko, dass unbekannte Benutzer aus dem öffentlichen Netz auf das Gerät zugreifen, ist gemindert. Wenn der SSH-Zugriff über das öffentliche Netz notwendig ist, wird empfohlen, SSH auf eine angepasste Portnummer zu übertragen, um eine weitere Sicherheitsebene zu erhalten.
+Der SSH-Zugriff ermöglicht Benutzern den sicheren Zugriff auf ein Gerät über eine Internetverbindung. SSH steht für {{site.data.keyword.cloud}}-Geräte sowohl im öffentlichen als auch im privaten Netz zur Verfügung. Allerdings sollten Sie den SSH-Zugriff über das öffentliche Netz einschränken, wenn er nicht für eine besondere Geschäftsanforderung benötigt wird. Bei Einschränkung des SSH-Zugriffs über das öffentliche Netz können Benutzer weiterhin über das private Netz auf ein Gerät zugreifen, aber das Risiko, dass unbekannte Benutzer aus dem öffentlichen Netz auf das Gerät zugreifen, ist gemindert. Wenn der SSH-Zugriff über das öffentliche Netz notwendig ist, können Sie SSH auf eine angepasste Portnummer übertragen, um eine weitere Sicherheitsebene zu erhalten.
 {:shortdesc}
 
 Befolgen Sie diese Schritte, um den SSH-Zugriff über das öffentliche Netz zu beschränken.
@@ -22,7 +22,7 @@ Befolgen Sie diese Schritte, um den SSH-Zugriff über das öffentliche Netz zu b
 6. Führen Sie den Befehl `:wq` aus, um die Änderungen zu speichern und die Datei zu verlassen.
 7. Starten Sie den SSHD-Service erneut.
   > `service sshd restart`
-8. Testen Sie die Aktualisierungen am SSH-Zugriff, indem Sie versuchen, über die öffentliche IP-Adresse des Bare-Metal-Servers auf SSH zuzugreifen.<br><br><table border="1"><tr><th>Wenn eine Verbindung...</th><th>Dann ist...</th></tr><tr><td>... nicht möglich.</td><td>Die am SSH-Zugriff vorgenommenen Änderungen waren erfolgreich. Es ist keine weitere Aktion erforderlich.</td></tr><tr><td>... möglich.</td><td>Die am SSH-Zugriff vorgenommenen Änderungen waren nicht erfolgreich. Wiederholen Sie die obigen Schritte, um die Beschränkung des SSH-Zugriffs erneut zu versuchen. Wenn die Probleme bestehen bleiben, wenden Sie sich bitte an den [Support](https://control.softlayer.com/).</td></tr></table>
+8. Testen Sie die Aktualisierungen am SSH-Zugriff, indem Sie versuchen, über die öffentliche IP-Adresse des Bare-Metal-Servers auf SSH zuzugreifen.<br><br><table border="1"><tr><th>Wenn eine Verbindung...</th><th>Dann ist...</th></tr><tr><td>... nicht möglich.</td><td>Die am SSH-Zugriff vorgenommenen Änderungen waren erfolgreich. Es ist keine weitere Aktion erforderlich.</td></tr><tr><td>... möglich.</td><td>Die am SSH-Zugriff vorgenommenen Änderungen waren nicht erfolgreich. Wiederholen Sie die obigen Schritte, um die Beschränkung des SSH-Zugriffs erneut zu versuchen. Wenn die Probleme bestehen bleiben, wenden Sie sich bitte an den Support.</td></tr></table>
 
 ## Nächste Schritte
 

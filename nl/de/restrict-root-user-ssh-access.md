@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2017-12-11"
 
 # SSH-Zugriff für Rootbenutzer unzugänglich machen
 
-Jedes Linux-System im {{site.data.keyword.cloud}}-Netz hat einen Rootbenutzer mit Administratorberechtigungen. Innerhalb von Linux können Sie Wheel-Gruppen erstellen, die den Benutzern durch "sudo" ähnliche Berechtigungen geben wie dem Rootbenutzer, ohne dass Rootbenutzer-Berechtigungsnachweise erforderlich wären. Nach dem Erstellen einer Wheel-Gruppe mit sudo-Stammberechtigungen können Sie den SSH-Zugriff für Benutzer in dieser Gruppe unzugänglich machen. Durch diese Einschränkung der Benutzer schützen Sie das Gerät vor Sicherheitslücken, die sich auf die Netzzugänglichkeit auswirken könnten. Benutzer, die Teil der Wheel-Gruppe sind, können weiterhin jederzeit Verwaltungsfunktionen am Gerät ausführen.
+Jedes Linux-System im {{site.data.keyword.cloud}}-Netz hat einen Rootbenutzer mit Administratorberechtigungen. Innerhalb von Linux können Sie Wheel-Gruppen erstellen, die den Benutzern durch "sudo" ähnliche Berechtigungen geben wie dem Rootbenutzer, ohne dass Rootbenutzer-Berechtigungsnachweise erforderlich wären. Nach dem Erstellen einer Wheel-Gruppe mit sudo-Stammberechtigungen können Sie den SSH-Zugriff für Benutzer in dieser Gruppe unzugänglich machen. Durch diese Einschränkung der Benutzer schützen Sie das Gerät vor Sicherheitslücken, die sich auf die Netzzugänglichkeit auswirken könnten. Benutzer, die Teil der Wheel-Gruppe sind, können weiterhin jederzeit Verwaltungsfunktionen am Gerät ausführen. 
 {:shortdesc}
 
 Befolgen Sie diese Schritte, um den SSH-Zugriff für Rootbenutzer unzugänglich zu machen.

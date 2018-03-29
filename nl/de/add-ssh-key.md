@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-12"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -15,7 +15,7 @@ Sofern Sie über die entsprechenden Benutzerberechtigungen verfügen, können Si
 
 Zum Hinzufügen eines SSH-Schlüssels zu Ihrem Konto befolgen Sie diese Schritte.
 1. Greifen Sie auf den Bildschirm **SSH-Schlüssel** zu. Informationen hierzu finden Sie unter [Einführung in SSH-Schlüssel](index.html).
-2. Klicken Sie oben auf dem Bildschirm auf die Registerkarte **Hinzufügen**.
+2. Klicken Sie auf **Hinzufügen**.
 3. Klicken Sie auf **Durchsuchen**, um die Datei mit dem öffentlichen Schlüssel zu finden, oder geben Sie sie manuell in das Textfeld **Schlüsselinhalte** ein.
 4. Geben Sie im Feld **Bezeichnung** einen **Kurznamen** für den SSH-Schlüssel ein.
 5. Geben Sie bei Bedarf im Feld **Anmerkungen** zutreffende Anmerkungen ein.
@@ -23,5 +23,5 @@ Zum Hinzufügen eines SSH-Schlüssels zu Ihrem Konto befolgen Sie diese Schritte
 
 ## Nächste Schritte
 
-Nach dem Hinzufügen eines SSH-Schlüssels wird dieser in der Liste der SSH-Schlüssel angezeigt.
+Nach dem Hinzufügen eines SSH-Schlüssels wird dieser in der Liste der SSH-Schlüssel angezeigt. 
 Sie können jederzeit die [Schlüssel-Details bearbeiten](edit-details-ssh-key.html). Sie können auch den [SSH-Schlüssel entfernen](remove-ssh-key.html){:new_window}, sodass er nicht mehr in der Liste erscheint. Entfernen Sie veraltete SSH-Schlüssel so bald wie möglich, um sicherzustellen, dass genügend Platz verfügbar ist, wenn Sie weitere Schlüssel hinzufügen müssen.

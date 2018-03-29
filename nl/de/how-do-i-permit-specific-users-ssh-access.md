@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-12-11"
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -40,7 +40,7 @@ Nach diesem Schlüsselwort beziehen Sie eine Liste der Gruppennamenmuster ein. T
 
 ### DenyUsers 
 
-Nach diesem Schlüsselwort beziehen Sie eine Liste der Benutzernamenmuster ein. Trennen Sie die Muster durch Leerzeichen. Wenn Sie **Anmeldung** angeben, ist es für Benutzernamen, die mit einem der Muster übereinstimmen, unzulässig. Sie können `"*" und "?"` als Platzhalter in den Mustern verwenden. Nur Benutzernamen sind gültig; eine numerische Benutzer-ID wird nicht erkannt. Standardmäßig ist **Anmeldung** für alle Benutzer zulässig. Wenn das Muster das Format USER@HOST hat, werden USER und HOST getrennt überprüft, wodurch Anmeldungen auf bestimmte Benutzer von bestimmten Hosts beschränkt werden.
+Nach diesem Schlüsselwort beziehen Sie eine Liste der Benutzernamenmuster ein. Trennen Sie die Muster durch Leerzeichen. Wenn Sie **Anmeldung** angeben, ist es für Benutzernamen, die mit einem der Muster übereinstimmen, unzulässig. Sie können `"*" und "?"` als Platzhalter in den Mustern verwenden. Nur Benutzernamen sind gültig; eine numerische Benutzer-ID wird nicht erkannt. Standardmäßig ist **Anmeldung** für alle Benutzer zulässig.  Wenn das Muster das Format USER@HOST hat, werden USER und HOST getrennt überprüft, wodurch Anmeldungen auf bestimmte Benutzer von bestimmten Hosts beschränkt werden.
 
 ## Beispiel
 
