@@ -1,31 +1,22 @@
 ---
-
-
-
 copyright:
-  years: 2017
-lastupdated: "2017-11-24"
-
-
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# A propos des serveurs bare metal
+# Initiation aux clés SSH
 
-Laissez le serveur {{site.data.keyword.baremetal_long}} constituer la base de votre solution d'infrastructure sous forme de service, que vous soyez un développeur de logiciels de jeux nécessitant des entrées-sorties très rapides ou que vous ayez besoin de serveurs aux performances élevés pour vos utilisateurs. Le serveur {{site.data.keyword.baremetal_short}} peut être la réponse à vos besoins en matière de calcul.
+Vous pouvez ajouter, gérer et supprimer des clés SSH en utilisant l'écran Clés SSH dans le portail {{site.data.keyword.slportal_full}}. L'accès à cet écran est soumis à autorisation. Certains utilisateurs ne peuvent pas avoir accès ou interagir avec cet écran. Si vous devez utiliser cet écran et que vous n'y avez pas accès, contactez l'administrateur de votre compte. 
 {:shortdesc}
 
-Un serveur {{site.data.keyword.baremetal_short}} est un serveur physique avec des capacités de personnalisation limitées. Il vous est dédié et aucune de ses parties n'est partagée avec d'autres clients, y compris les ressources serveur. Ces serveurs sont gérés par vous-même, sont mis à disposition sans un hyperviseur et peuvent être déployés dans un ou plusieurs centres de données. Plusieurs serveurs {{site.data.keyword.baremetal_short}} peuvent communiquer sur le réseau privé virtuel {{site.data.keyword.cloud_notm}} comme s'ils étaient positionnés sur le même rack. 
+Suivez cette procédure pour commencer par accéder à l'écran Clés SSH.
+1. Accédez au portail {{site.data.keyword.slportal}} [ ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://control.softlayer.com/){: new_window} à l'aide de vos données d'identification uniques.
+2. Sélectionnez **Equipements > Gérer > Clés SSH** à partir de la barre de navigation pour accéder à l'écran Clés SSH.
 
-La personnalisation étant limitée sur un serveur {{site.data.keyword.baremetal_short}}, des temps de mise à disposition plus rapides, compris entre 1 et 4 heures, peuvent être atteints. Une mise à disposition rapide est utile lorsque vous essayez de commercialiser une application avant la concurrence.  
 
-Un serveur{{site.data.keyword.baremetal_short}} inclut les principales fonctionnalités suivantes :
-  * Aucun hyperviseur n'est mis à disposition ; vous pouvez en mettre un à disposition 
-  * Une personnalisation limitée
-  * Une durée de mise à disposition comprise généralement entre 1 et 4 heures
-  * Une facturation horaire ou mensuelle
-  * La gestion par les clients
+## Etapes suivantes
 
-Les serveurs {{site.data.keyword.baremetal_short}} sont configurés et gérés pour prendre en charge divers cas d'utilisation, y compris l'hébergement de sites Web et de bases de données, le stockage de fichiers et l'exécution d'applications. Vous sélectionnez des processeurs, un centre de données, un système d'exploitation et une unité de disque dur lorsque vous commandez un serveur {{site.data.keyword.baremetal_short}}. Une fois que vous avez créé un compte {{site.data.keyword.cloud_notm}}, vous pouvez commander de nouveaux serveurs à tout moment via l'interface utilisateur {{site.data.keyword.cloud_notm}}. 
+Lorsque vous avez accédé à l'écran Clés SSH, vous pouvez [ajouter des clés SSH](add-ssh-key.html), [modifier des libellés et des remarques](edit-details-ssh-key.html) et [retirer des clés SSH](remove-ssh-key.html). Vous pouvez associer jusqu'à 100 clés SSH à un compte à tout moment.

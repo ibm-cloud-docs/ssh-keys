@@ -1,61 +1,37 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="bare-metal" audience="compute" href="/docs/bare-metal/about.html"}
-IBM Cloud 베어메탈 서버
+{: .toc subcollection="ssh-keys" audience="compute" href=“/docs/infrastructure/ssh-keys/index.html”}
+SSH 키
 
     {: .navgroup id="learn"}
-    about.md
     index.md
-
-    {: .topicgroup}
-    RAID
-        what-raid.md
-        what-raid-monitoring-daemon-named.md
-
-    bare-metal-software.md
-
-    {: .topicgroup}
-    운영 체제 옵션
-        introduction-no-os.md
-        can-i-change-operating-system-os-my-device.md
-
-    {: .topicgroup}
-    보안 옵션
-        ssl_certificates_intro.md
-        intel-trusted-execution-technology-txt.md
-        does-softlayer-keep-bare-metal-servers-date-security-patches.md
-
-    bare-metal-vmware.md
+    about.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     {: .topicgroup}
-    프로비저닝
-        baremetal-provision.md
-
+    SSH 키 관리
+        add-ssh-key.md
+        edit-details-ssh-key.md
+        remove-ssh-key.md
+        
     {: .topicgroup}
-    구성
-        configuring.md
-        what-port-speed-do-you-recommend-communication-between-bare-metal-servers.md
-        how-are-server-ip-addresses-assigned-softlayer-network.md
-        mount-iso-bare-metal-server.md
-        set-bare-metal-server.md
-
+    SSH 구성
+        how-do-i-force-ssh-run-non-standard-port.md
+        how-do-i-make-my-ssh-server-only-listen-private-network.md
+        configuring-ssh-listen-ipv6-addresses.md
+        
     {: .topicgroup}
-    관리
-        managing.md
-        understanding-server-transaction.md
-        view-bandwidth-graphs.md
-        creating-and-adjusting-raid-configurations-adaptec.md
-        how-do-i-check-health-my-3ware-raid-array.md
-        bare-metal-managing-vmware.md
-        can-i-back-data-between-bare-metal-servers-private-network.md
+    SSH 액세스 제한
+        restrict-root-user-ssh-access.md
+        restrict-ssh-access-public-network.md
+        
+    how-do-i-permit-specific-users-ssh-access.md
+    generating-and-using-ssh-keys-remote-host-authentication.md
+    how-do-i-connect-redhat-server-ssh.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    faq.md
-    [FAQ: 서버(일반)](../vsi/faq_servers_general.html)
-    [FAQ: OS 재로드](../infrastructure/software/os-reload-question-faq.html)
-    [FAQ: cpsrvd 이메일](../infrastructure/software/why-did-my-cpsrvd-email-fail.html)
-    {: .navgroup-end}
+    ssh-keys-faqs.md
+    {: .navgroup-end

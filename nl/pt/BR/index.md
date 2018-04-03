@@ -1,31 +1,27 @@
 ---
-
-
-
 copyright:
-  years: 2017
-lastupdated: "2017-11-24"
-
-
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Sobre servidores bare metal
+# Introdução às chaves SSH
 
-Deixe que {{site.data.keyword.baremetal_long}} sejam a base para sua solução de infraestrutura como serviço. Não importa se você é um desenvolvedor de jogos que requer de E/S de alta velocidade ou precisa configurar servidores de alto desempenho para seus usuários. Os {{site.data.keyword.baremetal_short}} podem ser sua resposta às necessidades de cálculo.
+É possível incluir, gerenciar e excluir chaves SSH usando a tela Chaves SSH no
+{{site.data.keyword.slportal_full}}. O acesso à tela Chaves SSH é baseado em permissão. Alguns usuários não podem acessar ou interagir com essa tela. Se você precisa de acesso, mas não o tem,
+entre em contato com o administrador da conta. 
 {:shortdesc}
 
-Os {{site.data.keyword.baremetal_short}} são servidores físicos com recursos de customização limitada. Eles são dedicados para você e não compartilhados em nenhuma parte, incluindo recursos do servidor, com outros clientes. Esses servidores são gerenciados por você, são provisionados em um hypervisor e podem ser implementados em um ou mais data centers. Múltiplos {{site.data.keyword.baremetal_short}} podem se comunicar na rede privada virtual (VPN) do {{site.data.keyword.cloud_notm}} como se estivessem posicionados no mesmo rack.
+Siga estas etapas para começar a usar o produto acessando a tela Chaves SSH.
+1. Acesse o [{{site.data.keyword.slportal}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://control.softlayer.com/){: new_window} usando suas credenciais exclusivas.
+2. Selecione **Dispositivos > Gerenciar > Chaves SSH** na Barra de Navegação para
+acessar a tela Chaves SSH.
 
-Como a customização é limitada em {{site.data.keyword.baremetal_short}}, tempos de fornecimento mais rápidos entre 1 a 4 horas são obtidos. O fornecimento rápido é útil quando você está tentando obter um app no mercado antes da concorrência. 
 
-Os {{site.data.keyword.baremetal_short}} incluem os recursos-chave a seguir:
-  * Nenhum hypervisor provisionado; é possível provisionar uma
-  * Customização limitada
-  * Normalmente provisionado em 1 a 4 horas
-  * Faturamento por hora ou mensal
-  * Gerenciado pelo cliente
+## Próximas Etapas
 
-Os {{site.data.keyword.baremetal_short}} são configurados e gerenciados para suportar vários casos de uso, incluindo hospedagem de websites e bancos de dados, armazenamento de arquivos e execução de aplicativos. Você seleciona seus processadores, data center, sistema operacional e unidade de disco rígido ao pedir {{site.data.keyword.baremetal_short}}. Depois de criar uma conta do {{site.data.keyword.cloud_notm}}, é possível pedir novos servidores a qualquer momento por meio da interface com o usuário do {{site.data.keyword.cloud_notm}}.
+Depois de acessar a tela Chaves SSH, é possível [incluir chaves SSH](add-ssh-key.html),
+[editar rótulos e notas](edit-details-ssh-key.html) e [remover
+chaves SSH](remove-ssh-key.html). No máximo 100 chaves SSH podem ser associadas a uma conta a qualquer momento.

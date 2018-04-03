@@ -1,61 +1,37 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="bare-metal" audience="compute" href="/docs/bare-metal/about.html"}
-Servidores bare metal IBM Cloud
+{: .toc subcollection="ssh-keys" audience="compute" href=“/docs/infrastructure/ssh-keys/index.html”}
+Chaves SSH
 
     {: .navgroup id="learn"}
-    about.md
     index.md
-
-    {: .topicgroup}
-    RAID
-        what-raid.md
-        what-raid-monitoring-daemon-named.md
-
-    bare-metal-software.md
-
-    {: .topicgroup}
-    Opções de sistema operacional
-        introduction-no-os.md
-        can-i-change-operating-system-os-my-device.md
-
-    {: .topicgroup}
-    Opções de segurança
-        ssl_certificates_intro.md
-        intel-trusted-execution-technology-txt.md
-        does-softlayer-keep-bare-metal-servers-date-security-patches.md
-
-    bare-metal-vmware.md
+    about.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     {: .topicgroup}
-    Fornecimento
-        baremetal-provision.md
-
+    Gerenciando chaves SSH
+        add-ssh-key.md
+        edit-details-ssh-key.md
+        remove-ssh-key.md
+        
     {: .topicgroup}
-    Configurando
-        configuring.md
-        what-port-speed-do-you-recommend-communication-between-bare-metal-servers.md
-        how-are-server-ip-addresses-assigned-softlayer-network.md
-        mount-iso-bare-metal-server.md
-        set-bare-metal-server.md
-
+    Configurando o SSH
+        how-do-i-force-ssh-run-non-standard-port.md
+        how-do-i-make-my-ssh-server-only-listen-private-network.md
+        configuring-ssh-listen-ipv6-addresses.md
+        
     {: .topicgroup}
-    Gerenciando
-        managing.md
-        understanding-server-transaction.md
-        view-bandwidth-graphs.md
-        creating-and-adjusting-raid-configurations-adaptec.md
-        how-do-i-check-health-my-3ware-raid-array.md
-        bare-metal-managing-vmware.md
-        can-i-back-data-between-bare-metal-servers-private-network.md
+    Restringindo o acesso ao SSH
+        restrict-root-user-ssh-access.md
+        restrict-ssh-access-public-network.md
+        
+    how-do-i-permit-specific-users-ssh-access.md
+    generating-and-using-ssh-keys-remote-host-authentication.md
+    how-do-i-connect-redhat-server-ssh.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    faq.md
-    [FAQs: servidores (geral)](../vsi/faq_servers_general.html)
-    [FAQs: recarregamento do S.O.](../infrastructure/software/os-reload-question-faq.html)
-    [FAQs: cpsrvd email](../infrastructure/software/why-did-my-cpsrvd-email-fail.html)
-    {: .navgroup-end}
+    ssh-keys-faqs.md
+    {: .navgroup-end

@@ -1,31 +1,22 @@
 ---
-
-
-
 copyright:
-  years: 2017
-lastupdated: "2017-11-24"
-
-
+  years: 2014, 2018
+lastupdated: "2018-02-23"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Informazioni sui server bare metal
+# Introduzione alle chiavi SSH
 
-Lascia che {{site.data.keyword.baremetal_long}} sia la base per la tua soluzione IaaS (infrastructure-as-a-service). Non importa se sei uno sviluppatore di giochi che ha bisogno di I/O ad alta velocità o se hai bisogno di configurare dei server ad elevate prestazioni per i tuoi utenti. {{site.data.keyword.baremetal_short}} può essere la risposta alle tue esigenze di elaborazione.
+Puoi aggiungere, gestire ed eliminare le chiavi SSH utilizzando la schermata delle chiavi SSH in {{site.data.keyword.slportal_full}}. L'accesso alla schermata delle chiavi SSH si basa sull'autorizzazione. Alcuni utenti non possono accedere o interagire con questa schermata. Se hai bisogno di accedere ma non puoi, contatta il tuo amministratore dell'account. 
 {:shortdesc}
 
-Un {{site.data.keyword.baremetal_short}} è un server fisico con limitate funzionalità di personalizzazione. È dedicato a te e nessuna sua parte, comprese le risorse server, è condivisa con altri clienti. Questi server sono gestiti da te, ne viene eseguito il provisioning senza un hypervisor e possono essere distribuiti in uno o più data center. Più {{site.data.keyword.baremetal_short}} possono comunicare sulla VPN (virtual private network) di {{site.data.keyword.cloud_notm}} come se si trovassero sullo stesso rack.
+Segui questa procedura per iniziare ad accedere alla schermata delle chiavi SSH.
+1. Accedi a [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} utilizzando le tue credenziali univoche.
+2. Seleziona **Devices > Manage > SSH Keys** dalla barra di navigazione per accedere alla schermata delle chiavi SSH.
 
-Poiché la personalizzazione è limitata su {{site.data.keyword.baremetal_short}}, è possibile ottenere dei tempi di provisioning più rapidi compresi tra 1 e 4 ore. Un rapido provisioning è utile quando stai tentando di mettere in commercio un'applicazione prima della concorrenza. 
 
-{{site.data.keyword.baremetal_short}} include le seguenti funzioni chiave:
-  * Nessun hypervisor di cui è stato eseguito il provisioning (tu puoi eseguire il provisioning di uno di essi)
-  * Personalizzazione limitata
-  * Provisioning di norma eseguito in un lasso di tempo compreso tra 1 e 4 ore
-  * Fatturazione oraria o mensile
-  * Gestito dal cliente
+## Passi successivi
 
-{{site.data.keyword.baremetal_short}} sono configurati e gestiti per supportare diversi casi d'uso, compresi la funzione di host per siti web e database, la memorizzazione di file e l'esecuzione di applicazioni. Selezioni i tuoi processori, il data center, il sistema operativo e l'unità disco rigido quando ordini un {{site.data.keyword.baremetal_short}}. Dopo che hai creato un account {{site.data.keyword.cloud_notm}}, puoi ordinare nuovi server in qualsiasi momento tramite l'interfaccia utente {{site.data.keyword.cloud_notm}}.
+Dopo aver eseguito l'accesso alla schermata delle chiavi SSH, puoi [aggiungere le chiavi SSH](add-ssh-key.html), [modificare le etichette e le note](edit-details-ssh-key.html) e [rimuovere le chiavi SSH](remove-ssh-key.html). Non possono essere associate più di 100 chiavi SSH a un account in qualsiasi momento.
