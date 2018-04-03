@@ -1,21 +1,30 @@
 ---
+
+
+
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2016
+lastupdated: "2016-01-19"
+
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Sobre as chaves SSH 
+# Introdução aos {{site.data.keyword.baremetal_short}}
 
-As chaves SSH são usadas pelos servidores SSH para identificar um usuário ou dispositivo por meio de
-criptografia de chave pública. As chaves SSH são formadas por uma combinação alfanumérica e são exclusivas
-para o dispositivo ao qual elas são designadas. A qualquer momento, os usuários autorizados podem incluir,
-editar ou excluir chaves SSH usando o {{site.data.keyword.slportal_full}}.
+Os {{site.data.keyword.baremetal_long}} fornecem a você desempenho e controle. Os {{site.data.keyword.baremetal_short}} não são executados em um hypervisor e você obtém acesso de baixo nível para os recursos de hardware. Além disso, nenhum outro cliente compartilhará o servidor com você -- é todo seu!
+{:shortdesc}
 
-As chaves SSH permitem acesso a um dispositivo sem usar uma senha de clientes correspondentes para cada
-chave pública que é implementada no dispositivo. Ao incluir uma chave SSH em um dispositivo, que pode ser
-feito durante o fornecimento ou por meio de um [Recarregamento de
-OS](../software/vsi_reload_os.html), o dispositivo que foi fornecido com a chave SSH acessa o dispositivo para a chave correspondente
-sem o uso de uma senha.
+Ao criar os {{site.data.keyword.baremetal_short}}, é possível customizar as especificações dos processadores e região para o sistema operacional e disco rígido.
+
+Para provisionar os {{site.data.keyword.baremetal_short}}:
+  1. Acesse **Cálculo > {{site.data.keyword.baremetal_short}}** e clique em **Incluir**.
+  2. Selecione o local em que você deseja que a instância dos {{site.data.keyword.baremetal_short}} seja provisionada. Este é um data center em uma das regiões do {{site.data.keyword.Bluemix}}.
+  3. Selecione a configuração para os servidores. Essa configuração se aplica a todos os servidores criados para esta instância.
+  4. Selecione o número de servidores que você deseja que sejam criados para esta instância. Para cada servidor, insira um nome de host exclusivo.
+  5. **Opcional:** insira uma URL em um arquivo de script ou texto que você definiu para configurar o servidor. O script de fornecimento deve usar um protocolo HTTPS. O script será transferido por download e executado após a instância ser provisionada, se possível. Se a URL não estiver associada a um script executável, o script simplesmente será transferido por download.
+  6. Selecione o sistema operacional para os servidores. Esse sistema operacional se aplica a todos os servidores criados para esta instância.
+
+Em uma hora, seus {{site.data.keyword.baremetal_short}} são provisionados e estão disponíveis para uso.

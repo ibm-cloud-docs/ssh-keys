@@ -1,14 +1,30 @@
 ---
+
+
+
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2016
+lastupdated: "2016-01-19"
+
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# 關於 SSH 金鑰 
+# 開始使用 {{site.data.keyword.baremetal_short}}
 
-SSH 金鑰由 SSH 伺服器用來透過公開金鑰加密法識別使用者或裝置。SSH 金鑰包含英數組合，且對於它們指派到的裝置而言是唯一的。獲得授權的使用者可以隨時使用 {{site.data.keyword.slportal_full}} 新增、編輯或刪除 SSH 金鑰。
+{{site.data.keyword.baremetal_long}} 提供效能及控制權。{{site.data.keyword.baremetal_short}} 不會在 Hypervisor 中執行，而且您可以取得硬體資源的低階存取權。此外，其他客戶都不會與您共用伺服器 -- 全部都是您的！
+{:shortdesc}
 
-SSH 金鑰允許存取裝置，而不必針對裝置上實作的每個公開金鑰使用來自對應用戶端的密碼。藉由將 SSH 金鑰新增至裝置（這可以在佈建期間進行，或透過 [OS 重新載入](../software/vsi_reload_os.html)進行），提供有 SSH 金鑰的裝置會存取對應金鑰的裝置，而不使用密碼。
+建立 {{site.data.keyword.baremetal_short}} 時，您可以自訂從處理器及地區到作業系統及硬碟的規格。
+
+若要佈建 {{site.data.keyword.baremetal_short}}，請執行下列動作：
+  1. 移至**運算 > {{site.data.keyword.baremetal_short}}**，然後按一下**新增**。
+  2. 選取您要在其中佈建 {{site.data.keyword.baremetal_short}} 實例的位置。這是其中一個 {{site.data.keyword.Bluemix}} 地區中的資料中心。
+  3. 選取伺服器的配置。此配置適用於針對此實例所建立的所有伺服器。
+  4. 選取您要針對此實例而建立的伺服器數目。針對每一部伺服器，輸入唯一的主機名稱。
+  5. **選用項目：**輸入您所定義用來配置伺服器的 Script 或文字檔的 URL。佈建 Script 必須使用 HTTPS 通訊協定。佈建實例之後，將會下載並執行 Script（可能的話）。如果 URL 未與可執行的 Script 相關聯，則只會下載 Script。
+  6. 選取伺服器的作業系統。此作業系統適用於針對此實例所建立的所有伺服器。
+
+在一個小時內，您的 {{site.data.keyword.baremetal_short}} 便會佈建且可供使用。

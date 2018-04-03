@@ -1,37 +1,61 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="ssh-keys" audience="compute" href=“/docs/infrastructure/ssh-keys/index.html”}
-Claves SSH
+{: .toc subcollection="bare-metal" audience="compute" href="/docs/bare-metal/about.html"}
+Servidores nativos de IBM Cloud
 
     {: .navgroup id="learn"}
-    index.md
     about.md
+    index.md
+
+    {: .topicgroup}
+    RAID
+        what-raid.md
+        what-raid-monitoring-daemon-named.md
+
+    bare-metal-software.md
+
+    {: .topicgroup}
+    Opciones de sistema operativo
+        introduction-no-os.md
+        can-i-change-operating-system-os-my-device.md
+
+    {: .topicgroup}
+    Opciones de seguridad
+        ssl_certificates_intro.md
+        intel-trusted-execution-technology-txt.md
+        does-softlayer-keep-bare-metal-servers-date-security-patches.md
+
+    bare-metal-vmware.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     {: .topicgroup}
-    Gestión de claves SSH
-        add-ssh-key.md
-        edit-details-ssh-key.md
-        remove-ssh-key.md
-        
+    Suministro
+        baremetal-provision.md
+
     {: .topicgroup}
-    Configuración de SSH
-        how-do-i-force-ssh-run-non-standard-port.md
-        how-do-i-make-my-ssh-server-only-listen-private-network.md
-        configuring-ssh-listen-ipv6-addresses.md
-        
+    Configuración
+        configuring.md
+        what-port-speed-do-you-recommend-communication-between-bare-metal-servers.md
+        how-are-server-ip-addresses-assigned-softlayer-network.md
+        mount-iso-bare-metal-server.md
+        set-bare-metal-server.md
+
     {: .topicgroup}
-    Restricción del acceso SSH
-        restrict-root-user-ssh-access.md
-        restrict-ssh-access-public-network.md
-        
-    how-do-i-permit-specific-users-ssh-access.md
-    generating-and-using-ssh-keys-remote-host-authentication.md
-    how-do-i-connect-redhat-server-ssh.md
+    Gestión
+        managing.md
+        understanding-server-transaction.md
+        view-bandwidth-graphs.md
+        creating-and-adjusting-raid-configurations-adaptec.md
+        how-do-i-check-health-my-3ware-raid-array.md
+        bare-metal-managing-vmware.md
+        can-i-back-data-between-bare-metal-servers-private-network.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    ssh-keys-faqs.md
-    {: .navgroup-end
+    faq.md
+    [Preguntas frecuentes: Servidores (general)](../vsi/faq_servers_general.html)
+    [Preguntas frecuentes: Recarga de SO](../infrastructure/software/os-reload-question-faq.html)
+    [Preguntas frecuentes: correo electrónico de cpsrvd](../infrastructure/software/why-did-my-cpsrvd-email-fail.html)
+    {: .navgroup-end}
