@@ -29,9 +29,9 @@ passphrase para proteger a chave SSH.
     Enter same passphrase again:
     Your identification has been saved in /root/.ssh/id_rsa.
     Your public key has been saved in /root/.ssh/id_rsa.pub.
-    The key fingerprint is:
+    A impressão digital da chave é:
     SHA256:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx root@bck2.example.com
-    The key's randomart image is:
+    A imagem de arte aleatória da chave é:
     +---[RSA 2048]----+
     |.  oo*%=+o..     |
     |.++.oX+=. .      |
