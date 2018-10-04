@@ -59,4 +59,4 @@ vi /etc/pam.d/su
 
 ## 次のステップ
 
-root ユーザーの SSH アクセスを制限した後は、root ユーザーは SSH にログインできません。ユーザーが現在 root ユーザーとして SSH 経由でサーバーにアクセスできても、前の手順で SSH を再始動した後に接続は失敗します。 root ユーザーを介した SSH への接続試行は、今後すべて失敗します。これらの変更を元に戻すには、ステップを繰り返し、`PermitRootLogin` no を `PermitRootLogin` yes に変更します。
+root ユーザーの SSH アクセスを制限した後は、root ユーザーは SSH にログインできません。 ユーザーが現在 root ユーザーとして SSH 経由でサーバーにアクセスできても、前の手順で SSH を再始動した後に接続は失敗します。 root ユーザーを介した SSH への接続試行は、今後すべて失敗します。 これらの変更を元に戻すには、ステップを繰り返し、`PermitRootLogin` no を `PermitRootLogin` yes に変更します。
