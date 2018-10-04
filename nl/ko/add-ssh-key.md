@@ -11,7 +11,7 @@ lastupdated: "2018-02-23"
 
 권한 부여된 사용자의 경우 계정에 SSH 키를 추가할 수 있습니다. 각 계정은 언제든 최대 100개의 SSH 키를 가질 수 있습니다. {{site.data.keyword.slportal_full}} 내에서 SSH 키는 [OS 재로드 프로세스](../software/vsi_reload_os.html){:new_window}에 자주 사용되며 사용자가 새 디바이스를 프로비저닝하는 경우에도 사용될 수 있습니다. 
 
-**참고:** 계정에 SSH 키를 추가하기 전에 키를 추가하는 디바이스에서 [공개 SSH 키를 생성![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://help.github.com/articles/generating-ssh-keys){: new_window}하십시오. 
+**참고:** 계정에 SSH 키를 추가하기 전에 키를 추가하는 디바이스에서 [공개 SSH 키를 생성 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://help.github.com/articles/generating-ssh-keys){: new_window}하십시오. 
 
 다음 단계에 따라 계정에 SSH 키를 추가하십시오.
 1. **SSH 키** 화면에 액세스하십시오. [SSH 키 시작하기](index.html)를 참조하십시오.
