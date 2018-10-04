@@ -9,9 +9,9 @@ lastupdated: "2018-02-23"
 
 # SSH-Schlüssel entfernen
 
-Wenn ein im {{site.data.keyword.slportal_full}} gespeicherter SSH-Schlüssel veraltet ist oder nicht mehr benötigt wird, können Sie den Schlüssel über den Bildschirm "SSH-Schlüssel" entfernen. Entfernen Sie veraltete SSH-Schlüssel so bald wie möglich, um sicherzustellen, dass genügend Platz für weitere, gültige Schlüssel vorhanden ist.
+Wenn ein im {{site.data.keyword.slportal_full}} gespeicherter SSH-Schlüssel veraltet ist oder nicht mehr benötigt wird, können Sie den Schlüssel über die Anzeige "SSH-Schlüssel" entfernen. Entfernen Sie veraltete SSH-Schlüssel so bald wie möglich, um sicherzustellen, dass genügend Platz für weitere, gültige Schlüssel vorhanden ist.
 
-1. Greifen Sie mit Ihren eindeutigen Berechtigungsnachweisen auf den Bildschirm **SSH-Schlüssel** im [{{site.data.keyword.slportal}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://control.softlayer.com/){: new_window} zu.
+1. Greifen Sie mit Ihren eindeutigen Berechtigungsnachweisen auf die Anzeige **SSH-Schlüssel** im [{{site.data.keyword.slportal}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://control.softlayer.com/){: new_window} zu.
 2. Klicken Sie neben dem SSH-Schlüssel, den Sie entfernen möchten, auf das Symbol **Entfernen**.
 3. Klicken Sie zur Bestätigung auf **Ja**. Zum Abbrechen der Aktion klicken Sie auf **Nein**.
 

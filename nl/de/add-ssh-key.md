@@ -14,7 +14,7 @@ Sofern Sie über die entsprechenden Benutzerberechtigungen verfügen, können Si
 **Anmerkung:** [Generieren Sie den öffentlichen SSH-Schlüssel ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://help.github.com/articles/generating-ssh-keys){: new_window} mit dem Gerät, für das Sie gerade einen Schlüssel hinzufügen, bevor Sie einen SSH-Schlüssel zu Ihrem Konto hinzufügen. 
 
 Zum Hinzufügen eines SSH-Schlüssels zu Ihrem Konto befolgen Sie diese Schritte.
-1. Greifen Sie auf den Bildschirm **SSH-Schlüssel** zu. Informationen hierzu finden Sie unter [Einführung in SSH-Schlüssel](index.html).
+1. Greifen Sie auf die Anzeige **SSH-Schlüssel** zu. Informationen hierzu finden Sie unter [Einführung in SSH-Schlüssel](index.html).
 2. Klicken Sie auf **Hinzufügen**.
 3. Klicken Sie auf **Durchsuchen**, um die Datei mit dem öffentlichen Schlüssel zu finden, oder geben Sie sie manuell in das Textfeld **Schlüsselinhalte** ein.
 4. Geben Sie im Feld **Bezeichnung** einen **Kurznamen** für den SSH-Schlüssel ein.

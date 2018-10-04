@@ -15,10 +15,10 @@ Wenn Sie den Schlüssel selbst bearbeiten müssen, entfernen Sie ihn und fügen 
 
 Befolgen Sie diese Schritte, um Details des SSH-Schlüssels zu bearbeiten:
 
-1. Greifen Sie auf den Bildschirm **SSH-Schlüssel** im [{{site.data.keyword.slportal}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://control.softlayer.com/){: new_window} zu.
+1. Greifen Sie auf die Anzeige **SSH-Schlüssel** im [{{site.data.keyword.slportal}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://control.softlayer.com/){: new_window} zu.
 2. Klicken Sie an beliebiger Stelle im Feld **Bezeichnung** oder im Feld **Anmerkung**, um das Feld zur Bearbeitung zu öffnen.
 3. Geben Sie den aktualisierten Text in das entsprechende Feld ein.
-4. Klicken Sie an beliebiger Stelle auf den Bildschirm, um das Feld für weitere Bearbeitungen zu schließen.
+4. Klicken Sie an beliebiger Stelle in die Anzeige, um das Feld für weitere Bearbeitungen zu schließen.
 
 
 ## Nächste Schritte
