@@ -1,22 +1,21 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-02-23"
+lastupdated: "2018-08-15"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Iniciación a las claves SSH
+# Guía de aprendizaje de iniciación
 
-Puede añadir, gestionar y suprimir las claves SSH utilizando la pantalla de claves SSH en el {{site.data.keyword.slportal_full}}. El acceso a la pantalla de claves SSH se basa en permisos. Algunos usuarios no pueden acceder o interactuar con esta pantalla. Si necesita disponer de acceso y no tiene, póngase en contacto con el administrador de la cuenta. 
+Puede añadir, gestionar y suprimir las claves SSH utilizando la página Claves SSH. El acceso a la pantalla Claves SSH se basa en permisos. Algunos usuarios no pueden acceder o interactuar con esta pantalla. Si necesita disponer de acceso y no tiene, póngase en contacto con el administrador de la cuenta.
 {:shortdesc}
 
-Siga estos pasos para empezar a acceder a la pantalla de claves SSH.
-1. Acceda al [{{site.data.keyword.slportal}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com/){: new_window} utilizando sus credenciales exclusivas.
-2. Seleccione **Dispositivos > Gestionar > Claves SSH** de la barra de navegación para acceder a la pantalla de claves SSH.
+**Iniciación a las claves SSH para la consola de IBM Cloud y VPC (Beta)**
 
+Para obtener más información sobre las claves SSH en la consola de IBM Cloud, consulte [Iniciación a las claves SSH para la consola de IBM Cloud y VPC (Beta)](ssh-get-started-cloud-console.html).
 
-## Pasos siguientes
+**Iniciación a las claves SSH para el portal de clientes de infraestructura de IBM Cloud (Beta)**
 
-Después de acceder a la pantalla de claves SSH, puede [añadir claves SSH](add-ssh-key.html), [editar etiquetas y notas](edit-details-ssh-key.html) y [eliminar las claves SSH](remove-ssh-key.html). No se pueden asociar más de 100 claves SSH con una cuenta en cualquier momento.
+Para obtener más información sobre las claves SSH en la consola de IBM Cloud, consulte [Iniciación a las claves SSH para el {{site.data.keyword.slportal_full}}](ssh-get-started-customer-portal.html).
