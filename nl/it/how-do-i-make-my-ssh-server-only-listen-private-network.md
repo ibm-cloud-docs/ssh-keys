@@ -9,7 +9,7 @@ lastupdated: "2018-02-23"
 
 # Configurazione di SSH per l'ascolto solo su una rete privata
 
-Puoi proteggere ulteriormente il tuo server eseguendo SSHd solo su una rete di backend. Pertanto, devi collegarti alla VPN ogni volta che hai bisogno di accedere a SSH. 
+Puoi proteggere ulteriormente il tuo server eseguendo SSHd solo su una rete di backend. Pertanto, devi collegarti alla VPN ogni volta che hai bisogno di accedere a SSH.
 
 1. Individua il seguente file. Utilizza questo file per definire l'indirizzo IP per `sshd`.
 ```
@@ -22,4 +22,4 @@ Puoi proteggere ulteriormente il tuo server eseguendo SSHd solo su una rete di b
 # service sshd restart
 ```
 
-La tua finestra shell corrente non di disconnetterà quando riavvii il servizio. Verifica di poterti collegare al server tramite la nuova porta SSH prima di uscire dalla tua finestra shell corrente. Se si verifica un problema, SSHd non riesce a riavviarsi e devi collegarti al server utilizzando un metodo alternativo. 
+La tua finestra shell corrente non di disconnetterà quando riavvii il servizio. Verifica di poterti collegare al server tramite la nuova porta SSH prima di uscire dalla tua finestra shell corrente. Se si verifica un problema, SSHd non riesce a riavviarsi e devi collegarti al server utilizzando un metodo alternativo.
