@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-08-15"
+lastupdated: "2018-10-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,10 +13,13 @@ lastupdated: "2018-08-15"
 entre em contato com o administrador da conta.
 {:shortdesc}
 
-**Introdução às chaves SSH para o IBM Cloud Console e VPC (Beta)**
+Siga estas etapas para começar a usar o produto acessando a tela Chaves SSH.
+1. Acesse o [{{site.data.keyword.slportal}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://control.softlayer.com/){: new_window} usando suas credenciais exclusivas.
+2. Selecione **Dispositivos > Gerenciar > Chaves SSH** na Barra de Navegação para
+acessar a tela Chaves SSH.
 
-Para obter mais informações sobre as chaves SSH no IBM Cloud Console, veja [Introdução às chaves SSH para o IBM Cloud Console e VPC (Beta)](ssh-get-started-cloud-console.html).
+## Próximas Etapas
 
-** Introdução às chaves SSH para o portal do cliente de infraestrutura do IBM Cloud**
-
-Para obter mais informações sobre as chaves SSH no IBM Cloud Console, veja [Introdução às chaves SSH para{{site.data.keyword.slportal_full}}](ssh-get-started-customer-portal.html).
+Depois de acessar a tela Chaves SSH, é possível [incluir chaves SSH](add-ssh-key.html),
+[editar rótulos e notas](edit-details-ssh-key.html) e [remover
+chaves SSH](remove-ssh-key.html). No máximo 100 chaves SSH podem ser associadas a uma conta a qualquer momento.
