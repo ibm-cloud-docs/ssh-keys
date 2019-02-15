@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="ssh-keys" audience="compute" href=“/docs/infrastructure/ssh-keys/index.html”}
+{: .toc subcollection="ssh-keys" audience="compute" href="/docs/infrastructure/ssh-keys/index.html" path="infrastructure/ssh-keys"}
 SSH 鍵
 
     {: .navgroup id="learn"}
@@ -15,18 +15,18 @@ SSH 鍵
         add-ssh-key.md
         edit-details-ssh-key.md
         remove-ssh-key.md
-        
+
     {: .topicgroup}
     SSH の構成
         how-do-i-force-ssh-run-non-standard-port.md
         how-do-i-make-my-ssh-server-only-listen-private-network.md
         configuring-ssh-listen-ipv6-addresses.md
-        
+
     {: .topicgroup}
     SSH アクセスの制限
         restrict-root-user-ssh-access.md
         restrict-ssh-access-public-network.md
-        
+
     how-do-i-permit-specific-users-ssh-access.md
     generating-and-using-ssh-keys-remote-host-authentication.md
     how-do-i-connect-redhat-server-ssh.md

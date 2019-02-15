@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-08-15"
+lastupdated: "2018-10-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,13 +9,13 @@ lastupdated: "2018-08-15"
 
 # 入門チュートリアル
 
-SSH 鍵の追加、管理、および削除は、「SSH 鍵」ページを使用して行うことができます。「SSH 鍵」画面へのアクセスは、アクセス権に基づきます。 一部のユーザーは、この画面にアクセスしたり、この画面と対話したりできません。 アクセスが必要なのにアクセス権限がない場合は、アカウント管理者に連絡してください。
+SSH 鍵の追加、管理、および削除は、「SSH 鍵」ページを使用して行うことができます。 「SSH 鍵」画面へのアクセスは、アクセス権に基づきます。 一部のユーザーは、この画面にアクセスしたり、この画面と対話したりできません。 アクセスが必要なのにアクセス権限がない場合は、アカウント管理者に連絡してください。
 {:shortdesc}
 
-**IBM Cloud コンソールおよび VPC のための SSH 鍵入門 (ベータ)**
+「SSH 鍵」画面にアクセスして開始するには、以下のステップを実行します。
+1. 固有の資格情報を使用して、[{{site.data.keyword.slportal}} ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://control.softlayer.com/){: new_window} にアクセスします。
+2. ナビゲーション・バーから**「デバイス」>「管理」>「SSH 鍵」**を選択して、「SSH 鍵」画面にアクセスします。
 
-IBM Cloud コンソールでの SSH 鍵について詳しくは、[IBM Cloud コンソールおよび VPC のための SSH 鍵入門 (Beta)](ssh-get-started-cloud-console.html)を参照してください。
+## 次のステップ
 
-**IBM Cloud インフラストラクチャーのカスタマー・ポータルのための SSH 鍵入門**
-
-IBM Cloud コンソールでの SSH 鍵について詳しくは、[{{site.data.keyword.slportal_full}} のための SSH 鍵入門](ssh-get-started-customer-portal.html)を参照してください。
+「SSH 鍵」画面にアクセスしたあと、[SSH 鍵の追加](add-ssh-key.html)、[ラベルとメモの編集](edit-details-ssh-key.html)、および[SSH 鍵の削除](remove-ssh-key.html)を行うことができます。1 つのアカウントに関連付けることのできる SSH 鍵は、いつでも 100 個までです。
