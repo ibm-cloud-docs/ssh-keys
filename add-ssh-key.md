@@ -24,4 +24,4 @@ Follow these steps to add an SSH key to your account.
 ## Next Steps
 
 After you add the SSH key, it appears in the list of SSH keys.
-You can [edit the key details](/docs/infrastructure/software//docs/infrastructure/software/edit-details-ssh-key.html) at any time. You can also [remove the SSH key](/docs/infrastructure/software/remove-ssh-key.html){:new_window} from the list. Remove obsolete SSH keys as soon as possible to ensure that space is available if you need to add more keys.
+You can [edit the key details](/docs/infrastructure/software/edit-details-ssh-key.html) at any time. You can also [remove the SSH key](/docs/infrastructure/software/remove-ssh-key.html){:new_window} from the list. Remove obsolete SSH keys as soon as possible to ensure that space is available if you need to add more keys.
