@@ -18,7 +18,7 @@ SSH keys are device-specific and are found within the device. Because each opera
 ## How many SSH keys can I add to my account?
 {:faq}
 
-You can associate up to 100 SSH keys with an account. Authorized users can [add 1 SSH key](/docs/infrastructure/software/add-ssh-key.html) at a time by using the {{site.data.keyword.slportal_full}}. While most users don't need 100 keys, you should remove any keys that you do not need to ensure that space is available for more valid keys. For more information, see [removing SSH keys](/docs/infrastructure/software/remove-ssh-key.html){:new_window}.
+You can associate up to 100 SSH keys with an account. Authorized users can [add 1 SSH key](/docs/infrastructure/ssh-keys/add-ssh-key.html) at a time by using the {{site.data.keyword.slportal_full}}. While most users don't need 100 keys, you should remove any keys that you do not need to ensure that space is available for more valid keys. For more information, see [removing SSH keys](/docs/infrastructure/ssh-keys/remove-ssh-key.html){:new_window}.
 
 ## I don't see my actual SSH key listed, but I do see a fingerprint. What is that?
 {:faq}
@@ -29,4 +29,3 @@ The fingerprint that is shown with the details for an SSH key is an abbreviated 
 {:faq}
 
 Yes and no. Each device has a unique SSH key, so the key for the newly provisioned or reloaded device will be different from the image.  However, SSH keys that are associated with either a Flex Image or a standard image template are associated with the device when it is provisioned or reloaded. You can also add keys during the setup process.
-
