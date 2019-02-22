@@ -1,7 +1,11 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +13,7 @@ lastupdated: "2018-02-23"
 
 # Editing details for an SSH key
 
-After [adding an SSH key](/docs/infrastructure/ssh-keys/add-ssh-key.html) in the {{site.data.keyword.slportal_full}}, you can edit the key details. You can edit the **Label** (the short name that is used to easily identify the SSH key) and the **Notes** for the key.
+After [adding an SSH key](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key) in the {{site.data.keyword.slportal_full}}, you can edit the key details. You can edit the **Label** (the short name that is used to easily identify the SSH key) and the **Notes** for the key.
 
 If you need to edit the key itself, remove the key and add the correct key to the {{site.data.keyword.slportal}}. The fingerprint that is listed with the details for the SSH key is not the key itself - it is a short sequence of bytes used in the retrieval of the key. The fingerprint might not represent the actual SSH key in any way.
 

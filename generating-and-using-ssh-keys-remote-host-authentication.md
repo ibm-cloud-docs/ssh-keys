@@ -1,7 +1,11 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -82,7 +86,7 @@ As you can see, there is not a prompt for the password when ssh-ing in to the re
 
 ## SSH Keys with a passphrase
 
-Providing a passphrase for your SSH key provides an additional layer of security, but it can also cause issues when you are trying to run automated scripts that require using the protected key. 
+Providing a passphrase for your SSH key provides an additional layer of security, but it can also cause issues when you are trying to run automated scripts that require using the protected key.
 
 The ssh-agent can manage your keys for you. You enter the passphrase once. The ssh-agent keeps your key in its memory and pulls it up when needed. To have ssh-agent manage your keys issue the following command:
 

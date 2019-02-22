@@ -1,7 +1,11 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +13,7 @@ lastupdated: "2018-02-23"
 
 # Restricting the root user from SSH access
 
-Every Linux system on the {{site.data.keyword.cloud}} network has a root user with administrative permissions. Within Linux, you can create wheel groups, which give users similar permissions to that of the root user through "sudo" without requiring the use of root user credentials. After you create a wheel group with sudo permissions of root, you can restrict the users in that group from SSH access. By restricting users this way, you protect the device from security vulnerabilities that pertain to network accessibility. Users that are part of the wheel group can still perform administrative functions on the device at any time. 
+Every Linux system on the {{site.data.keyword.cloud}} network has a root user with administrative permissions. Within Linux, you can create wheel groups, which give users similar permissions to that of the root user through "sudo" without requiring the use of root user credentials. After you create a wheel group with sudo permissions of root, you can restrict the users in that group from SSH access. By restricting users this way, you protect the device from security vulnerabilities that pertain to network accessibility. Users that are part of the wheel group can still perform administrative functions on the device at any time.
 {:shortdesc}
 
 Follow these steps to restrict the root user from SSH access.
@@ -18,14 +22,14 @@ Follow these steps to restrict the root user from SSH access.
 ```
 wheel:x:10:root
 ```
-  
+
     If this line is not in the file, create it.
 
 2. Add at least one user to the wheel group line:
 ```
 wheel:x:10:root, user1
 ```
-    
+
     Users added to the wheel group have identical permissions to the root user, but they use their unique user name when they access the system.
 3. Run the `:wq` command to save changes and exit the file.
 4. Open the `/etc/ssh/sshd_config`.
@@ -36,15 +40,15 @@ wheel:x:10:root, user1
 ```
 # %wheel ALL=(ALL) ALL
 ```
-  
+
     **Note:** Uncommenting this line allows users in the wheel group to run all commands.
-    
+
 9. Run the `:wq` command to save changes and exit the file.
 10. Run the following command at the command line:
 ```
 vi /etc/pam.d/su
 ```
-  
+
 11. Remove the **hash (#)** from the following line to uncomment the line:
 ```
 #auth required pam_wheel.so use_uid

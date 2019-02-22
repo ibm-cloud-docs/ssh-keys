@@ -1,7 +1,11 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -15,18 +19,18 @@ Follow these steps to force SSH to run on a non-standard port:
 ```
 # vi /etc/ssh/sshd_config
 ```
- 
+
 2. Browse to the following line:
 ```
 # Port 22
 ```
- 
+
 3. Uncomment and edit this line to reflect the new port.
 ```
 Port 2255
-``` 
+```
 (this can be set to any non-standard port)
- 
+
 4. Save and quit the file, and restart SSH.
 ```
 # /etc/init.d/sshd restart

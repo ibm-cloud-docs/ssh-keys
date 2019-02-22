@@ -1,7 +1,11 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -17,4 +21,4 @@ When an SSH key that is stored on the {{site.data.keyword.slportal_full}} is obs
 
 ## Next Steps
 
-After you remove an SSH key, it is immediately removed from the list. The key can no longer be used when you provision a new device or when you perform an OS reload on an existing device. If the key was removed in error or needs to be added back to the {{site.data.keyword.slportal}}, refer to [Adding an SSH key](/docs/infrastructure/ssh-keys/add-ssh-key.html){:new_window}.
+After you remove an SSH key, it is immediately removed from the list. The key can no longer be used when you provision a new device or when you perform an OS reload on an existing device. If the key was removed in error or needs to be added back to the {{site.data.keyword.slportal}}, refer to [Adding an SSH key](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key){:new_window}.

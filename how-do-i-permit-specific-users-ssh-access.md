@@ -1,13 +1,17 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Granting SSH access to a user 
+# Granting SSH access to a user
 
 Follow these steps to grant SSH access to one or more users. These steps demonstrate how to configure this file:
 
@@ -15,30 +19,30 @@ Follow these steps to grant SSH access to one or more users. These steps demonst
 ```
 /etc/ssh/sshd_config
 ```
-  
+
 2. Make a backup of this file so you can revert if necessary. For example:
 ```
 cp /etc/ssh/sshd_config{,.'date +%s'}
 ```
-  
+
 3. Edit the file by using the OpenSSH keywords.
 
 
 ## OpenSSH keywords
 
-### AllowGroups 
+### AllowGroups
 
 After this keyword, include a list of group name patterns. Separate the patterns with spaces. If you specify **Login**, it is allowed only for users whose primary group or supplementary group list matches one of the patterns. You can use `"*" and "?"` as wildcards in the patterns. Only group names are valid; a numerical group ID is not recognized. By default, **Login** is allowed for all groups.
 
-### AllowUsers 
+### AllowUsers
 
 After this keyword, include a list of user name patterns. Separate the patterns with spaces. If you specify **Login**, it is allowed only for user names that match one of the patterns. You can use `"*" and "?"` as wildcards in the patterns. Only user names are valid; a numerical user ID is not recognized. By default, **Login** is allowed for all users. If the pattern takes the form USER@HOST, then USER and HOST are separately checked, restricting logins to particular users from particular hosts.
 
-### DenyGroups 
+### DenyGroups
 
 After this keyword, include a list of group name patterns. Separate the patterns with spaces. If you specify **Login**, it is disallowed for users whose primary group or supplementary group list matches one of the patterns. You can use `"*" and "?"` can be used as wildcards in the patterns. Only group names are valid; a numerical group ID is not recognized. By default, **Login** is allowed for all groups.
 
-### DenyUsers 
+### DenyUsers
 
 After this keyword, include a list of user name patterns. Separate the patterns with spaces. If you specify **Login**, it is disallowed for user names that match one of the patterns. You can use`"*" and "?"` as wildcards in the patterns. Only user names are valid; a numerical user ID is not recognized. By default, **Login** is allowed for all users.  If the pattern takes the form USER@HOST, then USER and HOST are separately checked, restricting logins to particular users from particular hosts.
 

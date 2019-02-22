@@ -1,7 +1,11 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-10-23"
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -18,4 +22,4 @@ Follow these steps to get started by accessing the SSH Keys screen.
 
 ## Next Steps
 
-After you access the SSH keys screen, you can [add SSH keys](/docs/infrastructure/ssh-keys/add-ssh-key.html), [edit labels and notes](/docs/infrastructure/ssh-keys/edit-details-ssh-key.html), and [remove SSH keys](/docs/infrastructure/ssh-keys/remove-ssh-key.html). No more than 100 SSH keys can be associated with an account at any time.
+After you access the SSH keys screen, you can [add SSH keys](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key), [edit labels and notes](/docs/infrastructure/ssh-keys?topic=ssh-keys-editing-details-for-an-ssh-key), and [remove SSH keys](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key). No more than 100 SSH keys can be associated with an account at any time.
