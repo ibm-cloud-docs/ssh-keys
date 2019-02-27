@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-08-15"
+lastupdated: "2018-10-23"
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,10 +12,10 @@ lastupdated: "2018-08-15"
 您可以使用「SSH 金鑰」頁面來新增、管理及刪除 SSH 金鑰。對「SSH 金鑰」畫面的存取是以許可權為基礎。部分使用者無法存取此畫面或與它互動。如果您需要存取但沒有存取權，請與帳戶管理者聯絡。
 {:shortdesc}
 
-**針對 IBM Cloud 主控台及 VPC（測試版）開始使用 SSH 金鑰**
+請遵循下列步驟，存取「SSH 金鑰」畫面來開始進行。
+1. 使用您的唯一認證存取 [{{site.data.keyword.slportal}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://control.softlayer.com/){: new_window}。
+2. 從導覽列選取**裝置 > 管理 > SSH 金鑰**，以存取「SSH 金鑰」畫面。
 
-如需 IBM Cloud 主控台中的 SSH 金鑰相關資訊，請參閱[針對 IBM Cloud 主控台及 VPC（測試版）開始使用 SSH 金鑰](ssh-get-started-cloud-console.html)。
+## 後續步驟
 
-**針對 IBM Cloud 基礎架構客戶入口網站開始使用 SSH 金鑰**
-
-如需 IBM Cloud 基礎架構客戶入口網站中的 SSH 金鑰相關資訊，請參閱[針對 {{site.data.keyword.slportal_full}} 開始使用 SSH 金鑰](ssh-get-started-customer-portal.html)。
+存取「SSH 金鑰」畫面之後，您可以[新增 SSH 金鑰](add-ssh-key.html)、[編輯標籤及附註](edit-details-ssh-key.html)，以及[移除 SSH 金鑰](remove-ssh-key.html)。在任何時間，與帳戶相關聯的 SSH 金鑰不能超過 100 個。
