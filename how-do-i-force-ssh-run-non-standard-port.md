@@ -4,6 +4,8 @@ copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
 
+keywords: non-standard port, SSH, text editor
+
 subcollection: ssh-keys
 
 ---
@@ -12,6 +14,7 @@ subcollection: ssh-keys
 {:new_window: target="_blank"}
 
 # Configuring SSH to run on a non-standard port
+{: #configuring-ssh-to-run-on-a-non-standard-port}
 
 Follow these steps to force SSH to run on a non-standard port:
 
