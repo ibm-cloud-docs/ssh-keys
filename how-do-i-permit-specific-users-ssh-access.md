@@ -4,6 +4,8 @@ copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
 
+keywords: list of group name patterns, SSH access, error messages
+
 subcollection: ssh-keys
 
 ---
@@ -12,6 +14,7 @@ subcollection: ssh-keys
 {:new_window: target="_blank"}
 
 # Granting SSH access to a user
+{: #granting-ssh-access-to-a-user}
 
 Follow these steps to grant SSH access to one or more users. These steps demonstrate how to configure this file:
 
