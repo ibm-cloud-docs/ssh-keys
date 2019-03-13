@@ -4,6 +4,8 @@ copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
 
+keywords: RedHat server, main IP address of your server, default options
+
 subcollection: ssh-keys
 
 ---
@@ -12,6 +14,7 @@ subcollection: ssh-keys
 {:new_window: target="_blank"}
 
 # Connecting to a RedHat server with SSH
+{: #connecting-to-a-redhat-server-with-ssh}
 
 To complete this procedure, you need an SSH client, such as PuTTY, on your home computer. PuTTY is a widely distributed, free SSH client.
 In most cases, you can use the default options in PuTTY to successfully connect to your RedHat server for the first time.
