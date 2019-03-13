@@ -4,6 +4,8 @@ copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
 
+keywords: SSH keys, remote host authentication SSH keys, public-key cryptography
+
 subcollection: ssh-keys
 
 ---
@@ -12,6 +14,7 @@ subcollection: ssh-keys
 {:new_window: target="_blank"}
 
 # Generating and using SSH keys for remote host authentication
+{: #generating-and-using-ssh-keys-for-remote-host-authentication}
 
 SSH keys are a way to identify yourself to an SSH server that uses public-key cryptography and challenge-response authentication. An immediate advantage of this method over traditional password authentication is that you can be authenticated by the server without sending your password over the network. You can also use it with automation because it allows for unattended server communication.
 
