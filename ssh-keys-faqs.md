@@ -4,6 +4,8 @@ copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
 
+keywords: SSH keys, SSH key, device-specific
+
 subcollection: ssh-keys
 
 ---
@@ -13,6 +15,7 @@ subcollection: ssh-keys
 {:faq: data-hd-content-type='faq'}
 
 # FAQs: SSH keys
+{: #faqs-ssh-keys}
 
 ## Where can I find my SSH key?
 {:faq}
