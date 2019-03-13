@@ -4,6 +4,8 @@ copyright:
   years: 2014, 2018
 lastupdated: "2018-08-15"
 
+keywords: SSH keys, public-key cryptography, SSH
+
 subcollection: ssh-keys
 
 ---
@@ -12,6 +14,7 @@ subcollection: ssh-keys
 {:new_window: target="_blank"}
 
 # About SSH keys
+{: #about-ssh-keys}
 
 SSH keys are used by SSH servers to identify a user or device through public-key cryptography. SSH keys are made up of an alpha-numeric combination and are unique to the device to which they are assigned. At any time, authorized users can add, edit, or delete SSH keys by using the {{site.data.keyword.slportal_full}}.
 
