@@ -4,6 +4,8 @@ copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
 
+keywords: SSH Key, Remove icon, obsolete SSH keys
+
 subcollection: ssh-keys
 
 ---
@@ -12,6 +14,7 @@ subcollection: ssh-keys
 {:new_window: target="_blank"}
 
 # Removing an SSH Key
+{: #removing-an-ssh-key}
 
 When an SSH key that is stored on the {{site.data.keyword.slportal_full}} is obsolete or is no longer needed, you can remove the key by using the SSH Keys screen. Remove obsolete SSH keys as soon as possible to ensure that there is enough space for additional, valid keys.
 
