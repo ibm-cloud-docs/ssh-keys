@@ -4,6 +4,8 @@ copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
 
+keywords: SSH keys, IBM Cloud infrastructure customer, public SSH key
+
 subcollection: ssh-keys
 
 ---
@@ -12,6 +14,7 @@ subcollection: ssh-keys
 {:new_window: target="_blank"}
 
 # Adding an SSH key
+{: #adding-an-ssh-key}
 
 You can add SSH keys to your account if you are an authorized user. Each account can have up to 100 SSH keys at any time. Within the {{site.data.keyword.slportal_full}}, SSH keys are most often used in the [OS reload process](/docs/infrastructure/software?topic=software-reloading-the-os) and can also be used when you provision a new device.
 
