@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: list of group name patterns, SSH access, error messages
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Concessione dell'accesso SSH a un utente 
+# Concessione dell'accesso SSH a un utente
+{: #granting-ssh-access-to-a-user}
 
 Segui questa procedura per concedere l'accesso SSH a uno o più utenti. Questa procedura illustra come configurare questo file:
 
@@ -15,30 +22,30 @@ Segui questa procedura per concedere l'accesso SSH a uno o più utenti. Questa p
 ```
 /etc/ssh/sshd_config
 ```
-  
+
 2. Esegui un backup di questo file in modo da poterlo ripristinare se necessario. Ad esempio:
 ```
 cp /etc/ssh/sshd_config{,.'date +%s'}
 ```
-  
+
 3. Modifica il file utilizzando le parole chiave OpenSSH.
 
 
 ## Parole chiave OpenSSH
 
-### AllowGroups 
+### AllowGroups
 
 Dopo questa parola chiave, includi un elenco di modelli del nome del gruppo. Separa i modelli con gli spazi. Se specifichi **Login**, viene consentito solo agli utenti il cui elenco di gruppi supplementari o primari corrisponde a uno dei modelli. Puoi utilizzare `"*" e "?"` come caratteri jolly nei modelli. Sono validi solo i nomi del gruppo; un ID del gruppo numerico non viene riconosciuto. Per impostazione predefinita, **Login** non è consentito per tutti i gruppi.
 
-### AllowUsers 
+### AllowUsers
 
 Dopo questa parola chiave, includi un elenco di modelli del nome utente. Separa i modelli con gli spazi. Se specifichi **Login**, viene consentito solo ai nomi utente che corrispondono a uno dei modelli. Puoi utilizzare `"*" e "?"` come caratteri jolly nei modelli. Sono validi solo i nomi utente; un ID utente numerico non viene riconosciuto. Per impostazione predefinita, **Login** non è consentito per tutti gli utenti. Se il modello prende il formato USER@HOST, USER e HOST vengono controllati separatamente, limitando gli accessi a utenti particolari da host particolari.
 
-### DenyGroups 
+### DenyGroups
 
 Dopo questa parola chiave, includi un elenco di modelli del nome del gruppo. Separa i modelli con gli spazi. Se specifichi **Login**, non viene consentito agli utenti il cui elenco di gruppi supplementari o primari corrisponde a uno dei modelli. Puoi utilizzare `"*" e "?"` come caratteri jolly nei modelli. Sono validi solo i nomi del gruppo; un ID del gruppo numerico non viene riconosciuto. Per impostazione predefinita, **Login** non è consentito per tutti i gruppi.
 
-### DenyUsers 
+### DenyUsers
 
 Dopo questa parola chiave, includi un elenco di modelli del nome utente. Separa i modelli con gli spazi. Se specifichi **Login**, non viene consentito ai nomi utente che corrispondono a uno dei modelli. Puoi utilizzare `"*" e "?"` come caratteri jolly nei modelli. Sono validi solo i nomi utente; un ID utente numerico non viene riconosciuto. Per impostazione predefinita, **Login** non è consentito per tutti gli utenti.  Se il modello prende il formato USER@HOST, USER e HOST vengono controllati separatamente, limitando gli accessi a utenti particolari da host particolari.
 

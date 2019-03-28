@@ -1,17 +1,24 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH key, key details, IBM Cloud infrastructure customer
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Modifica dei dettagli di una chiave SSH
+{: #editing-details-for-an-ssh-key}
 
-Dopo aver [aggiunto una chiave SSH](add-ssh-key.html) in {{site.data.keyword.slportal_full}}, puoi modificare i dettagli della chiave. Puoi modificare **Label** (il nome breve che viene utilizzato per identificare facilmente la chiave SSH) e **Notes** della chiave.
+Dopo aver [aggiunto una chiave SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key) in {{site.data.keyword.slportal_full}}, puoi modificare i dettagli della chiave. Puoi modificare **Label** (il nome breve che viene utilizzato per identificare facilmente la chiave SSH) e **Notes** della chiave.
 
-Se hai bisogno di modificare la chiave stessa, rimuovila e aggiungi la chiave corretta a {{site.data.keyword.slportal}}. L'impronta digitale elencata con i dettagli della chiave SSH non è la chiave stessa - è una breve sequenza di byte utilizzati per il richiamo della chiave. L'impronta digitale potrebbe non rappresentare la chiave SSH attuale in alcun modo. 
+Se hai bisogno di modificare la chiave stessa, rimuovila e aggiungi la chiave corretta a {{site.data.keyword.slportal}}. L'impronta digitale elencata con i dettagli della chiave SSH non è la chiave stessa - è una breve sequenza di byte utilizzati per il richiamo della chiave. L'impronta digitale potrebbe non rappresentare la chiave SSH attuale in alcun modo.
 
 Segui questa procedura per modificare i dettagli della chiave SSH:
 
@@ -24,4 +31,3 @@ Segui questa procedura per modificare i dettagli della chiave SSH:
 ## Passi successivi
 
 I dettagli della chiave SSH che vengono modificati sono aggiornati immediatamente nell'elenco delle chiavi SSH.
-

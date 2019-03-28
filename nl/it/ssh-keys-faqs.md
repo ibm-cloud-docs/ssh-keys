@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH keys, SSH key, device-specific
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,6 +15,7 @@ lastupdated: "2018-02-23"
 {:faq: data-hd-content-type='faq'}
 
 # Domande frequenti (FAQ): chiavi SSH
+{: #faqs-ssh-keys}
 
 ## Dove posso trovare la mia chiave SSH?
 {:faq}
@@ -18,7 +25,7 @@ Le chiavi SSH sono specifiche per il dispositivo e si trovano all'interno di ess
 ## Quante chiavi SSH posso aggiungere al mio account?
 {:faq}
 
-Puoi associare fino a 100 chiavi SSH al tuo account. Gli utenti autorizzati possono [aggiungere 1 chiave SSH](add-ssh-key.html) in qualsiasi momento utilizzando {{site.data.keyword.slportal_full}}. Visto che la maggior parte degli utenti non ha bisogno di 100 chiavi, puoi rimuovere tutte la chiavi di cui non hai bisogno per assicurarti che lo spazio sia disponibile per ulteriori chiavi valide. Per ulteriori informazioni, consulta [rimozione chiavi SSH](remove-ssh-key.html){:new_window}.
+Puoi associare fino a 100 chiavi SSH al tuo account. Gli utenti autorizzati possono [aggiungere 1 chiave SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key) in qualsiasi momento utilizzando {{site.data.keyword.slportal_full}}. Visto che la maggior parte degli utenti non ha bisogno di 100 chiavi, puoi rimuovere tutte la chiavi di cui non hai bisogno per assicurarti che lo spazio sia disponibile per ulteriori chiavi valide. Per ulteriori informazioni, consulta [rimozione chiavi SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key).
 
 ## Non vedo elencata la mia chiave SSH corrente, ma vedo un'impronta digitale. Cosa è?
 {:faq}
@@ -29,4 +36,3 @@ L'impronta digitale che viene visualizzata con i dettagli di una chiave SSH è u
 {:faq}
 
 Sì e no. Ogni dispositivo ha una chiave SSH univoca, per cui la chave per il dispositivo appena fornito o ricaricato sarà differente da quella dell'immagine.  Tuttavia, le chiavi SSH associate a un'immagine Flex o a un template dell'immagine standard sono associate al dispositivo quando ne viene eseguito il provisioning o viene ricaricato. Puoi inoltre aggiungere le chiavi durante il processo di configurazione.
-

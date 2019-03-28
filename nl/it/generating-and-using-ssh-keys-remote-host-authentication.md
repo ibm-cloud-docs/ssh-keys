@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH keys, remote host authentication SSH keys, public-key cryptography
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Generazione e utilizzo delle chiavi SSH per l'autenticazione host remota
+{: #generating-and-using-ssh-keys-for-remote-host-authentication}
 
 Le chiavi sono un modo per identificare te stesso in un server SSH che utilizza la crittografia della chiave pubblica e l'autenticazione di verifica/risposta. Un vantaggio immediato di questo metodo rispetto all'autenticazione tramite password tradizionale è che puoi essere autenticato dal server senza inviare la tua password nella rete. Puoi anche utilizzarlo in modo automatizzato perché consente la comunicazione server in modalità non presidiata.
 
@@ -82,7 +89,7 @@ Come puoi vedere, non viene richiesta la password quando utilizzi ssh-ing nell'h
 
 ## Chiavi SSH con una passphrase
 
-Fornire una passphrase per la tua chiave SSH, fornisce un livello di sicurezza aggiuntivo, ma può anche causare problemi quando stai tentando di eseguire gli script automatizzati che richiedono l'utilizzo della chiave protetta. 
+Fornire una passphrase per la tua chiave SSH, fornisce un livello di sicurezza aggiuntivo, ma può anche causare problemi quando stai tentando di eseguire gli script automatizzati che richiedono l'utilizzo della chiave protetta.
 
 ssh-agent può gestire le tue chiavi per te. Immetti la passphrase una volta. ssh-agent conserva la tua chiave nella sua memoria e la trasmette quando necessario. Per permettere a ssh-agent di gestire le tue chiavi immetti il seguente comando:
 
