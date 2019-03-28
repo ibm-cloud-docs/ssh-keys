@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH Key, Remove icon, obsolete SSH keys
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 除去 SSH 密钥
+{: #removing-an-ssh-key}
 
 当存储在 {{site.data.keyword.slportal_full}} 中的 SSH 密钥过时或不再需要时，可以使用“SSH 密钥”屏幕将其除去。尽快除去过时的 SSH 密钥，以确保有足够的空间容纳更多有效密钥。
 
@@ -17,4 +24,4 @@ lastupdated: "2018-02-23"
 
 ## 后续步骤
 
-在除去 SSH 密钥之后，会从列表中立即将其除去。在您供应新设备或在现有设备上执行系统重装时，无法再使用该密钥。如果错误地除去了密钥，或者需要将密钥添加回 {{site.data.keyword.slportal}} 中，请参阅[添加 SSH 密钥](add-ssh-key.html){:new_window}。
+在除去 SSH 密钥之后，会从列表中立即将其除去。在您供应新设备或在现有设备上执行系统重装时，无法再使用该密钥。如果错误地除去了密钥，或者需要将密钥添加回 {{site.data.keyword.slportal}} 中，请参阅[添加 SSH 密钥](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key)。

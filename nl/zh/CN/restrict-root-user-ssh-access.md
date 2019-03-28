@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: root user, wheel group, SSH access Every Linux system
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 限制 root 用户进行 SSH 访问
+{: #restricting-the-root-user-from-ssh-access}
 
 {{site.data.keyword.cloud}} 网络上的每个 Linux 系统都有具有管理许可权的 root 用户。在 Linux 中，您可以创建 wheel 组，该组可通过“sudo”给予用户与 root 用户相似的权限，而无需使用 root 用户凭证。在创建了具有 sudo root 用户权限的 wheel 组之后，可以限制该组中的用户进行 SSH 访问。通过以这种方式限制用户，可以保护设备避免由于网络可访问而带来的安全漏洞。作为 wheel 组成员的用户仍可随时在设备上执行管理功能。
 {:shortdesc}
@@ -18,14 +25,14 @@ lastupdated: "2018-02-23"
 ```
 wheel:x:10:root
 ```
-  
+
     如果文件中没有此行，请创建此行。
 
 2. 将至少一个用户添加到该 wheel 组行：
 ```
 wheel:x:10:root, user1
 ```
-    
+
     添加到 wheel 组的用户具有与 root 用户相同的权限，但他们在访问系统时会使用其唯一的用户名。
 3. 运行 `:wq` 命令以保存更改并退出该文件。
 4. 打开 `/etc/ssh/sshd_config`。
@@ -36,15 +43,15 @@ wheel:x:10:root, user1
 ```
 # %wheel ALL=(ALL) ALL
 ```
-  
+
     **注：**取消注释此行可允许 wheel 组中的用户运行所有命令。
-    
+
 9. 运行 `:wq` 命令以保存更改并退出该文件。
 10. 在命令行中运行下列命令：
 ```
 vi /etc/pam.d/su
 ```
-  
+
 11. 从以下行中除去井号 **#** 以取消注释该行：
 ```
 #auth required pam_wheel.so use_uid

@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH keys, remote host authentication SSH keys, public-key cryptography
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 针对远程主机认证生成并使用 SSH 密钥
+{: #generating-and-using-ssh-keys-for-remote-host-authentication}
 
 SSH 密钥是一种用于向使用公用密钥密码术和提问应答认证的 SSH 服务器进行自身识别的方式。跟传统的密码认证相比，此方法的显著优势在于无需通过网络发送密码即可由服务器进行认证。此外，因为它支持无人照管的服务器通信，所以还可以实现自动化。
 
@@ -82,7 +89,7 @@ SSH 密钥是一种用于向使用公用密钥密码术和提问应答认证的 
 
 ## 带口令的 SSH 密钥
 
-通过为 SSH 密钥提供口令可以提供多一层安全保护，但在尝试运行需要使用受保护密钥的自动脚本时，也可能会导致问题。 
+通过为 SSH 密钥提供口令可以提供多一层安全保护，但在尝试运行需要使用受保护密钥的自动脚本时，也可能会导致问题。
 
 ssh-agent 可以为您管理密钥。您输入口令一次。ssh-agent 会将密钥保存在内存中，并在需要时将其拉出。要让 ssh-agent 管理密钥，请发出以下命令：
 

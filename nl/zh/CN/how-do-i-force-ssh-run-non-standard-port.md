@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: non-standard port, SSH, text editor
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 配置 SSH 以在非标准端口上运行
+{: #configuring-ssh-to-run-on-a-non-standard-port}
 
 按照下列步骤强制 SSH 在非标准端口上运行：
 
@@ -15,20 +22,20 @@ lastupdated: "2018-02-23"
 ```
 # vi /etc/ssh/sshd_config
 ```
- 
+
 2. 浏览到以下行：
 ```
 # Port 22
 ```
- 
+
 3. 取消注释并编辑此行以反映新端口。
 ```
 Port 2255
-``` 
+```
 （此值可设置为任何非标准端口）
 
 
- 
+
 4. 保存并退出文件，然后重新启动 SSH。
 ```
 # /etc/init.d/sshd restart

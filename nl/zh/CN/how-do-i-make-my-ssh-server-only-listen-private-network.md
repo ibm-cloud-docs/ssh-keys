@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: IP address, service sshd restart, private network
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 配置 SSH 以仅侦听专用网络
+{: #configuring-ssh-to-listen-only-on-a-private-network}
 
 通过仅在后端网络上运行 SSHd，可以进一步确保服务器的安全。因此，在每次需要访问 SSH 时，都需要连接 VPN。
 

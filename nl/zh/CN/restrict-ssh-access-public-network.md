@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH access, public network SSH accessibility, private network
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 限制公用网络上的 SSH 访问
+{: #restricting-ssh-access-on-a-public-network}
 
 SSH 可访问性让用户能够通过因特网连接对设备进行安全访问。在公用网络和专用网络上，SSH 在 {{site.data.keyword.cloud}} 设备上都可用。但除非有特殊的业务需求，否则应限制公用网络上的 SSH 可访问性。通过限制公用网络上的 SSH 访问，用户仍可通过专用网络访问设备，但公用网络上未知用户访问设备的风险得到了缓解。如果需要通过公用网络进行 SSH 访问，那么可以将 SSH 转移到定制端口号以增加一层安全保护。
 {:shortdesc}
