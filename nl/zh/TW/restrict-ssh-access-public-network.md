@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH access, public network SSH accessibility, private network
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 限制公用網路上的 SSH 存取
+{: #restricting-ssh-access-on-a-public-network}
 
 SSH 可存取性讓使用者能透過網際網路連線安全地存取裝置。公用及專用網路上的 {{site.data.keyword.cloud}} 裝置上都可使用 SSH。然而，您應該限制公用網路上的 SSH 可存取性，除非有獨特的商業需要。藉由在公用網路上限制 SSH 存取，使用者仍可以在專用網路上存取裝置，但來自於不明使用者在公用網路上存取裝置的風險會得到緩解。如果必須在公用網路上進行 SSH 存取，您可以將 SSH 轉移到自訂埠號，以增加一層安全。
 {:shortdesc}

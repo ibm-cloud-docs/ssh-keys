@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: IP address, service sshd restart, private network
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 配置 SSH 以便只接聽專用網路
+{: #configuring-ssh-to-listen-only-on-a-private-network}
 
 您可以只在後端網路執行 SSH，進一步保護您的伺服器。因此，每次您需要存取 SSH 時便需要連接至 VPN。
 

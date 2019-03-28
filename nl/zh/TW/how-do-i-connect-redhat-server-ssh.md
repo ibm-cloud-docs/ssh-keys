@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: RedHat server, main IP address of your server, default options
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 使用 SSH 連接至 RedHat 伺服器
+{: #connecting-to-a-redhat-server-with-ssh}
 
 若要完成此程序，您的起始電腦上需要有 SSH 用戶端，例如 PuTTY。PuTTY 是廣泛散佈的免費 SSH 用戶端。在大部分情況下，您在 PuTTY 中使用預設選項，即可第一次便順利連接至 RedHat 伺服器。
 

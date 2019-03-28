@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH Key, Remove icon, obsolete SSH keys
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 移除 SSH 金鑰
+{: #removing-an-ssh-key}
 
 當儲存在 {{site.data.keyword.slportal_full}} 上的 SSH 金鑰已作廢或不再需要時，您可以使用「SSH 金鑰」畫面移除金鑰。請儘快移除已作廢的 SSH 金鑰，以確定有足夠的空間給其他有效金鑰使用。
 
@@ -17,4 +24,4 @@ lastupdated: "2018-02-23"
 
 ## 後續步驟
 
-移除 SSH 金鑰之後，它會立即從清單移除。當您佈建新的裝置時，或是在現有裝置上執行 OS 重新載入時，無法再使用該金鑰。若是誤將金鑰移除，或是金鑰需要新增回到 {{site.data.keyword.slportal}}，請參閱[新增 SSH 金鑰](add-ssh-key.html){:new_window}。
+移除 SSH 金鑰之後，它會立即從清單移除。當您佈建新的裝置時，或是在現有裝置上執行 OS 重新載入時，無法再使用該金鑰。若是誤將金鑰移除，或是金鑰需要新增回到 {{site.data.keyword.slportal}}，請參閱[新增 SSH 金鑰](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key)。

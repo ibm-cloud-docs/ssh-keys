@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: list of group name patterns, SSH access, error messages
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# 將 SSH 存取授與給使用者 
+# 將 SSH 存取授與給使用者
+{: #granting-ssh-access-to-a-user}
 
 請遵循下列步驟，將 SSH 存取授與給一個以上的使用者。這些步驟示範如何配置這個檔案：
 
@@ -15,30 +22,30 @@ lastupdated: "2018-02-23"
 ```
 /etc/ssh/sshd_config
 ```
-  
+
 2. 備份這個檔案，以便您可以在必要時回復它。例如：
 ```
 cp /etc/ssh/sshd_config{,.'date +%s'}
 ```
-  
+
 3. 使用 OpenSSH 關鍵字編輯檔案。
 
 
 ## OpenSSH 關鍵字
 
-### AllowGroups 
+### AllowGroups
 
 在這個關鍵字之後，包含群組名稱型樣的清單。請以空格來區隔型樣。如果您指定 **Login**，則只針對主要群組或增補群組清單符合其中一個型樣的使用者才允許它。您可以使用 `"*" 和 "?"` 作為型樣中的萬用字元。只有群組名稱有效，無法辨識數值群組 ID。依預設，所有群組都允許 **Login**。
 
-### AllowUsers 
+### AllowUsers
 
 在這個關鍵字之後，包含使用者名稱型樣的清單。請以空格來區隔型樣。如果您指定 **Login**，則只針對符合其中一個型樣的使用者名稱才允許它。您可以使用 `"*" 和 "?"` 作為型樣中的萬用字元。只有使用者名稱有效，無法辨識數值使用者 ID。依預設，所有使用者都允許 **Login**。如果型樣的格式為 USER@HOST，則 USER 和 HOST 會分開檢查，限制只有來自特定主機的特定使用者能登入。
 
-### DenyGroups 
+### DenyGroups
 
 在這個關鍵字之後，包含群組名稱型樣的清單。請以空格來區隔型樣。如果您指定 **Login**，則會針對主要群組或增補群組清單符合其中一個型樣的使用者禁止它。您可以使用 `"*" 和 "?"` 作為型樣中的萬用字元。只有群組名稱有效，無法辨識數值群組 ID。依預設，所有群組都允許 **Login**。
 
-### DenyUsers 
+### DenyUsers
 
 在這個關鍵字之後，包含使用者名稱型樣的清單。請以空格來區隔型樣。如果您指定 **Login**，則會針對符合其中一個型樣的使用者名稱禁止它。您可以使用 `"*" 和 "?"` 作為型樣中的萬用字元。只有使用者名稱有效，無法辨識數值使用者 ID。依預設，所有使用者都允許 **Login**。如果型樣的格式為 USER@HOST，則 USER 和 HOST 會分開檢查，限制只有來自特定主機的特定使用者能登入。
 

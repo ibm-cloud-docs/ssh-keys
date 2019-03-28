@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH keys, remote host authentication SSH keys, public-key cryptography
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 產生及使用 SSH 金鑰來進行遠端主機鑑別
+{: #generating-and-using-ssh-keys-for-remote-host-authentication}
 
 SSH 金鑰可以用來向使用公開金鑰加密法和盤查-回應鑑別的 SSH 伺服器識別您自己。此方法相較於傳統密碼鑑別的立即優點，是您可以由伺服器鑑別而不必在網路上傳送密碼。您也可以自動地使用它，因為它允許自動式伺服器通訊。
 
@@ -82,7 +89,7 @@ SSH 金鑰可以用來向使用公開金鑰加密法和盤查-回應鑑別的 SS
 
 ## 具有通行詞組的 SSH 金鑰
 
-為您的 SSH 金鑰提供通行詞組，可以額外提供一層安全，但它也可能在您嘗試執行需要使用受保護金鑰的自動化 Script 時導致問題。 
+為您的 SSH 金鑰提供通行詞組，可以額外提供一層安全，但它也可能在您嘗試執行需要使用受保護金鑰的自動化 Script 時導致問題。
 
 ssh-agent 可以為您管理金鑰。您只要輸入一次通行詞組。ssh-agent 會將您的金鑰保存在它的記憶體中，並在需要時取出它。若要讓 ssh-agent 管理您的金鑰，請發出下列指令：
 

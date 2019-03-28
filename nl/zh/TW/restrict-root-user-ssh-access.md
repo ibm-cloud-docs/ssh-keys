@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: root user, wheel group, SSH access Every Linux system
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 限制 root 使用者的 SSH 存取
+{: #restricting-the-root-user-from-ssh-access}
 
 {{site.data.keyword.cloud}} 網路上的每個 Linux 系統都有具有管理許可權的 root 使用者。在 Linux 內，您可以建立 wheel 群組，它們透過 "sudo" 提供使用者與 root 使用者類似的許可權，而不需要使用 root 使用者認證。在您建立具有 root sudo 許可權的 wheel 群組之後，您可以限制該群組使用者的 SSH 存取。藉由以這種方式限制使用者，您可以保護裝置避免與網路可存取性相關的安全漏洞。隸屬於 wheel 群組的使用者仍可隨時在裝置上執行管理功能。
 {:shortdesc}
@@ -18,14 +25,14 @@ lastupdated: "2018-02-23"
 ```
 wheel:x:10:root
 ```
-  
+
     如果這行不在檔案中，請建立它。
 
 2. 新增至少一個使用者至 wheel 群組行：
 ```
 wheel:x:10:root, user1
 ```
-    
+
     新增至 wheel 群組的使用者將具有與 root 使用者相同的許可權，但他們在存取系統時會使用他們的唯一使用者名稱。
 3. 執行 `:wq` 指令，以儲存變更並結束檔案。
 4. 開啟 `/etc/ssh/sshd_config`。
@@ -36,15 +43,15 @@ wheel:x:10:root, user1
 ```
 # %wheel ALL=(ALL) ALL
 ```
-  
+
     **附註：**將此行解除註解可允許 wheel 群組中的使用者執行所有指令。
-    
+
 9. 執行 `:wq` 指令，以儲存變更並結束檔案。
 10. 在指令行執行下列指令：
 ```
 vi /etc/pam.d/su
 ```
-  
+
 11. 從下行移除**井字號 (#)**，以解除該行的註解。
 ```
 #auth required pam_wheel.so use_uid

@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH keys, SSH key, device-specific
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,6 +15,7 @@ lastupdated: "2018-02-23"
 {:faq: data-hd-content-type='faq'}
 
 # 常見問題：SSH 金鑰
+{: #faqs-ssh-keys}
 
 ## 在哪裡可以找到我的 SSH 金鑰？
 {:faq}
@@ -18,7 +25,7 @@ SSH 金鑰是裝置所特有，且能在裝置內找到。因為每個作業系�
 ## 我可以新增多少 SSH 金鑰至我的帳戶？
 {:faq}
 
-您可以將最多 100 個 SSH 金鑰關聯至一個帳戶。獲授權的使用者可以使用 {{site.data.keyword.slportal_full}}，一次[新增 1 個 SSH 金鑰](add-ssh-key.html)。雖然大部分使用者不需要 100 個金鑰，您應該移除任何不需要的金鑰，以確保空間可供更多有效金鑰使用。如需相關資訊，請參閱[移除 SSH 金鑰](remove-ssh-key.html){:new_window}。
+您可以將最多 100 個 SSH 金鑰關聯至一個帳戶。獲授權的使用者可以使用 {{site.data.keyword.slportal_full}}，一次[新增 1 個 SSH 金鑰](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key)。雖然大部分使用者不需要 100 個金鑰，您應該移除任何不需要的金鑰，以確保空間可供更多有效金鑰使用。如需相關資訊，請參閱[移除 SSH 金鑰](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key)。
 
 ## 我沒有看到列出我的實際 SSH 金鑰，但有看到指紋。那是什麼？
 {:faq}
@@ -29,4 +36,3 @@ SSH 金鑰是裝置所特有，且能在裝置內找到。因為每個作業系�
 {:faq}
 
 是，同時也否。每個裝置都有唯一的 SSH 金鑰，因此新佈建或重新載入的裝置，其金鑰將與映像檔不同。不過，與 Flex 映像檔或標準映像檔範本相關聯的 SSH 金鑰，會在佈建或重新載入裝置時與裝置相關聯。您也可以在設定程序期間新增金鑰。
-

@@ -1,17 +1,24 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH key, key details, IBM Cloud infrastructure customer
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 編輯 SSH 金鑰的詳細資料
+{: #editing-details-for-an-ssh-key}
 
-在 {{site.data.keyword.slportal_full}} [新增 SSH 金鑰](add-ssh-key.html)之後，您可以編輯金鑰詳細資料。您可以編輯金鑰的**標籤**（用來輕鬆識別 SSH 金鑰的簡稱）和**附註**。
+在 {{site.data.keyword.slportal_full}} [新增 SSH 金鑰](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key)之後，您可以編輯金鑰詳細資料。您可以編輯金鑰的**標籤**（用來輕鬆識別 SSH 金鑰的簡稱）和**附註**。
 
-如果您需要編輯金鑰本身，請移除金鑰然後將正確的金鑰新增至 {{site.data.keyword.slportal}}。與 SSH 金鑰詳細資料一起列出的指紋不是金鑰本身 - 它是在擷取金鑰時用到的位元組短序列。指紋可能不以任何形式代表實際的 SSH 金鑰。 
+如果您需要編輯金鑰本身，請移除金鑰然後將正確的金鑰新增至 {{site.data.keyword.slportal}}。與 SSH 金鑰詳細資料一起列出的指紋不是金鑰本身 - 它是在擷取金鑰時用到的位元組短序列。指紋可能不以任何形式代表實際的 SSH 金鑰。
 
 請遵循下列步驟以編輯 SSH 金鑰詳細資料：
 
@@ -24,4 +31,3 @@ lastupdated: "2018-02-23"
 ## 後續步驟
 
 編輯過的 SSH 金鑰詳細資料會立即在 SSH 金鑰清單中更新。
-
