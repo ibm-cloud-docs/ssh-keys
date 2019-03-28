@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH keys, remote host authentication SSH keys, public-key cryptography
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 원격 호스트 인증을 위한 SSH 키 생성 및 사용
+{: #generating-and-using-ssh-keys-for-remote-host-authentication}
 
 SSH 키는 공개 키 암호 방식 및 인증 확인 응답 인증을 사용하는 SSH 서버에 대해 자체 식별하는 방법입니다. 기존 비밀번호 인증에 비해 이 방법을 사용하면 비밀번호를 네트워크를 통해 보내지 않고 서버에서 인증받을 수 있습니다. 또한 무인 서버 통신이 가능하여 자동화와 함께 이 방법을 사용할 수 있습니다.
 
@@ -82,7 +89,7 @@ Linux 서버에서 SSH 키를 생성하려면 `ssh-keygen` 명령을 실행하�
 
 ## 비밀번호 문구가 있는 SSH 키
 
-SSH 키의 비밀번호 문구가 추가 보안 계층을 제공하는 경우, 보호된 키를 사용해야 하는 자동화된 스크립트를 실행하려고 하면 문제가 발생할 수 있습니다. 
+SSH 키의 비밀번호 문구가 추가 보안 계층을 제공하는 경우, 보호된 키를 사용해야 하는 자동화된 스크립트를 실행하려고 하면 문제가 발생할 수 있습니다.
 
 ssh-agent는 사용자 키를 관리할 수 있습니다. 사용자는 비밀번호 문구를 한 번 입력합니다. ssh-agent가 해당 메모리에 이 키를 보관하고 필요한 경우 가져옵니다. ssh-agent가 키를 관리하게 하려면 다음 명령을 실행하십시오.
 

@@ -1,15 +1,22 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH access, public network SSH accessibility, private network
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 공용 네트워크에서 SSH 액세스 제한
+{: #restricting-ssh-access-on-a-public-network}
 
-SSH 접근성을 통해 사용자는 인터넷 연결을 통해 디바이스에 안전하게 액세스할 수 있습니다. SSH는 공용 네트워크 및 사설 네트워크의 {{site.data.keyword.cloud}} 디바이스에서 사용 가능합니다. 하지만 고유 비즈니스 요구에 필요하지 않은 한 공용 네트워크를 통한 SSH 접근성을 제한해야 합니다. 공용 네트워크에서 SSH 액세스를 제한하면 사용자는 여전히 사설 네트워크를 통해 디바이스에 액세스할 수 있지만 알 수 없는 사용자가 공용 네트워크의 디바이스에 액세스하는 위험은 줄어듭니다. 공용 네트워크를 통한 SSH 접근성이 필요한 경우, 추가된 보안 계층에 대한 사용자 정의 포트 번호로 SSH를 전송할 수 있습니다. 
+SSH 접근성을 통해 사용자는 인터넷 연결을 통해 디바이스에 안전하게 액세스할 수 있습니다. SSH는 공용 네트워크 및 사설 네트워크의 {{site.data.keyword.cloud}} 디바이스에서 사용 가능합니다. 하지만 고유 비즈니스 요구에 필요하지 않은 한 공용 네트워크를 통한 SSH 접근성을 제한해야 합니다. 공용 네트워크에서 SSH 액세스를 제한하면 사용자는 여전히 사설 네트워크를 통해 디바이스에 액세스할 수 있지만 알 수 없는 사용자가 공용 네트워크의 디바이스에 액세스하는 위험은 줄어듭니다. 공용 네트워크를 통한 SSH 접근성이 필요한 경우, 추가된 보안 계층에 대한 사용자 정의 포트 번호로 SSH를 전송할 수 있습니다.
 {:shortdesc}
 
 다음 단계에 따라 공용 네트워크의 SSH 액세스를 제한하십시오.

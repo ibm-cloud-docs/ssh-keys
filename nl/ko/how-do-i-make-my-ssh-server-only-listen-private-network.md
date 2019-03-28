@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: IP address, service sshd restart, private network
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 사설 네트워크에서만 청취하도록 SSH 구성
+{: #configuring-ssh-to-listen-only-on-a-private-network}
 
 백엔드 네트워크에서만 SSHd를 실행하여 서버의 보안을 강화할 수 있습니다. 따라서 SSH에 액세스할 때마다 VPN에 연결해야 합니다.
 

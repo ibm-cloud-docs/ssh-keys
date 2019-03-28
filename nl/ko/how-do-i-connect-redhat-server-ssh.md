@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: RedHat server, main IP address of your server, default options
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # SSH를 사용하여 RedHat 서버에 연결
+{: #connecting-to-a-redhat-server-with-ssh}
 
 이 프로시저를 완료하려면 홈 컴퓨터에 PuTTY와 같은 SSH 클라이언트가 필요합니다. PuTTY는 널리 배포된 무료 SSH 클라이언트입니다.
 대부분의 경우 처음에 PuTTY에서 기본 옵션을 사용하여 RedHat 서버에 연결할 수 있습니다.

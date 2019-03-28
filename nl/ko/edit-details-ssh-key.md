@@ -1,17 +1,24 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH key, key details, IBM Cloud infrastructure customer
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # SSH 키의 세부사항 편집
+{: #editing-details-for-an-ssh-key}
 
-{{site.data.keyword.slportal_full}}에서 [SSH 키를 추가](add-ssh-key.html)한 후 키 세부사항을 편집할 수 있습니다. 키의 **레이블**(SSH 키를 쉽게 식별하는 데 사용되는 단축 이름) 및 **참고**를 편집할 수 있습니다.
+{{site.data.keyword.slportal_full}}에서 [SSH 키를 추가](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key)한 후 키 세부사항을 편집할 수 있습니다. 키의 **레이블**(SSH 키를 쉽게 식별하는 데 사용되는 단축 이름) 및 **참고**를 편집할 수 있습니다.
 
-키 자체를 편집해야 하는 경우 키를 제거하고 {{site.data.keyword.slportal}}에 올바른 키를 추가하십시오. SSH 키의 세부사항과 함께 나열된 지문은 키가 아닙니다. 키 검색에 사용되는 단축 바이트 시퀀스입니다. 어쨌든 지문은 실제 SSH 키를 나타내지 않습니다. 
+키 자체를 편집해야 하는 경우 키를 제거하고 {{site.data.keyword.slportal}}에 올바른 키를 추가하십시오. SSH 키의 세부사항과 함께 나열된 지문은 키가 아닙니다. 키 검색에 사용되는 단축 바이트 시퀀스입니다. 어쨌든 지문은 실제 SSH 키를 나타내지 않습니다.
 
 다음 단계에 따라 SSH 키 세부사항을 편집하십시오.
 
@@ -24,4 +31,3 @@ lastupdated: "2018-02-23"
 ## 다음 단계
 
 편집된 SSH 키 세부사항은 SSH 키 목록에서 바로 업데이트됩니다.
-
