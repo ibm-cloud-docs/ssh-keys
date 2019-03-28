@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-10-23"
+
+keywords: SSH keys, SSH Keys page, Next Steps
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Guía de aprendizaje de iniciación
+{: #getting-started-tutorial}
 
 Puede añadir, gestionar y suprimir las claves SSH utilizando la página Claves SSH. El acceso a la pantalla Claves SSH se basa en permisos. Algunos usuarios no pueden acceder o interactuar con esta pantalla. Si necesita disponer de acceso y no tiene, póngase en contacto con el administrador de la cuenta.
 {:shortdesc}
@@ -18,4 +25,4 @@ Siga estos pasos para empezar accediendo a la pantalla Claves SSH.
 
 ## Pasos siguientes
 
-Tras acceder a la pantalla de claves SSH, puede [añadir claves SSH](add-ssh-key.html), [editar etiquetas y notas](edit-details-ssh-key.html) y [eliminar claves SSH](remove-ssh-key.html). Una cuenta no puede tener más de 100 claves SSH asociadas en cualquier momento.
+Tras acceder a la pantalla de claves SSH, puede [añadir claves SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key), [editar etiquetas y notas](/docs/infrastructure/ssh-keys?topic=ssh-keys-editing-details-for-an-ssh-key) y [eliminar claves SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key). Una cuenta no puede tener más de 100 claves SSH asociadas en cualquier momento.

@@ -1,17 +1,24 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH key, key details, IBM Cloud infrastructure customer
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Edición de los detalles de una clave SSH
+{: #editing-details-for-an-ssh-key}
 
-Después de [añadir una clave SSH](add-ssh-key.html) en {{site.data.keyword.slportal_full}}, podrá editar los detalles de la clave. Puede editar la **Etiqueta** (el nombre abreviado que se utiliza para identifica fácilmente la clave SSH) y las **Notas** para la clave.
+Después de [añadir una clave SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key) en {{site.data.keyword.slportal_full}}, podrá editar los detalles de la clave. Puede editar la **Etiqueta** (el nombre abreviado que se utiliza para identifica fácilmente la clave SSH) y las **Notas** para la clave.
 
-Si necesita editar la misma clave, elimine la clave y añada la clave correcta {{site.data.keyword.slportal}}. La huella dactilar que aparece con los detalles de la clave SSH no es la clave propiamente, es una breve secuencia de bytes que se utiliza en la recuperación de la clave. Es posible que la huella dactilar no represente la clave SSH real en modo alguno. 
+Si necesita editar la misma clave, elimine la clave y añada la clave correcta {{site.data.keyword.slportal}}. La huella dactilar que aparece con los detalles de la clave SSH no es la clave propiamente, es una breve secuencia de bytes que se utiliza en la recuperación de la clave. Es posible que la huella dactilar no represente la clave SSH real en modo alguno.
 
 Siga estos pasos para editar los detalles de la clave SSH:
 
@@ -24,4 +31,3 @@ Siga estos pasos para editar los detalles de la clave SSH:
 ## Pasos siguientes
 
 Los detalles de las claves SSH que se han editado se actualizan inmediatamente en la lista de claves SSH.
-

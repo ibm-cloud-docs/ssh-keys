@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: IP address, service sshd restart, private network
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Configuración de SSH para que se escuche solo en una red privada
+{: #configuring-ssh-to-listen-only-on-a-private-network}
 
 Puede proteger el servidor ejecutando SSHd sólo en la red de fondo. Por lo tanto, debe conectarse a la VPN cada vez que necesite acceder a SSH.
 

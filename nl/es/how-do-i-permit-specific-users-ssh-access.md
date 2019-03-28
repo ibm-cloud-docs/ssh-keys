@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: list of group name patterns, SSH access, error messages
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Concesión de acceso SSH a un usuario 
+# Concesión de acceso SSH a un usuario
+{: #granting-ssh-access-to-a-user}
 
 Siga estos pasos para otorgar acceso SSH a uno o varios usuarios. Estos pasos muestran cómo configurar este archivo:
 
@@ -15,30 +22,30 @@ Siga estos pasos para otorgar acceso SSH a uno o varios usuarios. Estos pasos mu
 ```
 /etc/ssh/sshd_config
 ```
-  
+
 2. Realice una copia de este archivo para poder volver atrás si es necesario. Por ejemplo:
 ```
 cp /etc/ssh/sshd_config{,.'date +%s'}
 ```
-  
+
 3. Edite el archivo utilizando las palabras clave de OpenSSH.
 
 
 ## Palabras clave de OpenSSH
 
-### AllowGroups 
+### AllowGroups
 
 Después de esta palabra clave, incluya una lista de patrones de nombre de grupo. Separe los patrones mediante espacios. Si especifica **Login**, sólo está permitido para los usuarios cuya lista de grupos primarios o complementarios coincida con uno de los patrones. Puede utilizar `"*" y "?"` como comodines en los patrones. Sólo son válidos los nombres de grupo; un ID de grupo numérico no se reconocerá. De forma predeterminada, **Login** está permitido para todos los grupos.
 
-### AllowUsers 
+### AllowUsers
 
 Después de esta palabra clave, incluya una lista de patrones de nombre de usuario. Separe los patrones mediante espacios. Si especifica **Login**, sólo está permitido para los nombres de usuario que coincidan con uno de los patrones. Puede utilizar `"*" y "?"` como comodines en los patrones. Sólo son válidos los nombres de usuario; un ID de grupo numérico no se reconocerá. De forma predeterminada, **Login** está permitido para todos los usuarios. Si el patrón adopta el formato USER@HOST, USER y HOST se comprobarán por separado, lo cual restringirá los inicios de sesión a determinados usuarios de hosts determinados.
 
-### DenyGroups 
+### DenyGroups
 
 Después de esta palabra clave, incluya una lista de patrones de nombre de grupo. Separe los patrones mediante espacios. Si especifica **Login**, no está permitido para los usuarios cuya lista de grupos primarios o complementarios coincida con uno de los patrones. Puede utilizar `"*" y "?"` como comodines en los patrones. Sólo son válidos los nombres de grupo; un ID de grupo numérico no se reconocerá. De forma predeterminada, **Login** está permitido para todos los grupos.
 
-### DenyUsers 
+### DenyUsers
 
 Después de esta palabra clave, incluya una lista de patrones de nombre de usuario. Separe los patrones mediante espacios. Si especifica **Login**, no está permitido para los nombres de usuario que coincidan con uno de los patrones. Puede utilizar `"*" y "?"` como comodines en los patrones. Sólo son válidos los nombres de usuario; un ID de grupo numérico no se reconocerá. De forma predeterminada, **Login** está permitido para todos los usuarios.  Si el patrón adopta el formato USER@HOST, USER y HOST se comprobarán por separado, lo cual restringirá los inicios de sesión a determinados usuarios de hosts determinados.
 

@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH keys, remote host authentication SSH keys, public-key cryptography
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Generación y uso de claves SSH para la autenticación de host remoto
+{: #generating-and-using-ssh-keys-for-remote-host-authentication}
 
 Las claves SSH son una forma de identificarse en un servidor SSH que utilice la criptografía de claves públicas y la autenticación de respuesta de verificación de identidad. Una ventaja inmediata de este método en comparación con la autenticación de contraseñas tradicional es que el servidor puede autenticarlo sin necesidad de enviar la contraseña por la red. También puede utilizarlo con la automatización, ya que permite la comunicación con el servidor de forma desatendida.
 
@@ -82,7 +89,7 @@ Como puede ver, no se solicita contraseña al ejecutar ssh en el host remoto.
 
 ## Claves SSH con una frase de contraseña
 
-Proporcionar una frase de contraseña para la clave SSH proporciona una capa adicional de seguridad, pero también puede causar problemas al intentar ejecutar scripts automatizados que requieran el uso de la clave protegida. 
+Proporcionar una frase de contraseña para la clave SSH proporciona una capa adicional de seguridad, pero también puede causar problemas al intentar ejecutar scripts automatizados que requieran el uso de la clave protegida.
 
 ssh-agent puede gestionar las claves por usted. Sólo debe especificar la frase de contraseña una vez. ssh-agent conserva la clave en su memoria y la recupera cuando es necesaria. Para que ssh-agent gestione sus claves, emita el siguiente mandato:
 

@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: non-standard port, SSH, text editor
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Configuración de SSH para se ejecute en un puerto no estándar
+{: #configuring-ssh-to-run-on-a-non-standard-port}
 
 Siga estos pasos para forzar a SSH para que se ejecute en un puerto no estándar:
 
@@ -15,18 +22,18 @@ Siga estos pasos para forzar a SSH para que se ejecute en un puerto no estándar
 ```
 # vi /etc/ssh/sshd_config
 ```
- 
+
 2. Vaya a la línea siguiente:
 ```
 # Port 22
 ```
- 
+
 3. Elimine el comentario de la línea y edítela para reflejar el nuevo puerto.
 ```
 Port 2255
-``` 
+```
 (se puede establecer en cualquier puerto no estándar)
- 
+
 4. Guarde y salga del archivo y reinicie SSH.
 ```
 # /etc/init.d/sshd restart
