@@ -1,20 +1,27 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH access, public network SSH accessibility, private network
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Restringindo o acesso SSH em uma rede pública
+{: #restricting-ssh-access-on-a-public-network}
 
 A acessibilidade SSH fornece aos usuários a capacidade de acessar com segurança um dispositivo por meio de
 uma conexão com a Internet. O SSH está disponível em dispositivos {{site.data.keyword.cloud}}
 nas redes pública e privada. No entanto, é necessário restringir a acessibilidade SSH na rede pública, a menos
 que ela seja necessária para uma necessidade de negócios exclusiva. Ao restringir o acesso SSH na rede
 pública, os usuários ainda podem acessar um dispositivo pela rede privada, mas o risco de usuários
-desconhecidos de acessarem o dispositivo na rede pública é reduzido. Se a acessibilidade SSH pela rede pública for necessária, será possível transferir o SSH para um número de porta customizado para obter uma camada adicional de segurança. 
+desconhecidos de acessarem o dispositivo na rede pública é reduzido. Se a acessibilidade SSH pela rede pública for necessária, será possível transferir o SSH para um número de porta customizado para obter uma camada adicional de segurança.
 {:shortdesc}
 
 Siga essas etapas para restringir o acesso do SSH na rede pública.

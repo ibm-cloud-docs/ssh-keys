@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: IP address, service sshd restart, private network
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Configurando o SSH para atender apenas em uma rede privada
+{: #configuring-ssh-to-listen-only-on-a-private-network}
 
 É possível proteger ainda mais seu servidor executando SSHd apenas na rede de backend. Portanto, será necessário se conectar à VPN toda vez que você precisar acessar o SSH.
 

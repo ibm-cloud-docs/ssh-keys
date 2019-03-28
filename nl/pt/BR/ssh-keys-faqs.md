@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH keys, SSH key, device-specific
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,6 +15,7 @@ lastupdated: "2018-02-23"
 {:faq: data-hd-content-type='faq'}
 
 # FAQs: chaves SSH
+{: #faqs-ssh-keys}
 
 ## Em qual lugar posso encontrar a minha chave SSH?
 {:faq}
@@ -19,9 +26,9 @@ As chaves SSH são específicas do dispositivo e estão localizadas dentro do di
 {:faq}
 
 É possível associar até 100 chaves SSH a uma conta. Os usuários autorizados podem
-[incluir 1 chave SSH](add-ssh-key.html) por vez usando o
+[incluir 1 chave SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key) por vez usando o
 {{site.data.keyword.slportal_full}}. Embora a maioria dos usuários não precisa de 100 chaves, é necessário remover quaisquer chaves que não forem necessárias para assegurar que o espaço esteja disponível para mais chaves válidas. Para obter mais informações, consulte [removendo chaves
-SSH](remove-ssh-key.html){:new_window}.
+SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key).
 
 ## Eu não vejo minha chave SSH real listada, mas vejo uma impressão digital. O que é isso?
 {:faq}
@@ -32,4 +39,3 @@ A impressão digital que é mostrada com os detalhes para uma chave SSH é uma s
 {:faq}
 
 Sim e não. Como cada dispositivo possui uma chave SSH exclusiva, a chave para o dispositivo recém-fornecido ou recarregado será diferente da imagem.  No entanto, as chaves SSH que estão associadas a uma Imagem Flex ou a um modelo de imagem padrão estão associadas ao dispositivo quando ele é fornecido ou recarregado. Também é possível incluir chaves durante o processo de configuração.
-

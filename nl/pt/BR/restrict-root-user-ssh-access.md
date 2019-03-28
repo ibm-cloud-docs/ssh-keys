@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: root user, wheel group, SSH access Every Linux system
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Restringindo o usuário raiz do acesso SSH
+{: #restricting-the-root-user-from-ssh-access}
 
 Cada sistema Linux na rede do {{site.data.keyword.cloud}} possui um usuário raiz com permissões
 administrativas. No Linux, é possível criar grupos de roda, que dão aos usuários permissões semelhantes à do
@@ -15,7 +22,7 @@ usuário raiz por meio de "sudo" sem requerer o uso de credenciais do usuário r
 roda com permissões sudo de raiz, é possível restringir os usuários nesse grupo do acesso SSH. Ao restringir
 os usuários dessa maneira, você protege o dispositivo contra vulnerabilidades de segurança
 referentes à acessibilidade de rede. Os usuários que fazem parte do grupo de roda ainda podem executar funções
-administrativas no dispositivo a qualquer momento. 
+administrativas no dispositivo a qualquer momento.
 {:shortdesc}
 
 Siga estas etapas para restringir o usuário raiz do acesso SSH.
@@ -24,14 +31,14 @@ Siga estas etapas para restringir o usuário raiz do acesso SSH.
 ```
 wheel:x:10:root
 ```
-  
+
     Se essa linha não estiver no arquivo, crie-a.
 
 2. Inclua pelo menos um usuário na linha de grupo de roda:
 ```
 wheel:x:10:root, user1
 ```
-    
+
     Os usuários incluídos no grupo de roda têm permissões idênticas às do usuário raiz, mas eles usam o seu nome de usuário exclusivo ao acessarem o sistema.
 3. Execute o comando `:wq` para salvar as mudanças e sair do arquivo.
 4. Abra o `/etc/ssh/sshd_config`.
@@ -44,16 +51,16 @@ de comando.
 ```
 # %wheel ALL=(ALL) ALL
 ```
-  
+
     **Nota:** a remoção do comentário desta linha permite que os usuários no grupo
 de roda executem todos os comandos.
-    
+
 9. Execute o comando `:wq` para salvar as mudanças e sair do arquivo.
 10. Execute o seguinte comando na linha de comandos:
 ```
 vi /etc/pam.d/su
 ```
-  
+
 11. Remova o **hash (#)** da linha a seguir para remover o comentário da linha:
 ```
 #auth required pam_wheel.so use_uid

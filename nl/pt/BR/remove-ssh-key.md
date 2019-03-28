@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH Key, Remove icon, obsolete SSH keys
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Removendo uma Chave SSH
+{: #removing-an-ssh-key}
 
 Quando uma chave SSH armazenada no {{site.data.keyword.slportal_full}} está obsoleta ou não é mais necessária, é possível removê-la usando a tela Chaves SSH. Remova as chaves SSH obsoletas assim que possível para assegurar que haja espaço suficiente para chaves adicionais válidas.
 
@@ -18,4 +25,4 @@ Quando uma chave SSH armazenada no {{site.data.keyword.slportal_full}} está obs
 ## Próximas Etapas
 
 Depois de remover uma chave SSH, ela é imediatamente removida da lista. A chave não pode mais ser usada ao fornecer um novo dispositivo ou ao executar um recarregamento de S.O. em um dispositivo existente. Se a chave foi removida por engano ou precisa ser incluída novamente no {{site.data.keyword.slportal}}, consulte [Incluindo uma chave
-SSH](add-ssh-key.html){:new_window}.
+SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key).

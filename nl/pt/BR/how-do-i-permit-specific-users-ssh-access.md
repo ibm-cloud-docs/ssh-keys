@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: list of group name patterns, SSH access, error messages
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Concedendo acesso SSH a um usuário 
+# Concedendo acesso SSH a um usuário
+{: #granting-ssh-access-to-a-user}
 
 Siga estas etapas para conceder acesso SSH a um ou mais usuários. Estas etapas demonstram como
 configurar esse arquivo:
@@ -16,25 +23,25 @@ configurar esse arquivo:
 ```
 /etc/ssh/sshd_config
 ```
-  
+
 2. Faça backup desse arquivo para que possa ser revertido, se necessário. Por exemplo:
 ```
 cp /etc/ssh/sshd_config{,.'date +%s'}
 ```
-  
+
 3. Edite o arquivo usando as palavras-chave do OpenSSH.
 
 
 ## Palavras-chave do OpenSSH
 
-### AllowGroups 
+### AllowGroups
 
 Após essa palavra-chave, inclua uma lista de padrões de nome de grupo. Separe os padrões com espaços. Se
 você especificar **Login**, será permitido apenas para usuários cujo grupo primário ou
 grupo complementar corresponde a um dos padrões. É possível usar `"*" e "?"` como curingas nos padrões. Apenas nomes de grupo são válidos; um ID do grupo numérico não é reconhecido. Por
 padrão, **Login** é permitido para todos os grupos.
 
-### AllowUsers 
+### AllowUsers
 
 Após essa palavra-chave, inclua uma lista de padrões de nomes de usuário. Separe os padrões com espaços. Se você especificar **Login**, será permitido apenas para nomes de usuários que
 corresponderem a um dos padrões. É possível usar `"*" e "?"` como curingas nos padrões. Apenas nomes de usuário
@@ -42,14 +49,14 @@ são válidos; um ID do usuário numérico não é reconhecido. Por padrão,
 **Login** é permitido para todos os usuários. Se o padrão assume o formato USER@HOST, então USER e HOST são verificados
 separadamente, restringindo logins para usuários específicos de hosts específicos.
 
-### DenyGroups 
+### DenyGroups
 
 Após essa palavra-chave, inclua uma lista de padrões de nome de grupo. Separe os padrões com espaços. Se
 você especificar **Login**, será desaprovado para usuários cujo grupo primário ou
 grupo complementar corresponde a um dos padrões. É possível usar `"*" e "?"` como curingas nos padrões. Apenas nomes de grupo são válidos; um ID do grupo numérico não é reconhecido. Por
 padrão, **Login** é permitido para todos os grupos.
 
-### DenyUsers 
+### DenyUsers
 
 Após essa palavra-chave, inclua uma lista de padrões de nomes de usuário. Separe os padrões com espaços. Se você especificar **Login**, será permitido para nomes de usuários que corresponderem a
 um dos padrões. É possível usar`"*" e "?"` como curingas nos padrões. Apenas nomes de usuário
