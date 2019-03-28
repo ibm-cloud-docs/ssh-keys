@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: IP address, service sshd restart, private network
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # プライベート・ネットワークのみで listen するための SSH の構成
+{: #configuring-ssh-to-listen-only-on-a-private-network}
 
 バックエンド・ネットワークでのみ SSHd を実行することにより、さらにサーバーを保護することができます。 そのため、SSH へのアクセスが必要になる度に VPN に接続する必要があります。
 

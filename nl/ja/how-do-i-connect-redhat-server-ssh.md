@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: RedHat server, main IP address of your server, default options
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # SSH を使用した RedHat サーバーへの接続
+{: #connecting-to-a-redhat-server-with-ssh}
 
 この手順を完了するには、ホーム・コンピューター上に PuTTY などの SSH クライアントが必要です。 PuTTY は、広く流通している無料の SSH クライアントです。
 初めて RedHat サーバーに接続する際、多くの場合、PuTTY でデフォルト・オプションを使用して正常に接続できます。

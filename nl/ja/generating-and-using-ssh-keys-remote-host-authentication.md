@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH keys, remote host authentication SSH keys, public-key cryptography
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # リモート・ホスト認証のための SSH 鍵の生成および使用
+{: #generating-and-using-ssh-keys-for-remote-host-authentication}
 
 SSH 鍵は、公開鍵暗号方式およびチャレンジ応答認証を使用する SSH サーバーに対してユーザー自身を識別する方法です。 従来型のパスワード認証と比べた場合のこの方式の直接の利点は、ネットワークでパスワードを送信せずにサーバーで認証が行える点です。 また、この方式では無人サーバー通信が可能なため、自動化で使用することができます。
 
@@ -82,7 +89,7 @@ Linux サーバー上で SSH 鍵を生成するには、コマンド `ssh-keygen
 
 ## パスフレーズ付きの SSH 鍵
 
-SSH 鍵のパスフレーズを指定すると追加のセキュリティー層が提供されますが、保護された鍵の使用を必要とする自動スクリプトを実行しようとしているときに問題が発生する可能性があります。 
+SSH 鍵のパスフレーズを指定すると追加のセキュリティー層が提供されますが、保護された鍵の使用を必要とする自動スクリプトを実行しようとしているときに問題が発生する可能性があります。
 
 ssh-agent は、ユーザーの代わりに鍵を管理できます。 ユーザーはパスフレーズを 1 回入力します。 ssh-agent はメモリー内に鍵を保持し、必要なときに取り出します。 ssh-agent で鍵の管理を行うには、以下のコマンドを実行します。
 
