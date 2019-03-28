@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: list of group name patterns, SSH access, error messages
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# SSH-Zugriff für einen Benutzer erteilen 
+# SSH-Zugriff für einen Benutzer erteilen
+{: #granting-ssh-access-to-a-user}
 
 Befolgen Sie diese Schritte, um einem oder mehreren Benutzern SSH-Zugriff zu erteilen. Diese Schritte zeigen, wie diese Datei konfiguriert werden kann:
 
@@ -15,30 +22,30 @@ Befolgen Sie diese Schritte, um einem oder mehreren Benutzern SSH-Zugriff zu ert
 ```
 /etc/ssh/sshd_config
 ```
-  
+
 2. Erstellen Sie ein Backup dieser Datei, um sie bei Bedarf zurücksetzen zu können. Beispiel:
 ```
 cp /etc/ssh/sshd_config{,.'date +%s'}
 ```
-  
+
 3. Bearbeiten Sie die Datei, indem Sie die OpenSSH-Schlüsselwörter verwenden.
 
 
 ## OpenSSH-Schlüsselwörter
 
-### AllowGroups 
+### AllowGroups
 
 Nach diesem Schlüsselwort beziehen Sie eine Liste der Gruppennamenmuster ein. Trennen Sie die Muster durch Leerzeichen. Wenn Sie **Anmeldung** angeben, ist es nur für Benutzer zugänglich, deren primäre oder ergänzende Gruppenliste mit einem der Muster übereinstimmt. Sie können `"*" und "?"` als Platzhalter in den Mustern verwenden. Nur Gruppennamen sind gültig; eine numerische Gruppen-ID wird nicht erkannt. Standardmäßig ist **Anmeldung** für alle Gruppen zulässig.
 
-### AllowUsers 
+### AllowUsers
 
 Nach diesem Schlüsselwort beziehen Sie eine Liste der Benutzernamenmuster ein. Trennen Sie die Muster durch Leerzeichen. Wenn Sie **Anmeldung** angeben, ist es nur für Benutzernamen zugänglich, die mit einem der Muster übereinstimmen. Sie können `"*" und "?"` als Platzhalter in den Mustern verwenden. Nur Benutzernamen sind gültig; eine numerische Benutzer-ID wird nicht erkannt. Standardmäßig ist **Anmeldung** für alle Benutzer zulässig. Wenn das Muster das Format USER@HOST hat, werden USER und HOST getrennt überprüft, wodurch Anmeldungen auf bestimmte Benutzer von bestimmten Hosts beschränkt werden.
 
-### DenyGroups 
+### DenyGroups
 
 Nach diesem Schlüsselwort beziehen Sie eine Liste der Gruppennamenmuster ein. Trennen Sie die Muster durch Leerzeichen. Wenn Sie **Anmeldung** angeben, ist es für Benutzer, deren primäre oder ergänzende Gruppenliste mit einem der Muster übereinstimmt, unzulässig. Sie können `"*" und "?"` als Platzhalter in den Mustern verwenden. Nur Gruppennamen sind gültig; eine numerische Gruppen-ID wird nicht erkannt. Standardmäßig ist **Anmeldung** für alle Gruppen zulässig.
 
-### DenyUsers 
+### DenyUsers
 
 Nach diesem Schlüsselwort beziehen Sie eine Liste der Benutzernamenmuster ein. Trennen Sie die Muster durch Leerzeichen. Wenn Sie **Anmeldung** angeben, ist es für Benutzernamen, die mit einem der Muster übereinstimmen, unzulässig. Sie können `"*" und "?"` als Platzhalter in den Mustern verwenden. Nur Benutzernamen sind gültig; eine numerische Benutzer-ID wird nicht erkannt. Standardmäßig ist **Anmeldung** für alle Benutzer zulässig.  Wenn das Muster das Format USER@HOST hat, werden USER und HOST getrennt überprüft, wodurch Anmeldungen auf bestimmte Benutzer von bestimmten Hosts beschränkt werden.
 

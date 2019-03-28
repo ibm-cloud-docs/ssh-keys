@@ -1,15 +1,22 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH access, public network SSH accessibility, private network
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # SSH-Zugriff in einem öffentlichen Netz beschränken
+{: #restricting-ssh-access-on-a-public-network}
 
-Der SSH-Zugriff ermöglicht Benutzern den sicheren Zugriff auf ein Gerät über eine Internetverbindung. SSH steht für {{site.data.keyword.cloud}}-Geräte sowohl im öffentlichen als auch im privaten Netz zur Verfügung. Allerdings sollten Sie den SSH-Zugriff über das öffentliche Netz einschränken, wenn er nicht für eine besondere Geschäftsanforderung benötigt wird. Bei Einschränkung des SSH-Zugriffs über das öffentliche Netz können Benutzer weiterhin über das private Netz auf ein Gerät zugreifen, aber das Risiko, dass unbekannte Benutzer aus dem öffentlichen Netz auf das Gerät zugreifen, ist gemindert. Wenn der SSH-Zugriff über das öffentliche Netz notwendig ist, können Sie SSH auf eine angepasste Portnummer übertragen, um eine weitere Sicherheitsebene zu erhalten. 
+Der SSH-Zugriff ermöglicht Benutzern den sicheren Zugriff auf ein Gerät über eine Internetverbindung. SSH steht für {{site.data.keyword.cloud}}-Geräte sowohl im öffentlichen als auch im privaten Netz zur Verfügung. Allerdings sollten Sie den SSH-Zugriff über das öffentliche Netz einschränken, wenn er nicht für eine besondere Geschäftsanforderung benötigt wird. Bei Einschränkung des SSH-Zugriffs über das öffentliche Netz können Benutzer weiterhin über das private Netz auf ein Gerät zugreifen, aber das Risiko, dass unbekannte Benutzer aus dem öffentlichen Netz auf das Gerät zugreifen, ist gemindert. Wenn der SSH-Zugriff über das öffentliche Netz notwendig ist, können Sie SSH auf eine angepasste Portnummer übertragen, um eine weitere Sicherheitsebene zu erhalten.
 {:shortdesc}
 
 Befolgen Sie diese Schritte, um den SSH-Zugriff über das öffentliche Netz zu beschränken.

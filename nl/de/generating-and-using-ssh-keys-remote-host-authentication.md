@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH keys, remote host authentication SSH keys, public-key cryptography
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # SSH-Schlüssel zur Authentifizierung eines fernen Hosts erstellen und verwenden
+{: #generating-and-using-ssh-keys-for-remote-host-authentication}
 
 Mit SSH-Schlüsseln können Sie sich bei einem SSH-Server identifizieren, der eine Verschlüsselung mit öffentlichem Schlüssel und Challenge/Response-Verfahren verwendet. Ein unmittelbarer Vorteil dieser Methode gegenüber der Kennwortauthentifizierung liegt darin, dass Sie vom Server authentifiziert werden können, ohne Ihr Kennwort über das Netz senden zu müssen. Sie können diese Methode auch zusammen mit einer Automatisierung verwenden, da sie die unbeaufsichtigte Serverkommunikation zulässt.
 
@@ -82,7 +89,7 @@ Wie Sie sehen, gibt es keine Aufforderung zur Eingabe des Kennworts, wenn eine S
 
 ## SSH-Schlüssel mit Kennphrase
 
-Durch die Angabe einer Kennphrase für Ihren SSH-Schlüssel wird eine zusätzliche Sicherheitsebene hinzugefügt. Dies kann allerdings auch zu Problemen führen, wenn Sie versuchen, automatisierte Scripts auszuführen, die die Verwendung des geschützten Schlüssels erfordern. 
+Durch die Angabe einer Kennphrase für Ihren SSH-Schlüssel wird eine zusätzliche Sicherheitsebene hinzugefügt. Dies kann allerdings auch zu Problemen führen, wenn Sie versuchen, automatisierte Scripts auszuführen, die die Verwendung des geschützten Schlüssels erfordern.
 
 Der SSH-Agent kann Ihre Schlüssel für Sie verwalten. Sie müssen die Kennphrase nur einmal eingeben. Der SSH-Agent speichert Ihren Schlüssel ab und extrahiert ihn, wenn er gebraucht wird. Damit der SSH-Agent Ihre Schlüssel verwaltet, geben Sie folgenden Befehl ein:
 

@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH keys, SSH key, device-specific
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,6 +15,7 @@ lastupdated: "2018-02-23"
 {:faq: data-hd-content-type='faq'}
 
 # Häufig gestellte Fragen (FAQs): SSH-Schlüssel
+{: #faqs-ssh-keys}
 
 ## Wo finde ich meinen SSH-Schlüssel?
 {:faq}
@@ -18,7 +25,7 @@ SSH-Schlüssel sind gerätespezifisch und innerhalb des Geräts angegeben. Da je
 ## Wie viele SSH-Schlüssel kann ich meinem Konto hinzufügen?
 {:faq}
 
-Sie können einem Konto bis zu 100 SSH-Schlüssel zuordnen. Benutzer mit der entsprechenden Berechtigung können jeweils [1 SSH-Schlüssel hinzufügen](add-ssh-key.html), indem sie das {{site.data.keyword.slportal_full}} verwenden. Wenngleich die wenigsten Benutzer 100 Schlüssel benötigen, sollten Sie alle nicht benötigten Schlüssel entfernen, um sicherzustellen, dass genügend Platz für gültige Schlüssel zur Verfügung steht. Weitere Informationen finden Sie unter [SSH-Schlüssel entfernen](remove-ssh-key.html){:new_window}.
+Sie können einem Konto bis zu 100 SSH-Schlüssel zuordnen. Benutzer mit der entsprechenden Berechtigung können jeweils [1 SSH-Schlüssel hinzufügen](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key), indem sie das {{site.data.keyword.slportal_full}} verwenden. Wenngleich die wenigsten Benutzer 100 Schlüssel benötigen, sollten Sie alle nicht benötigten Schlüssel entfernen, um sicherzustellen, dass genügend Platz für gültige Schlüssel zur Verfügung steht. Weitere Informationen finden Sie unter [SSH-Schlüssel entfernen](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key).
 
 ## Mein tatsächlicher SSH-Schlüssel wird mir in der Liste nicht angezeigt, dafür aber ein Fingerabdruck. Was hat das zu bedeuten?
 {:faq}
@@ -29,4 +36,3 @@ Der Fingerabdruck, der zusammen mit den Details für einen SSH-Schlüssel angeze
 {:faq}
 
 Ja und nein. Jedes Gerät besitzt einen eindeutigen SSH-Schlüssel, weshalb der Schlüssel für das neu bereitgestellte oder neu geladene Gerät von dem Image abweichen wird.  Allerdings werden SSH-Schlüssel, die entweder einem Flex Image oder einem Standard-Image zugehörig sind, dem Gerät zugeordnet, wenn dieses bereitgestellt oder neu geladen wird. Sie können auch Schlüssel während des Einrichtungsprozesses hinzufügen.
-

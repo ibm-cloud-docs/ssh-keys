@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: IP address, service sshd restart, private network
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # SSH für die Empfangsbereitschaft nur für ein privates Netz konfigurieren
+{: #configuring-ssh-to-listen-only-on-a-private-network}
 
 Sie können Ihren Server zusätzlich sichern, indem Sie SSHD nur im Back-End-Netz ausführen. Deshalb müssen Sie sich jedes Mal neu mit VPN verbinden, wenn Sie auf SSH zugreifen müssen.
 

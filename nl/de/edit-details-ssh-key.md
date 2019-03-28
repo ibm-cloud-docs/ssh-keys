@@ -1,17 +1,24 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH key, key details, IBM Cloud infrastructure customer
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Details für einen SSH-Schlüssel bearbeiten
+{: #editing-details-for-an-ssh-key}
 
-Nach dem [Hinzufügen eines SSH-Schlüssels](add-ssh-key.html) im {{site.data.keyword.slportal_full}} können Sie die Schlüssel-Details bearbeiten. Sie können die **Bezeichnung** (den Kurznamen, der zur leichteren Identifizierung des SSH-Schlüssels verwendet wird) und die **Anmerkungen** für den Schlüssel bearbeiten.
+Nach dem [Hinzufügen eines SSH-Schlüssels](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key) im {{site.data.keyword.slportal_full}} können Sie die Schlüssel-Details bearbeiten. Sie können die **Bezeichnung** (den Kurznamen, der zur leichteren Identifizierung des SSH-Schlüssels verwendet wird) und die **Anmerkungen** für den Schlüssel bearbeiten.
 
-Wenn Sie den Schlüssel selbst bearbeiten müssen, entfernen Sie ihn und fügen Sie den richtigen Schlüssel zum {{site.data.keyword.slportal}} hinzu. Der Fingerabdruck, der zusammen mit den Details für den SSH-Schlüssel aufgelistet ist, ist nicht der Schlüssel selbst, sondern eine Kurzsequenz von Byte, die beim Abruf des Schlüssels verwendet wird. Es kann sein, dass der Fingerabdruck den tatsächlichen SSH-Schlüssel in keiner Weise darstellt. 
+Wenn Sie den Schlüssel selbst bearbeiten müssen, entfernen Sie ihn und fügen Sie den richtigen Schlüssel zum {{site.data.keyword.slportal}} hinzu. Der Fingerabdruck, der zusammen mit den Details für den SSH-Schlüssel aufgelistet ist, ist nicht der Schlüssel selbst, sondern eine Kurzsequenz von Byte, die beim Abruf des Schlüssels verwendet wird. Es kann sein, dass der Fingerabdruck den tatsächlichen SSH-Schlüssel in keiner Weise darstellt.
 
 Befolgen Sie diese Schritte, um Details des SSH-Schlüssels zu bearbeiten:
 
@@ -24,4 +31,3 @@ Befolgen Sie diese Schritte, um Details des SSH-Schlüssels zu bearbeiten:
 ## Nächste Schritte
 
 Bearbeitete Details zu SSH-Schlüsseln werden in der Liste der SSH-Schlüssel sofort aktualisiert.
-

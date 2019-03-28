@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-10-23"
+
+keywords: SSH keys, SSH Keys page, Next Steps
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Lernprogramm zur Einführung
+{: #getting-started-tutorial}
 
 Auf der Seite "SSH-Schlüssel" können Sie SSH-Schlüssel hinzufügen, verwalten und löschen. Der Zugriff auf die Anzeige "SSH-Schlüssel" ist von den Berechtigungen abhängig. Einige Benutzer können nicht auf diese Anzeige zugreifen oder mit ihr interagieren. Wenn Sie den Zugriff benötigen, aber nicht darüber verfügen, wenden Sie sich an Ihren Kontoadministrator.
 {:shortdesc}
@@ -18,4 +25,4 @@ Gehen Sie wie folgt vor, um als ersten Schritt auf die Anzeige der SSH-Schlüsse
 
 ## Nächste Schritte
 
-In der Anzeige der SSH-Schlüssel können Sie [SSH-Schlüssel hinzufügen](add-ssh-key.html), [Bezeichnungen und Anmerkungen bearbeiten](edit-details-ssh-key.html) und [SSH-Schlüssel entfernen](remove-ssh-key.html). Einem Konto können maximal 100 SSH-Schlüssel gleichzeitig zugeordnet werden.
+In der Anzeige der SSH-Schlüssel können Sie [SSH-Schlüssel hinzufügen](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key), [Bezeichnungen und Anmerkungen bearbeiten](/docs/infrastructure/ssh-keys?topic=ssh-keys-editing-details-for-an-ssh-key) und [SSH-Schlüssel entfernen](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key). Einem Konto können maximal 100 SSH-Schlüssel gleichzeitig zugeordnet werden.
