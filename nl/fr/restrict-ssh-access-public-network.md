@@ -1,15 +1,22 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH access, public network SSH accessibility, private network
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Restriction de l'accès SSH sur un réseau public
+{: #restricting-ssh-access-on-a-public-network}
 
-L'accessibilité SSH fournit aux utilisateurs la possibilité d'accéder en toute sécurité à un appareil via une connexion Internet. SSH est disponible sur les appareils {{site.data.keyword.cloud}} sur le réseau public et privé. Toutefois, vous devez restreindre l'accessibilité de SSH sur le réseau public, sauf en cas de nécessité pour un besoin d'entreprise unique. En restreignant l'accès SSH sur le réseau public, les utilisateurs peuvent toujours accéder à un appareil via le réseau privé, mais les risques liés à l'accès potentiel d'utilisateurs inconnus à l'appareil sur le réseau public sera atténué. Si l'accessibilité SSH via le réseau public est nécessaire, transférez SSH sur un numéro de port personnalisé pour ajouter une couche de sécurité supplémentaire. 
+L'accessibilité SSH fournit aux utilisateurs la possibilité d'accéder en toute sécurité à un appareil via une connexion Internet. SSH est disponible sur les appareils {{site.data.keyword.cloud}} sur le réseau public et privé. Toutefois, vous devez restreindre l'accessibilité de SSH sur le réseau public, sauf en cas de nécessité pour un besoin d'entreprise unique. En restreignant l'accès SSH sur le réseau public, les utilisateurs peuvent toujours accéder à un appareil via le réseau privé, mais les risques liés à l'accès potentiel d'utilisateurs inconnus à l'appareil sur le réseau public sera atténué. Si l'accessibilité SSH via le réseau public est nécessaire, transférez SSH sur un numéro de port personnalisé pour ajouter une couche de sécurité supplémentaire.
 {:shortdesc}
 
 Suivez cette procédure pour limiter l'accès SSH sur le réseau public.

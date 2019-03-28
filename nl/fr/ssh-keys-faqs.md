@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH keys, SSH key, device-specific
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,6 +15,7 @@ lastupdated: "2018-02-23"
 {:faq: data-hd-content-type='faq'}
 
 # FAQ : clés SSH
+{: #faqs-ssh-keys}
 
 ## Où trouver ma clé SSH ?
 {:faq}
@@ -18,7 +25,7 @@ Les clés SSH sont spécifiques à chaque appareil et se trouvent dans l'apparei
 ## Combien de clés SSH puis-je ajouter à mon compte ?
 {:faq}
 
-Vous pouvez associer jusqu'à 100 clés SSH à un compte. Les utilisateurs autorisés peuvent [ajouter 1 clé SSH](add-ssh-key.html) à la fois en utilisant le portail {{site.data.keyword.slportal_full}}. Alors que la plupart des utilisateurs n'ont pas besoin de 100 clés, vous devez supprimer les clés dont vous n'avez pas besoin pour garantir un espace suffisant pour ajouter des clés valides. Pour plus d'informations, voir la rubrique [Retrait d'une clé SSH](remove-ssh-key.html){:new_window}.
+Vous pouvez associer jusqu'à 100 clés SSH à un compte. Les utilisateurs autorisés peuvent [ajouter 1 clé SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key) à la fois en utilisant le portail {{site.data.keyword.slportal_full}}. Alors que la plupart des utilisateurs n'ont pas besoin de 100 clés, vous devez supprimer les clés dont vous n'avez pas besoin pour garantir un espace suffisant pour ajouter des clés valides. Pour plus d'informations, voir la rubrique [Retrait d'une clé SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key).
 
 ## Je ne vois pas ma clé SSH réelle, mais je vois une empreinte. Qu'est-ce que c'est ?
 {:faq}
@@ -29,4 +36,3 @@ L'empreinte figurant avec les détails d'une clé SSH est une séquence abrégé
 {:faq}
 
 Oui et non. Chaque appareil dispose d'une clé SSH unique, donc la clé pour le nouvel appareil ou l'appareil rechargé sera différente de l'image.  Toutefois, les clés SSH associées à une image Flex ou à un modèle d'image standard sont associées à l'appareil lors de sa mise à disposition ou de son rechargement. Vous pouvez également ajouter des clés lors du processus de configuration.
-

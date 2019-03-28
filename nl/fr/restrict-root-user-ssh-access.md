@@ -1,15 +1,22 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: root user, wheel group, SSH access Every Linux system
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Restriction de l'accès SSH pour l'utilisateur root
+{: #restricting-the-root-user-from-ssh-access}
 
-Tout système Linux sur le réseau {{site.data.keyword.cloud}} a un utilisateur root doté de droits d'administration. Sous Linux, vous pouvez créer des groupes 'wheel', qui octroient aux utilisateurs des droits similaires à ceux de l'utilisateur root via la commande "sudo" sans nécessiter l'utilisation des données d'identification de l'utilisateur root. Après avoir créé un groupe wheel avec les droits sudo sur l'utilisateur root, vous pouvez refuser l'accès SSH aux utilisateurs figurant dans ce groupe. En limitant l'accès utilisateur ainsi, vous protégez l'appareil des vulnérabilités en matière de sécurité liées à l'accessibilité au réseau. Les utilisateurs faisant partie du groupe wheel peuvent toujours effectuer des fonctions d'administration sur l'appareil à tout moment. 
+Tout système Linux sur le réseau {{site.data.keyword.cloud}} a un utilisateur root doté de droits d'administration. Sous Linux, vous pouvez créer des groupes 'wheel', qui octroient aux utilisateurs des droits similaires à ceux de l'utilisateur root via la commande "sudo" sans nécessiter l'utilisation des données d'identification de l'utilisateur root. Après avoir créé un groupe wheel avec les droits sudo sur l'utilisateur root, vous pouvez refuser l'accès SSH aux utilisateurs figurant dans ce groupe. En limitant l'accès utilisateur ainsi, vous protégez l'appareil des vulnérabilités en matière de sécurité liées à l'accessibilité au réseau. Les utilisateurs faisant partie du groupe wheel peuvent toujours effectuer des fonctions d'administration sur l'appareil à tout moment.
 {:shortdesc}
 
 Suivez cette procédure pour empêcher l'accès SSH à l'utilisateur root.
@@ -18,14 +25,14 @@ Suivez cette procédure pour empêcher l'accès SSH à l'utilisateur root.
 ```
 wheel:x:10:root
 ```
-  
+
     Si cette ligne ne figure pas dans le fichier, créez-la.
 
 2. Ajoutez au moins un utilisateur (user1) dans la ligne du groupe wheel :
 ```
 wheel:x:10:root, user1
 ```
-    
+
     Les utilisateurs ajoutés dans le groupe wheel ont des droits identiques à ceux de l'utilisateur root, mais ils utilisent leur nom d'utilisateur unique pour accéder au système.
 3. Exécutez la commande `:wq` pour sauvegarder les modifications et quitter le fichier.
 4. Ouvrez le fichier `/etc/ssh/sshd_config`.
@@ -36,15 +43,15 @@ wheel:x:10:root, user1
 ```
 # %wheel ALL=(ALL) ALL
 ```
-  
+
     **Remarque :** La suppression de la mise en commentaire de cette ligne permet aux utilisateurs du groupe wheel d'exécuter toutes les commandes.
-    
+
 9. Exécutez la commande `:wq` pour sauvegarder les modifications et quitter le fichier.
 10. Exécutez la commande suivante sur la ligne de commande :
 ```
 vi /etc/pam.d/su
 ```
-  
+
 11. Supprimez le signe **dièse (#)** de la ligne suivante pour supprimer la mise en commentaire de la ligne :
 ```
 #auth required pam_wheel.so use_uid

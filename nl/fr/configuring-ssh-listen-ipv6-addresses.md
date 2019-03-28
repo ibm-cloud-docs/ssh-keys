@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: IPv6 addresses, Linux server, IPv6
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Configuration de SSH pour écouter sur des adresses IPv6
+{: #configuring-ssh-to-listen-on-ipv6-addresses}
 
 Pour activer SSH sur un serveur Linux de manière à écouter sur des adresses IPv6, procédez comme suit :
 1. Localisez le fichier : /etc/ssh/sshd_config.

@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: SSH keys, remote host authentication SSH keys, public-key cryptography
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Génération et utilisation de clés SSH pour l'authentification d'hôte distant
+{: #generating-and-using-ssh-keys-for-remote-host-authentication}
 
 Les clés SSH constituent un moyen de vous identifier sur un hôte SSH qui utilise un système de chiffrement à clé publique et de réponse d'identification. L'avantage immédiat de cette méthode par rapport à l'authentification classique par mot de passe est la possibilité de vous faire authentifier par le serveur sans envoyer votre mot de passe sur le réseau. Vous pouvez également l'utiliser avec l'automatisation car cette méthode permet la communication avec des serveurs automatisés.
 
@@ -82,7 +89,7 @@ Comme vous pouvez le constater, aucun mot de passe n'a été demandé lors de ce
 
 ## Clés SSH avec phrase passe
 
-La fourniture d'une phrase passe pour votre clé SSH offre une couche de sécurité supplémentaire, mais elle peut également causer des problèmes lorsque vous essayez d'exécuter des scripts automatiques nécessitant l'utilisation de la clé protégée. 
+La fourniture d'une phrase passe pour votre clé SSH offre une couche de sécurité supplémentaire, mais elle peut également causer des problèmes lorsque vous essayez d'exécuter des scripts automatiques nécessitant l'utilisation de la clé protégée.
 
 L'agent SSH (ssh-agent) peut gérer les clés à votre place. Vous n'entrez qu'une seule fois la phrase passe. L'agent ssh-agent conserve votre clé en mémoire et la restitue si nécessaire. Pour que l'agent ssh-agent gère vos clés, exécutez la commande suivante :
 

@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: IP address, service sshd restart, private network
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Configuration de SSH pour écouter uniquement sur un réseau privé
+{: #configuring-ssh-to-listen-only-on-a-private-network}
 
 Vous pouvez renforcer la sécurité de votre serveur en exécutant SSHd uniquement sur un réseau de back end. Par conséquent, vous devez vous connecter au réseau privé virtuel (VPN) chaque fois que vous avez besoin d'accéder à SSH.
 

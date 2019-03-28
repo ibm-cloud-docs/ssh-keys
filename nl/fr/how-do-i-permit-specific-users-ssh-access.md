@@ -1,13 +1,20 @@
 ---
+
 copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
+
+keywords: list of group name patterns, SSH access, error messages
+
+subcollection: ssh-keys
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Octroi d'accès SSH à un utilisateur 
+# Octroi d'accès SSH à un utilisateur
+{: #granting-ssh-access-to-a-user}
 
 Suivez cette procédure pour octroyer l'accès SSH à un ou plusieurs utilisateurs. Les étapes suivantes montrent comment configurer ce fichier :
 
@@ -15,30 +22,30 @@ Suivez cette procédure pour octroyer l'accès SSH à un ou plusieurs utilisateu
 ```
 /etc/ssh/sshd_config
 ```
-  
+
 2. Effectuez une sauvegarde de ce fichier de sorte à pouvoir le récupérer si nécessaire. Par exemple :
 ```
 cp /etc/ssh/sshd_config{,.'date +%s'}
 ```
-  
+
 3. Editez le fichier en utilisant les mots clés OpenSSH.
 
 
 ## Mots clés OpenSSH
 
-### AllowGroups 
+### AllowGroups
 
 Après ce mot clé, insérez une liste de masques de nom de groupe. Séparez les masques par des espaces. Si vous indiquez **Login**, la connexion n'est autorisée que pour les utilisateurs dont le groupe principal ou la liste de groupes supplémentaires correspond à l'un des masques. Vous pouvez utiliser `"*" et "?"` comme caractères génériques dans les masques. Seuls les noms de groupe sont valides. Un ID de groupe numérique n'est pas reconnu. Par défaut, la connexion est autorisée pour tous les groupes.
 
-### AllowUsers 
+### AllowUsers
 
 Après ce mot clé, insérez une liste de masques de nom d'utilisateur. Séparez les masques par des espaces. Si vous indiquez **Login**, la connexion n'est autorisée que pour les noms d'utilisateur correspondant à l'un des masques. Vous pouvez utiliser `"*" et "?"` comme caractères génériques dans les masques. Seuls les noms d'utilisateur sont valides. Un ID utilisateur numérique n'est pas reconnu. Par défaut, la connexion est autorisée pour tous les utilisateurs. Si le masque prend la forme USER@HOST, l'utilisateur (USER) et l'hôte (HOST) sont vérifiés séparément, limitant les connexions à certains utilisateurs sur certains hôtes.
 
-### DenyGroups 
+### DenyGroups
 
 Après ce mot clé, insérez une liste de masques de nom de groupe. Séparez les masques par des espaces. Si vous indiquez **Login**, la connexion est interdite aux utilisateurs dont le groupe principal ou la liste de groupes supplémentaires correspond à l'un des masques. Vous pouvez utiliser `"*" et "?"` comme caractères génériques dans les masques. Seuls les noms de groupe sont valides. Un ID de groupe numérique n'est pas reconnu. Par défaut, la connexion est autorisée pour tous les groupes.
 
-### DenyUsers 
+### DenyUsers
 
 Après ce mot clé, insérez une liste de masques de nom d'utilisateur. Séparez les masques par des espaces. Si vous indiquez **Login**, la connexion est interdite aux noms d'utilisateur correspondant à l'un des masques. Vous pouvez utiliser `"*" et "?"` comme caractères génériques dans les masques. Seuls les noms d'utilisateur sont valides. Un ID utilisateur numérique n'est pas reconnu. Par défaut, la connexion est autorisée pour tous les utilisateurs.  Si le masque prend la forme USER@HOST, l'utilisateur (USER) et l'hôte (HOST) sont vérifiés séparément, limitant les connexions à certains utilisateurs sur certains hôtes.
 
