@@ -25,5 +25,5 @@ You can add, manage, and delete SSH keys by using the {{site.data.keyword.cloud}
 
 ## Next steps
 
-After you ensure that you have the right access to view and manage SSH keys, you can [add SSH keys](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key#adding-an-ssh-key),[edit labels and notes](/docs/infrastructure/ssh-keys?topic=ssh-keys-editing-details-for-an-ssh-key#editing-details-for-an-ssh-key), and [remove SSH keys](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key#removing-an-ssh-key). No more than 100 SSH keys can be associated with an account at any time.
+After you ensure that you have the right access to view and manage SSH keys, you can [add SSH keys](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key#adding-an-ssh-key), [edit labels and notes](/docs/infrastructure/ssh-keys?topic=ssh-keys-editing-details-for-an-ssh-key#editing-details-for-an-ssh-key), and [remove SSH keys](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key#removing-an-ssh-key). No more than 100 SSH keys can be associated with an account at any time.
 
