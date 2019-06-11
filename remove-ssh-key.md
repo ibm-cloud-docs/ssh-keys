@@ -27,7 +27,7 @@ First, navigate to the device menu and ensure you have the correct account permi
 
 For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
 
-## Remove an SSH key
+## Removing an SSH key
 
 1. From the **Devices** menu, select **Manage > SSH Keys**.
 2. Click the **Remove** icon next to the SSH key that you want to remove.
