@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: root user, wheel group, SSH access Every Linux system
 
@@ -10,6 +10,7 @@ subcollection: ssh-keys
 
 ---
 
+{:note: .note}
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
@@ -44,7 +45,8 @@ wheel:x:10:root, user1
 # %wheel ALL=(ALL) ALL
 ```
 
-    **Note:** Uncommenting this line allows users in the wheel group to run all commands.
+   Uncommenting this line allows users in the wheel group to run all commands.
+   {:note}
 
 9. Run the `:wq` command to save changes and exit the file.
 10. Run the following command at the command line:
@@ -57,13 +59,15 @@ vi /etc/pam.d/su
 #auth required pam_wheel.so use_uid
 ```
 
-    **Note:** Uncommenting this line requires users to be part of the wheel group to have permission to run all commands.
+   Uncommenting this line requires users to be part of the wheel group to have permission to run all commands.
+   {:note}
+   
 12. Run the `:wq` command to save changes and exit the file.
 13. Run the following command to save all changes and restart SSH:
 ```
 # etc/init.d/ssh restart
 ```
 
-## Next Steps
+## Next steps
 
 After you restrict the root user from SSH access, the root user cannot log in to SSH. If a user currently can access the server through SSH under the root user, the connection will fail after the restart of SSH in the previous procedure. All future attempts to connect to SSH through the root user fail. To reverse these changes, repeat the steps and change `PermitRootLogin` no back to `PermitRootLogin` yes.
