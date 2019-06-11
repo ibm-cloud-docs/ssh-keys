@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: IP address, service sshd restart, private network
 
@@ -23,7 +23,7 @@ You can further secure your server by running SSHd only on the backend network. 
 # nano /etc/ssh/sshd_config
 ```
 
-2. Locate the line containing `ListenAddress 0.0.0.0`. If it begins with a '#' character, remove this character. Set the IP address to the IP you would like it to listen on. You can find your internal IP address by selecting *Hardware* from the {{site.data.keyword.slportal_full}}.
+2. Locate the line containing `ListenAddress 0.0.0.0`. If it begins with a '#' character, remove this character. Set the IP address to the IP you would like it to listen on. You can find your internal IP address by selecting *Hardware* from the {{site.data.keyword.cloud}} console.
 3. After you make the change, restart the SSH service:
 ```
 # service sshd restart
