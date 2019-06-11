@@ -89,7 +89,7 @@ To test that the public key was properly copied to the remote host simply ssh to
 
 As you can see, there is not a prompt for the password when ssh-ing in to the remote host.
 
-## SSH Keys with a passphrase
+## SSH keys with a passphrase
 
 Providing a passphrase for your SSH key provides an additional layer of security, but it can also cause issues when you are trying to run automated scripts that require using the protected key.
 
