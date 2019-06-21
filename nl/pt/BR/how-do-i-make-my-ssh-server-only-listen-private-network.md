@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: IP address, service sshd restart, private network
 
@@ -25,8 +25,7 @@ subcollection: ssh-keys
 ```
 
 2. Localize a linha que contenha `ListenAddress 0.0.0.0`. Se ela começar com um caractere
-'#', remova esse caractere. Configure o endereço IP para o IP desejado para atendimento. É possível localizar
-seu endereço IP interno selecionando *Hardware* no {{site.data.keyword.slportal_full}}.
+'#', remova esse caractere. Configure o endereço IP para o IP desejado para atendimento. É possível localizar seu endereço IP interno selecionando *Hardware* no console do {{site.data.keyword.cloud}}.
 3. Depois de fazer a mudança, reinicie o serviço SSH:
 ```
 # service sshd restart

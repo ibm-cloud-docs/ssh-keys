@@ -10,6 +10,8 @@ Chaves SSH
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    /vsi/virtual-servers-navigating-devices
+    
     {: .topicgroup}
     Gerenciando chaves SSH
         add-ssh-key.md

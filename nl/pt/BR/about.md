@@ -18,11 +18,10 @@ subcollection: ssh-keys
 
 As chaves SSH são usadas pelos servidores SSH para identificar um usuário ou dispositivo por meio de
 criptografia de chave pública. As chaves SSH são formadas por uma combinação alfanumérica e são exclusivas
-para o dispositivo ao qual elas são designadas. A qualquer momento, os usuários autorizados podem incluir,
-editar ou excluir chaves SSH usando o {{site.data.keyword.slportal_full}}.
+para o dispositivo ao qual elas são designadas. A qualquer momento, os usuários autorizados podem incluir, editar ou excluir chaves SSH usando o console do {{site.data.keyword.cloud}}.
+{:shortdesc}
 
-É possível solicitar chaves SSH durante o fornecimento ou através de uma [Recarga de S.O.](/docs/infrastructure/software?topic=software-reloading-the-os).
-
+É possível solicitar chaves SSH durante o fornecimento ou através de uma [Recarga de S.O.](/docs/software?topic=software-reloading-the-os#reloading-the-os).
 
 As chaves SSH permitem acesso a um dispositivo sem usar uma senha de clientes correspondentes para cada
 chave pública que é implementada no dispositivo. Ao incluir uma chave SSH em um dispositivo, o dispositivo que foi fornecido com a chave SSH acessa o dispositivo da chave correspondente sem o uso de senha.

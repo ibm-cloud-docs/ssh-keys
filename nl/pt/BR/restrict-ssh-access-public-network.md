@@ -44,7 +44,7 @@ do Bare Metal Server.<br><br><table border="1"><tr><th>Se uma conexão...</th><t
 adicional é necessária.</td></tr><tr><td>Pode ser feita</td><td>As mudanças feitas na acessibilidade de SSH
 foram malsucedidas. Repita as etapas anteriores para tentar novamente a restrição SSH. Se os problemas persistirem, entre em contato com o Suporte.</td></tr></table>
 
-## Próximas Etapas
+## Próximos passos
 
 Após a restrição com sucesso do acesso SSH, os usuários não poderão acessar o dispositivo por meio de
 SSH quando eles não estiverem se conectando por meio da rede privada. Essa ação pode ser revertida a qualquer momento incluindo o hash (#) de volta na linha com comentário removido, o que retorna a linha aos comentários.

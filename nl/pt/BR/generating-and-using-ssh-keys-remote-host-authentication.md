@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-05-06"
 
 keywords: SSH keys, remote host authentication SSH keys, public-key cryptography
 
@@ -10,6 +10,7 @@ subcollection: ssh-keys
 
 ---
 
+{:note: .note}
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
@@ -72,8 +73,8 @@ chave pública para copiá-la para o host remoto.
     Now try logging into the machine, with:   "ssh 'root@10.176.18.15'"
     and check to make sure that only the key(s) you wanted were added.
 
-***Nota:*** o comando ssh-copy-id anexa as chaves ao arquivo
-.ssh/authorized_key do host remoto.
+O comando ssh-copy-id anexa as chaves ao arquivo .ssh/authorized_key do host remoto.
+{:note}
 
 ## Testando se a chave foi copiada corretamente
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: SSH keys, SSH key, device-specific
 
@@ -25,9 +25,7 @@ As chaves SSH são específicas do dispositivo e estão localizadas dentro do di
 ## Quantas chaves SSH posso incluir em minha conta?
 {:faq}
 
-É possível associar até 100 chaves SSH a uma conta. Os usuários autorizados podem
-[incluir 1 chave SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key) por vez usando o
-{{site.data.keyword.slportal_full}}. Embora a maioria dos usuários não precisa de 100 chaves, é necessário remover quaisquer chaves que não forem necessárias para assegurar que o espaço esteja disponível para mais chaves válidas. Para obter mais informações, consulte [removendo chaves
+É possível associar até 100 chaves SSH a uma conta. Os usuários autorizados podem [incluir uma chave SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key) de cada vez usando o console do {{site.data.keyword.cloud}}. Embora a maioria dos usuários não precisa de 100 chaves, é necessário remover quaisquer chaves que não forem necessárias para assegurar que o espaço esteja disponível para mais chaves válidas. Para obter mais informações, consulte [removendo chaves
 SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key).
 
 ## Eu não vejo minha chave SSH real listada, mas vejo uma impressão digital. O que é isso?

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: root user, wheel group, SSH access Every Linux system
 
@@ -10,6 +10,7 @@ subcollection: ssh-keys
 
 ---
 
+{:note: .note}
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
@@ -52,8 +53,8 @@ de comando.
 # %wheel ALL=(ALL) ALL
 ```
 
-    **Nota:** a remoção do comentário desta linha permite que os usuários no grupo
-de roda executem todos os comandos.
+   A remoção do comentário dessa linha permite que os usuários no grupo wheel executem todos os comandos.
+   {:note}
 
 9. Execute o comando `:wq` para salvar as mudanças e sair do arquivo.
 10. Execute o seguinte comando na linha de comandos:
@@ -66,15 +67,17 @@ vi /etc/pam.d/su
 #auth required pam_wheel.so use_uid
 ```
 
-    **Nota:** a remoção do comentário desta linha requer que os usuários façam parte do
-grupo de roda e que também tenham permissão para executar todos os comandos.
+   A remoção do comentário dessa linha requer que os usuários façam parte do
+grupo wheel para que tenham permissão de executar todos os comandos.
+   {:note}
+   
 12. Execute o comando `:wq` para salvar as mudanças e sair do arquivo.
 13. Execute o comando a seguir para salvar todas as mudanças e reiniciar o SSH:
 ```
 # etc/init.d/ssh restart
 ```
 
-## Próximas Etapas
+## Próximos passos
 
 Depois de restringir o usuário raiz do acesso SSH, o usuário raiz não poderá efetuar login no SSH. Se um
 usuário atualmente puder acessar o servidor por meio de SSH sob o usuário root, a conexão falhará após a

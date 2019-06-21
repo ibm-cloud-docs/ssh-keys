@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-10-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: SSH keys, SSH Keys page, Next Steps
 
@@ -16,17 +16,14 @@ subcollection: ssh-keys
 # Tutorial de Introdução
 {: #getting-started-tutorial}
 
-É possível incluir, gerenciar e excluir chaves SSH por meio da página Chaves SSH. O acesso à tela Chaves SSH é baseado em permissão. Alguns usuários não podem acessar ou interagir com essa tela. Se você precisa de acesso, mas não o tem,
-entre em contato com o administrador da conta.
+É possível incluir, gerenciar e excluir chaves SSH usando o console do {{site.data.keyword.cloud}}.
 {:shortdesc}
 
-Siga estas etapas para começar a usar o produto acessando a tela Chaves SSH.
-1. Acesse o [{{site.data.keyword.slportal}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://control.softlayer.com/){: new_window} usando suas credenciais exclusivas.
-2. Selecione **Dispositivos > Gerenciar > Chaves SSH** na Barra de Navegação para
-acessar a tela Chaves SSH.
+## Antes de começar:
+1. Saiba mais sobre as [chaves SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-about-ssh-keys).
+2. Assegure-se de que tenha as permissões de conta e o acesso ao dispositivo necessários para que seja possível visualizar e gerenciar as chaves SSH. Somente o proprietário da conta ou um usuário com a permissão de infraestrutura clássica **Gerenciar usuários** pode ajustar as permissões. Para obter mais informações sobre as permissões, consulte [Permissões de infraestrutura clássica](/docs/iam?topic=iam-infrapermission#infrapermission) e [Gerenciando o acesso ao dispositivo](/docs/vsi?topic=virtual-servers-managing-device-access).
 
-## Próximas Etapas
+## Próximos passos
 
-Depois de acessar a tela Chaves SSH, é possível [incluir chaves SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key),
-[editar rótulos e notas](/docs/infrastructure/ssh-keys?topic=ssh-keys-editing-details-for-an-ssh-key) e [remover
-chaves SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key). No máximo 100 chaves SSH podem ser associadas a uma conta a qualquer momento.
+Depois de assegurar que você tem o acesso correto para visualizar e gerenciar as chaves SSH, é possível [incluir chaves SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key#adding-an-ssh-key), [editar rótulos e notas](/docs/infrastructure/ssh-keys?topic=ssh-keys-editing-details-for-an-ssh-key#editing-details-for-an-ssh-key) e [remover chaves SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key#removing-an-ssh-key). No máximo 100 chaves SSH podem ser associadas a uma conta a qualquer momento.
+
