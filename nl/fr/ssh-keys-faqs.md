@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: SSH keys, SSH key, device-specific
 
@@ -25,7 +25,7 @@ Les clés SSH sont spécifiques à chaque appareil et se trouvent dans l'apparei
 ## Combien de clés SSH puis-je ajouter à mon compte ?
 {:faq}
 
-Vous pouvez associer jusqu'à 100 clés SSH à un compte. Les utilisateurs autorisés peuvent [ajouter 1 clé SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key) à la fois en utilisant le portail {{site.data.keyword.slportal_full}}. Alors que la plupart des utilisateurs n'ont pas besoin de 100 clés, vous devez supprimer les clés dont vous n'avez pas besoin pour garantir un espace suffisant pour ajouter des clés valides. Pour plus d'informations, voir la rubrique [Retrait d'une clé SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key).
+Vous pouvez associer jusqu'à 100 clés SSH à un compte. Les utilisateurs autorisés peuvent [ajouter 1 clé SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key) à la fois à l'aide de la console {{site.data.keyword.cloud}}. Alors que la plupart des utilisateurs n'ont pas besoin de 100 clés, vous devez supprimer les clés dont vous n'avez pas besoin pour garantir un espace suffisant pour ajouter des clés valides. Pour plus d'informations, voir la rubrique [Retrait d'une clé SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key).
 
 ## Je ne vois pas ma clé SSH réelle, mais je vois une empreinte. Qu'est-ce que c'est ?
 {:faq}

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: IP address, service sshd restart, private network
 
@@ -23,7 +23,7 @@ Vous pouvez renforcer la sécurité de votre serveur en exécutant SSHd uniqueme
 # nano /etc/ssh/sshd_config
 ```
 
-2. Localisez la ligne contenant `ListenAddress 0.0.0.0`. Si elle commence par le caractère '#', supprimez ce caractère. Définissez l'adresse IP avec l'adresse IP que vous voulez utiliser pour écouter. Vous pouvez obtenir votre adresse IP interne en sélectionnant *Matériel* dans le portail {{site.data.keyword.slportal_full}}.
+2. Localisez la ligne contenant `ListenAddress 0.0.0.0`. Si elle commence par le caractère '#', supprimez ce caractère. Définissez l'adresse IP avec l'adresse IP que vous voulez utiliser pour écouter. Vous pouvez obtenir votre adresse IP interne en sélectionnant *Matériel* dans la console {{site.data.keyword.cloud}}.
 3. Une fois la modification effectuée, redémarrez le service SSH :
 ```
 # service sshd restart

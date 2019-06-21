@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-10-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: SSH keys, SSH Keys page, Next Steps
 
@@ -16,13 +16,14 @@ subcollection: ssh-keys
 # Tutoriel d'initiation
 {: #getting-started-tutorial}
 
-Vous pouvez ajouter, gérer et supprimer des clés SSH depuis la page Clés SSH. L'accès à cet écran est soumis à autorisation. Certains utilisateurs ne peuvent pas avoir accès ou interagir avec cet écran. Si vous devez utiliser cet écran et que vous n'y avez pas accès, contactez l'administrateur de votre compte.
+Vous pouvez ajouter, gérer et supprimer des clés SSH à l'aide de la console {{site.data.keyword.cloud}}.
 {:shortdesc}
 
-Procédez comme suit pour commencer en accédant à l'écran Clés SSH.
-1. Accédez au portail [{{site.data.keyword.slportal}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://control.softlayer.com/){: new_window} à l'aide de vos données d'identification uniques.
-2. Sélectionnez **Appareils > Gérer > Clés SSH** dans la barre de navigation pour accéder à l'écran Clés SSH.
+## Avant de commencer
+1. En savoir plus sur les [clés SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-about-ssh-keys).
+2. Vérifiez que vous disposez des autorisations de compte nécessaires et que vous avez accès aux appareils pour pouvoir visualiser et gérer les clés SSH. Seul le propriétaire du compte, ou un utilisateur avec l'autorisation **Gérer les utilisateurs** de l'infrastructure classique, peut régler les autorisations. Pour plus d'informations sur les autorisations, voir [Droits d'infrastructure classique](/docs/iam?topic=iam-infrapermission#infrapermission) et [Gestion de l'accès aux terminaux](/docs/vsi?topic=virtual-servers-managing-device-access).
 
 ## Etapes suivantes
 
-Une fois que vous avez accédé à l'écran Clés SSH, vous pouvez [ajouter des clés SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key), [éditer des libellés et des remarques](/docs/infrastructure/ssh-keys?topic=ssh-keys-editing-details-for-an-ssh-key), ainsi que [supprimer des clés SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key). Il n'est pas possible d'associer plus de 100 clés SSH à un compte.
+Après vous être assuré que vous disposez des droits d'accès nécessaires pour visualiser et gérer les clés SSH, vous pouvez [ajouter des clés SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key#adding-an-ssh-key), [éditer des libellés et des remarques](/docs/infrastructure/ssh-keys?topic=ssh-keys-editing-details-for-an-ssh-key#editing-details-for-an-ssh-key) et [retirer des clés SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key#removing-an-ssh-key). Il n'est pas possible d'associer plus de 100 clés SSH à un compte.
+

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: root user, wheel group, SSH access Every Linux system
 
@@ -10,6 +10,7 @@ subcollection: ssh-keys
 
 ---
 
+{:note: .note}
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
@@ -44,7 +45,8 @@ wheel:x:10:root, user1
 # %wheel ALL=(ALL) ALL
 ```
 
-    **Remarque :** La suppression de la mise en commentaire de cette ligne permet aux utilisateurs du groupe wheel d'exécuter toutes les commandes.
+   La suppression de la mise en commentaire de cette ligne permet aux utilisateurs du groupe wheel d'exécuter toutes les commandes.
+   {:note}
 
 9. Exécutez la commande `:wq` pour sauvegarder les modifications et quitter le fichier.
 10. Exécutez la commande suivante sur la ligne de commande :
@@ -57,7 +59,9 @@ vi /etc/pam.d/su
 #auth required pam_wheel.so use_uid
 ```
 
-    **Remarque :** La suppression de la mise en commentaire de cette ligne nécessite que les utilisateurs fassent partie du groupe wheel pour avoir le droit d'exécuter toutes les commandes.
+   La suppression de la mise en commentaire de cette ligne nécessite que les utilisateurs fassent partie du groupe wheel pour avoir le droit d'exécuter toutes les commandes.
+   {:note}
+   
 12. Exécutez la commande `:wq` pour sauvegarder les modifications et quitter le fichier.
 13. Exécutez la commande suivante pour sauvegarder toutes les modifications et redémarrer SSH :
 ```
