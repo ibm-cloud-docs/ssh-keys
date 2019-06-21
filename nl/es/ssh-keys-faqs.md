@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: SSH keys, SSH key, device-specific
 
@@ -25,7 +25,7 @@ Las claves SSH son específicas del dispositivo y se encuentra en el dispositivo
 ## ¿Cuántas claves SSH puedo añadir a mi cuenta?
 {:faq}
 
-Puede asociar un máximo de 100 claves SSH a una cuenta. Los usuarios autorizados pueden [añadir 1 clave SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key) en un momento determinado utilizando {{site.data.keyword.slportal_full}}. Aunque la mayoría de los usuarios no necesitan 100 claves, debe eliminar las claves que no necesite para asegurarse de que haya espacio disponible para obtener más claves válidas. Para obtener más información, consulte [Eliminación de claves SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key).
+Puede asociar un máximo de 100 claves SSH a una cuenta. Los usuarios autorizados pueden [añadir 1 clave SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key) en un momento determinado utilizando la consola de {{site.data.keyword.cloud}}. Aunque la mayoría de los usuarios no necesitan 100 claves, debe eliminar las claves que no necesite para asegurarse de que haya espacio disponible para obtener más claves válidas. Para obtener más información, consulte [Eliminación de claves SSH](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key).
 
 ## No veo mi clave SSH en la lista, en cambio veo una huella dactilar. ¿Qué significa?
 {:faq}

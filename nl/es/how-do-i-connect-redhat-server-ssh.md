@@ -10,6 +10,7 @@ subcollection: ssh-keys
 
 ---
 
+{:note: .note}
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
@@ -20,10 +21,13 @@ Para completar este procedimiento, necesita un cliente SSH, como por ejemplo, Pu
 En la mayoría de los casos, puede utilizar las opciones predeterminadas en PuTTY para conectarse correctamente a su servidor RedHat la primera vez.
 
 1. Abra PuTTY y escriba en la dirección IP principal de su servidor en el campo `'Hostname (o IP address)'` y pulse Abrir.
-  Nota: El puerto predeterminado de SSH es 22, pero puede cambiarlo en el servidor después de la primera conexión satisfactoria.
+
+  El puerto predeterminado de SSH es 22, pero puede cambiarlo en el servidor después de la primera conexión satisfactoria.
+  {:note} 
+  
 2. El servidor RedHat le solicita un nombre de usuario y la contraseña. Escriba la información de usuario root y la contraseña del servidor.
 3. Guarde los detalles de la conexión (dirección IP y puerto) en Sesiones escribiendo la dirección IP y el puerto. Cree un título para las propiedades de conexión, como por ejemplo, "Mi Servidor" y pulse Guardar.
   Cuando se conecte a su servidor, deberá resaltar sólo la sesión guardada y pulsar Abrir.
 
 Puede conectarse a su servidor utilizando la red pública.
-También puede conectarse utilizando la red privada. Siga las instrucciones de {{site.data.keyword.slportal_full}} para conectarse a la VPN y, a continuación, utilizar la SSH para conectarse a su dirección IP privada.
+También puede conectarse utilizando la red privada. Siga las instrucciones de la consola de {{site.data.keyword.cloud}} para conectarse a la VPN y, a continuación, utilizar la SSH para conectarse a su dirección IP privada.

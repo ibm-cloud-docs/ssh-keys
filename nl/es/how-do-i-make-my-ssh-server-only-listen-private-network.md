@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: IP address, service sshd restart, private network
 
@@ -23,7 +23,7 @@ Puede proteger el servidor ejecutando SSHd sólo en la red de fondo. Por lo tant
 # nano /etc/ssh/sshd_config
 ```
 
-2. Localice la línea que contiene `ListenAddress 0.0.0.0`. Si empieza con un carácter '#', elimine este carácter. Establezca la dirección IP en la dirección IP en la que desea que escuche. Para encontrar la dirección IP interna, seleccione *Hardware* en {{site.data.keyword.slportal_full}}.
+2. Localice la línea que contiene `ListenAddress 0.0.0.0`. Si empieza con un carácter '#', elimine este carácter. Establezca la dirección IP en la dirección IP en la que desea que escuche. Para encontrar la dirección IP interna, seleccione *Hardware* en la consola de {{site.data.keyword.cloud}}.
 3. Después de realizar el cambio, reinicie el servicio SSH:
 ```
 # service sshd restart
