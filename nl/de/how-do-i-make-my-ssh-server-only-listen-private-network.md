@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: IP address, service sshd restart, private network
 
@@ -23,7 +23,7 @@ Sie können Ihren Server zusätzlich sichern, indem Sie SSHD nur im Back-End-Net
 # nano /etc/ssh/sshd_config
 ```
 
-2. Suchen Sie die Zeile, die `ListenAddress 0.0.0.0` enthält. Wenn sie mit dem Zeichen '#' beginnt, entfernen Sie dieses Zeichen. Legen Sie die IP-Adresse auf die IP fest, für die eine Empfangsbereitschaft bestehen soll. Sie können Ihre interne IP-Adresse finden, indem Sie im {{site.data.keyword.slportal_full}} *Hardware* auswählen.
+2. Suchen Sie die Zeile, die `ListenAddress 0.0.0.0` enthält. Wenn sie mit dem Zeichen '#' beginnt, entfernen Sie dieses Zeichen. Legen Sie die IP-Adresse auf die IP fest, für die eine Empfangsbereitschaft bestehen soll. Sie können Ihre interne IP-Adresse finden, indem Sie in der {{site.data.keyword.cloud}}-Konsole *Hardware* auswählen. 
 3. Nachdem Sie die Änderung vorgenommen haben, starten Sie den SSH-Service erneut:
 ```
 # service sshd restart

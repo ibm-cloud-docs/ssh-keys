@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-10-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: SSH keys, SSH Keys page, Next Steps
 
@@ -16,13 +16,14 @@ subcollection: ssh-keys
 # Lernprogramm zur Einführung
 {: #getting-started-tutorial}
 
-Auf der Seite "SSH-Schlüssel" können Sie SSH-Schlüssel hinzufügen, verwalten und löschen. Der Zugriff auf die Anzeige "SSH-Schlüssel" ist von den Berechtigungen abhängig. Einige Benutzer können nicht auf diese Anzeige zugreifen oder mit ihr interagieren. Wenn Sie den Zugriff benötigen, aber nicht darüber verfügen, wenden Sie sich an Ihren Kontoadministrator.
+Sie können SSH-Schlüssel über die {{site.data.keyword.cloud}}-Konsole hinzufügen, verwalten und löschen.
 {:shortdesc}
 
-Gehen Sie wie folgt vor, um als ersten Schritt auf die Anzeige der SSH-Schlüssel zuzugreifen.
-1. Rufen Sie das [{{site.data.keyword.slportal}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://control.softlayer.com/){: new_window} auf, und verwenden Sie dabei die eindeutigen Berechtigungsnachweise.
-2. Wählen Sie **Geräte > Verwalten > SSH-Schlüssel** in der Navigationsleiste aus, um auf die Anzeige der SSH-Schlüssel zuzugreifen.
+## Vorbereitung
+1. Lesen Sie die Informationen zu [SSH-Schlüsseln](/docs/infrastructure/ssh-keys?topic=ssh-keys-about-ssh-keys). 
+2. Stellen Sie sicher, dass Sie über die erforderlichen Kontoberechtigungen und Gerätezugriff verfügen, damit Sie SSH-Schlüssel anzeigen und verwalten können. Nur der Kontoeigner oder ein Benutzer mit der Berechtigung **Benutzer verwalten** der klassischen Infrastruktur kann die Berechtigungen anpassen. Weitere Informationen zu Berechtigungen finden Sie in [Berechtigungen der klassischen Infrastruktur](/docs/iam?topic=iam-infrapermission#infrapermission) und in [Gerätezugriff verwalten](/docs/vsi?topic=virtual-servers-managing-device-access).
 
 ## Nächste Schritte
 
-In der Anzeige der SSH-Schlüssel können Sie [SSH-Schlüssel hinzufügen](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key), [Bezeichnungen und Anmerkungen bearbeiten](/docs/infrastructure/ssh-keys?topic=ssh-keys-editing-details-for-an-ssh-key) und [SSH-Schlüssel entfernen](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key). Einem Konto können maximal 100 SSH-Schlüssel gleichzeitig zugeordnet werden.
+Nachdem Sie sichergestellt haben, dass Sie über die korrekten Zugriffsberechtigungen zum Anzeigen und Verwalten von SSH-Schlüsseln verfügen, können Sie [SSH-Schlüssel hinzufügen](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key#adding-an-ssh-key), [Bezeichnungen und Anmerkungen bearbeiten](/docs/infrastructure/ssh-keys?topic=ssh-keys-editing-details-for-an-ssh-key#editing-details-for-an-ssh-key) und [SSH-Schlüssel entfernen](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key#removing-an-ssh-key). Einem Konto können maximal 100 SSH-Schlüssel gleichzeitig zugeordnet werden.
+

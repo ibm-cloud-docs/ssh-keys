@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: SSH keys, SSH key, device-specific
 
@@ -25,7 +25,7 @@ SSH-Schlüssel sind gerätespezifisch und innerhalb des Geräts angegeben. Da je
 ## Wie viele SSH-Schlüssel kann ich meinem Konto hinzufügen?
 {:faq}
 
-Sie können einem Konto bis zu 100 SSH-Schlüssel zuordnen. Benutzer mit der entsprechenden Berechtigung können jeweils [1 SSH-Schlüssel hinzufügen](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key), indem sie das {{site.data.keyword.slportal_full}} verwenden. Wenngleich die wenigsten Benutzer 100 Schlüssel benötigen, sollten Sie alle nicht benötigten Schlüssel entfernen, um sicherzustellen, dass genügend Platz für gültige Schlüssel zur Verfügung steht. Weitere Informationen finden Sie unter [SSH-Schlüssel entfernen](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key).
+Sie können einem Konto bis zu 100 SSH-Schlüssel zuordnen. Benutzer mit der entsprechenden Berechtigung können jeweils [1 SSH-Schlüssel hinzufügen](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key), indem sie die {{site.data.keyword.cloud}}-Konsole verwenden. Wenngleich die wenigsten Benutzer 100 Schlüssel benötigen, sollten Sie alle nicht benötigten Schlüssel entfernen, um sicherzustellen, dass genügend Platz für gültige Schlüssel zur Verfügung steht. Weitere Informationen finden Sie unter [SSH-Schlüssel entfernen](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key).
 
 ## Mein tatsächlicher SSH-Schlüssel wird mir in der Liste nicht angezeigt, dafür aber ein Fingerabdruck. Was hat das zu bedeuten?
 {:faq}

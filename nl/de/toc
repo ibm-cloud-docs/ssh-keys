@@ -10,6 +10,8 @@ SSH-Schlüssel
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    /vsi/virtual-servers-navigating-devices
+    
     {: .topicgroup}
     SSH-Schlüssel verwalten
         add-ssh-key.md
