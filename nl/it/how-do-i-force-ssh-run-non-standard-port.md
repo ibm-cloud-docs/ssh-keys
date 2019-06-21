@@ -28,7 +28,7 @@ Segui questa procedura per forzare l'esecuzione di SSH su una porta non standard
 # Port 22
 ```
 
-3. Annulla il comment e modifica questa riga per rispecchiare la nuova porta.
+3. Annulla il commento e modifica questa riga per rispecchiare la nuova porta.
 ```
 Port 2255
 ```
@@ -39,4 +39,4 @@ Port 2255
 # /etc/init.d/sshd restart
 ```
 
-5. Se sei collegato al server utilizzando SSH sulla porta 22, la tua connessione cadrà e dovrai ricollegarti utilizzando la nuova porta.
+5. Se sei connesso al server tramite SSH sulla porta 22, la tua connessione verrà interrotta e dovrai riconnetterti utilizzando la nuova porta.

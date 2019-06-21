@@ -19,7 +19,7 @@ subcollection: ssh-keys
 Utilizza la seguente procedura per abilitare SSH su un server Linux per essere in ascolto su IPv6:
 1. Individua il file: /etc/ssh/sshd_config.
 2. Individua la riga che contiene `ListenAddress`.
-3. Annulla il comment nella riga `#ListenAddress ::`:
+3. Annulla il commento nella riga `#ListenAddress ::`:
 ```
 ListenAddress ::
 ```

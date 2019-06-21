@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-05-06"
 
 keywords: SSH keys, remote host authentication SSH keys, public-key cryptography
 
@@ -10,6 +10,7 @@ subcollection: ssh-keys
 
 ---
 
+{:note: .note}
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
@@ -63,7 +64,8 @@ Per l'autenticazione con un host remoto utilizzando la tua chiave SSH pubblica d
     Now try logging into the machine, with:   "ssh 'root@10.176.18.15'"
     and check to make sure that only the key(s) you wanted were added.
 
-***Nota:*** il comando ssh-copy-id aggiunge le chiavi al file .ssh/authorized_key dell'host remoto.
+Il comando ssh-copy-id aggiunge le chiavi al file .ssh/authorized_key dell'host remoto.
+{:note}
 
 ## Verifica che la chiave è stata copiata correttamente
 
@@ -102,7 +104,7 @@ Dopo l'avvio del programma utilizzando il comando ssh-add per aggiungere la tua 
     Identity added: /root/.ssh/id_rsa (/root/.ssh/id_rsa)
     root@bck1:~#
 
-Ogni volta che apri una nuova sessione del terminale ti sarà richiesta la passphrase delle chiavi. Considera di immettere i seguenti comandi per aggiungere il tuo file `.bash_profile` in modo che ssh-agent si avvii con ogni sessione bash  e che la tua chiave venga aggiunta.
+Ogni volta che apri una nuova sessione del terminale ti sarà richiesta la passphrase delle chiavi. Considera di immettere i seguenti comandi per aggiungere il tuo file `.bash_profile` in modo che ssh-agent si avvii con ogni sessione bash e che la tua chiave venga aggiunta.
 
     echo ‘eval $(ssh-agent)’ >> ~/.bash_profile
     echo ‘ssh-add’ >> ~/.bash_profile

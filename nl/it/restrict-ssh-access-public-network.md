@@ -24,8 +24,8 @@ Segui questa procedura per limitare l'accesso SSH sulla rete pubblica.
 2. Accedi a **Private IP Address** del Bare Metal Server tramite SSH.
 3. Immetti il seguente comando per aprire il file `sshd_config` per la modifica:
   > `vi /etc/ssh/sshd_config`
-4. Rimuovi **hash (#)** dalla riga `ListenAddress` per annullare il comment della riga.
-5. Immetti **Private IP Address** per il Bare Metal Server Server nella riga di cui è stato annullato il comment `ListenAddress`.
+4. Rimuovi **hash (#)** da una riga `ListenAddress` per annullare il commento nella riga.
+5. Immetti **Private IP Address** per il Bare Metal Server nella riga `ListenAddress` in cui è stato annullato il commento.
 6. Esegui il comando `:wq` per salvare le modifiche e uscire dal file.
 7. Riavvia il servizio sshd
   > `service sshd restart`
@@ -33,4 +33,4 @@ Segui questa procedura per limitare l'accesso SSH sulla rete pubblica.
 
 ## Passi successivi
 
-Dopo aver correttamente limitato l'accesso SSH, gli utenti non potranno accedere al dispositivo tramite SSH quando non si collegano tramite a rete privata. Questa azione può essere annullata in qualsiasi momento aggiungendo l'hash (#) alla riga di cui è stato annullato il comment, che ritorna la riga con comment.
+Dopo aver correttamente limitato l'accesso SSH, gli utenti non potranno accedere al dispositivo tramite SSH quando non si connettono attraverso la rete privata. Questa azione può essere annullata in qualsiasi momento aggiungendo l'hash (#) alla riga di cui è stato annullato il commento, che restituisce la riga ai commenti.

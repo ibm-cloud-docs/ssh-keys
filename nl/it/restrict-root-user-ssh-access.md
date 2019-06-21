@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: root user, wheel group, SSH access Every Linux system
 
@@ -10,6 +10,7 @@ subcollection: ssh-keys
 
 ---
 
+{:note: .note}
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
@@ -39,12 +40,13 @@ wheel:x:10:root, user1
 5. Modifica la riga `PermitRootLogin yes` in modo che legga `PermitRootLogin no`.
 6. Esegui il comando `:wq` per salvare le modifiche e uscire dal file.
 7. Immetti `visudo` nella **Command Line** per generare le autorizzazioni del comando.
-8. Rimuovi **hash (#)** dalla seguente riga per annullare il comment della riga:
+8. Rimuovi **hash (#)** dalla seguente riga per annullare il commento nella riga:
 ```
 # %wheel ALL=(ALL) ALL
 ```
 
-    **Nota:** l'annullare il comment di questa riga consente agli utenti nel gruppo wheel di eseguire tutti i comandi.
+   L'annullamento del commento di questa riga consente agli utenti nel gruppo wheel di eseguire tutti i comandi.
+   {:note}
 
 9. Esegui il comando `:wq` per salvare le modifiche e uscire dal file.
 10. Immetti il seguente comando nella riga di comando:
@@ -52,12 +54,14 @@ wheel:x:10:root, user1
 vi /etc/pam.d/su
 ```
 
-11. Rimuovi **hash (#)** dalla seguente riga per annullare il comment della riga:
+11. Rimuovi **hash (#)** dalla seguente riga per annullare il commento nella riga:
 ```
 #auth required pam_wheel.so use_uid
 ```
 
-    **Nota:** l'annullare il comment di questa riga richiede agli utenti di far parte del gruppo wheel per avere le autorizzazioni per eseguire tutti i comandi.
+   L'annullamento del commento di questa riga richiede che gli utenti facciano parte del gruppo wheel per avere le autorizzazioni per eseguire tutti i comandi.
+   {:note}
+   
 12. Esegui il comando `:wq` per salvare le modifiche e uscire dal file.
 13. Immetti il seguente comando per salvare tutte le modifiche e riavviare SSH:
 ```
@@ -66,4 +70,4 @@ vi /etc/pam.d/su
 
 ## Passi successivi
 
-Dopo aver limitato all'utente root l'accesso SSH, l'utente root non può accedere a SSH. Se un utente al momento può accedere al server tramite SSH nell'utente root, la connessione avrà esito negativo dopo il riavvio di SSH nella procedura precedente. Tutti i tentativi futuri di collegarsi a SSH tramite l'utente root hanno esito negativo. Per annullare queste modifiche, ripetere le istruzioni e riportare `PermitRootLogin` no su `PermitRootLogin` yes.
+Dopo aver limitato all'utente root l'accesso SSH, l'utente root non può accedere a SSH. Se un utente al momento può accedere al server tramite SSH nell'utente root, la connessione avrà esito negativo dopo il riavvio di SSH nella procedura precedente. Tutti i tentativi futuri di connettersi a SSH tramite l'utente root hanno esito negativo. Per annullare queste modifiche, ripetere le istruzioni e riportare `PermitRootLogin` no su `PermitRootLogin` yes.

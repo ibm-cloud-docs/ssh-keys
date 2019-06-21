@@ -57,7 +57,7 @@ Nel seguente esempio, solo a due utenti specifici, `admin` e `user1` è consenti
 AllowUsers admin user1
 ```
 
-Per preparare una futura espansione degli utenti, puoi creare un gruppo sul server che può accedere al server. Puoi aggiungere gli utenti individuali se necessario (sostituisci *`username`* con l'utente attuale):
+Per preparare una futura espansione degli utenti, puoi creare un gruppo sul server che può accedere al server. Puoi aggiungere singoli utenti secondo necessità (sostituisci *`username`* con l'utente effettivo):
 
 1. Nella shell, aggiungi un gruppo di utenti, come ad esempio sshusers:
 ```
@@ -100,4 +100,4 @@ sshd_config: terminating, 1 bad configuration options
 5. Dopo che hai corretto tutti gli errori e disponi di una configurazione funzionante, riavvia sshd. Il seguente è un comando di esempio in un sistema compatibile sysv:
   /etc/init.d/sshd restart
 
-Assicurati di creare una nuova sessione SSH senza scollegare la tua sessione esistente. Verifica di poter eseguire tutte le azioni con gli utenti che hai aggiunto.
+Assicurati di creare una nuova sessione SSH senza disconnettere la tua sessione esistente. Verifica di poter eseguire tutte le azioni con gli utenti che hai aggiunto.
