@@ -10,6 +10,8 @@ SSH 키
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    /vsi/virtual-servers-navigating-devices
+    
     {: .topicgroup}
     SSH 키 관리
         add-ssh-key.md

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: root user, wheel group, SSH access Every Linux system
 
@@ -10,6 +10,7 @@ subcollection: ssh-keys
 
 ---
 
+{:note: .note}
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
@@ -44,7 +45,8 @@ wheel:x:10:root, user1
 # %wheel ALL=(ALL) ALL
 ```
 
-    **참고:** 이 행을 주석 해제하면 wheel 그룹의 사용자가 모든 명령을 실행할 수 있습니다.
+   이 행을 주석 해제하면 wheel 그룹의 사용자가 모든 명령을 실행할 수 있습니다.
+   {:note}
 
 9. `:wq` 명령을 실행하여 변경사항을 저장하고 파일을 종료하십시오.
 10. 명령행에서 다음 명령을 실행하십시오.
@@ -57,7 +59,9 @@ vi /etc/pam.d/su
 #auth required pam_wheel.so use_uid
 ```
 
-    **참고:** 이 행을 주석 해제하려면 사용자가 모든 명령을 실행할 권한이 있는 wheel 그룹의 일부여야 합니다.
+   이 행을 주석 해제하려면 사용자가 모든 명령을 실행할 권한이 있는 wheel 그룹의 일부여야 합니다.
+   {:note}
+   
 12. `:wq` 명령을 실행하여 변경사항을 저장하고 파일을 종료하십시오.
 13. 다음 명령을 실행하여 모든 변경사항을 저장하고 SSH를 다시 시작하십시오.
 ```

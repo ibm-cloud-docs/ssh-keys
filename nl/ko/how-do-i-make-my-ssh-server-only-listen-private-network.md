@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: IP address, service sshd restart, private network
 
@@ -23,7 +23,7 @@ subcollection: ssh-keys
 # nano /etc/ssh/sshd_config
 ```
 
-2. `ListenAddress 0.0.0.0`이 포함된 행을 찾으십시오. '#' 문자로 시작하는 경우 이 문자를 제거하십시오. IP 주소를 청취할 IP로 설정하십시오. {{site.data.keyword.slportal_full}}에서 *하드웨어*를 선택하여 내부 IP 주소를 찾을 수 있습니다.
+2. `ListenAddress 0.0.0.0`이 포함된 행을 찾으십시오. '#' 문자로 시작하는 경우 이 문자를 제거하십시오. IP 주소를 청취할 IP로 설정하십시오. {{site.data.keyword.cloud}} 콘솔에서 *하드웨어*를 선택하여 내부 IP 주소를 찾을 수 있습니다.
 3. 변경 후 SSH 서비스를 다시 시작하십시오.
 ```
 # service sshd restart
