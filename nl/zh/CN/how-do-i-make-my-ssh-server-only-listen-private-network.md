@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: IP address, service sshd restart, private network
 
@@ -23,7 +23,7 @@ subcollection: ssh-keys
 # nano /etc/ssh/sshd_config
 ```
 
-2. 找到包含 `ListenAddress 0.0.0.0` 的行。如果该行的开头是“#”字符，请除去此字符。将 IP 地址设置为您要侦听的 IP。您可以通过在 {{site.data.keyword.slportal_full}} 中选择*硬件*来查找内部 IP 地址。
+2. 找到包含 `ListenAddress 0.0.0.0` 的行。如果该行的开头是“#”字符，请除去此字符。将 IP 地址设置为您要侦听的 IP。您可以通过在 {{site.data.keyword.cloud}} 控制台中选择*硬件*来查找内部 IP 地址。
 3. 在进行更改之后，请重新启动 SSH 服务：
 ```
 # service sshd restart

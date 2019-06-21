@@ -10,6 +10,8 @@ SSH 密钥
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    /vsi/virtual-servers-navigating-devices
+    
     {: .topicgroup}
     管理 SSH 密钥
         add-ssh-key.md
