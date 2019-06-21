@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-10-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: SSH keys, SSH Keys page, Next Steps
 
@@ -16,13 +16,14 @@ subcollection: ssh-keys
 # 入門指導教學
 {: #getting-started-tutorial}
 
-您可以使用「SSH 金鑰」頁面來新增、管理及刪除 SSH 金鑰。對「SSH 金鑰」畫面的存取是以許可權為基礎。部分使用者無法存取此畫面或與它互動。如果您需要存取但沒有存取權，請與帳戶管理者聯絡。
+您可以使用 {{site.data.keyword.cloud}} 主控台來新增、管理及刪除 SSH 金鑰。
 {:shortdesc}
 
-請遵循下列步驟，存取「SSH 金鑰」畫面來開始進行。
-1. 使用您的唯一認證存取 [{{site.data.keyword.slportal}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://control.softlayer.com/){: new_window}。
-2. 從導覽列選取**裝置 > 管理 > SSH 金鑰**，以存取「SSH 金鑰」畫面。
+## 開始之前
+1. 進一步瞭解 [SSH 金鑰](/docs/infrastructure/ssh-keys?topic=ssh-keys-about-ssh-keys)。
+2. 確保您具有必要的帳戶許可權及裝置存取權，讓您可以檢視和管理 SSH 金鑰。僅帳戶擁有者或具有**管理使用者**標準基礎架構許可權的使用者才能調整許可權。如需許可權的相關資訊，請參閱[標準基礎架構許可權](/docs/iam?topic=iam-infrapermission#infrapermission)及[管理裝置存取權](/docs/vsi?topic=virtual-servers-managing-device-access)。
 
 ## 後續步驟
 
-存取「SSH 金鑰」畫面之後，您可以[新增 SSH 金鑰](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key)、[編輯標籤及附註](/docs/infrastructure/ssh-keys?topic=ssh-keys-editing-details-for-an-ssh-key)，以及[移除 SSH 金鑰](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key)。在任何時間，與帳戶相關聯的 SSH 金鑰不能超過 100 個。
+在確保您具有正確的存取權來檢視及管理 SSH 金鑰之後，您可以[新增 SSH 金鑰](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key#adding-an-ssh-key)、[編輯標籤及附註](/docs/infrastructure/ssh-keys?topic=ssh-keys-editing-details-for-an-ssh-key#editing-details-for-an-ssh-key)，以及[移除 SSH 金鑰](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key#removing-an-ssh-key)。在任何時間，與帳戶相關聯的 SSH 金鑰不能超過 100 個。
+

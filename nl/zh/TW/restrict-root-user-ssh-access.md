@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: root user, wheel group, SSH access Every Linux system
 
@@ -10,6 +10,7 @@ subcollection: ssh-keys
 
 ---
 
+{:note: .note}
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
@@ -44,7 +45,8 @@ wheel:x:10:root, user1
 # %wheel ALL=(ALL) ALL
 ```
 
-    **附註：**將此行解除註解可允許 wheel 群組中的使用者執行所有指令。
+   將此行解除註解可允許 wheel 群組中的使用者執行所有指令。
+   {:note}
 
 9. 執行 `:wq` 指令，以儲存變更並結束檔案。
 10. 在指令行執行下列指令：
@@ -57,7 +59,9 @@ vi /etc/pam.d/su
 #auth required pam_wheel.so use_uid
 ```
 
-    **附註：**將此行解除註解需要使用者隸屬於 wheel 群組，才能有執行所有指令的許可權。
+   將此行解除註解需要使用者隸屬於 wheel 群組，才能有執行所有指令的許可權。
+   {:note}
+   
 12. 執行 `:wq` 指令，以儲存變更並結束檔案。
 13. 執行下列指令以儲存所有變更，並重新啟動 SSH：
 ```

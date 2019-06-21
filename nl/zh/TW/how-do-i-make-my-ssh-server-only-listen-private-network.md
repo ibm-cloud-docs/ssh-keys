@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: IP address, service sshd restart, private network
 
@@ -23,7 +23,7 @@ subcollection: ssh-keys
 # nano /etc/ssh/sshd_config
 ```
 
-2. 找到包含 `ListenAddress 0.0.0.0` 的行。如果它開頭為 '#' 字元，請移除此字元。將 IP 位址設為您要接聽的 IP。您可以從 {{site.data.keyword.slportal_full}} 選取*硬體* 來找到您的內部 IP 位址。
+2. 找到包含 `ListenAddress 0.0.0.0` 的行。如果它開頭為 '#' 字元，請移除此字元。將 IP 位址設為您要接聽的 IP。您可以從 {{site.data.keyword.cloud}} 主控台選取*硬體* 來找到您的內部 IP 位址。
 3. 變更之後，重新啟動 SSH 服務：
 ```
 # service sshd restart

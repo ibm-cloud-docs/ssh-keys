@@ -16,9 +16,9 @@ subcollection: ssh-keys
 # 關於 SSH 金鑰
 {: #about-ssh-keys}
 
-SSH 金鑰由 SSH 伺服器用來透過公開金鑰加密法識別使用者或裝置。SSH 金鑰包含英數組合，且對於它們指派到的裝置而言是唯一的。獲得授權的使用者可以隨時使用 {{site.data.keyword.slportal_full}} 新增、編輯或刪除 SSH 金鑰。
+SSH 金鑰由 SSH 伺服器用來透過公開金鑰加密法識別使用者或裝置。SSH 金鑰包含英數組合，且對於它們指派到的裝置而言是唯一的。獲得授權的使用者可以隨時使用 {{site.data.keyword.cloud}} 主控台新增、編輯或刪除 SSH 金鑰。
+{:shortdesc}
 
-您可以在佈建期間要求 SSH 金鑰，或透過 [OS 重新載入](/docs/infrastructure/software?topic=software-reloading-the-os)來要求 SSH 金鑰。
-
+您可以在佈建期間要求 SSH 金鑰，或透過 [OS 重新載入](/docs/software?topic=software-reloading-the-os#reloading-the-os)來要求 SSH 金鑰。
 
 SSH 金鑰允許存取裝置，而不必針對裝置上實作的每個公開金鑰使用來自對應用戶端的密碼。藉由將 SSH 金鑰新增至裝置，提供有 SSH 金鑰的裝置會存取對應金鑰的裝置，而不使用密碼。

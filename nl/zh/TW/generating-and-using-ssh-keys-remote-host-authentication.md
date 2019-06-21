@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-05-06"
 
 keywords: SSH keys, remote host authentication SSH keys, public-key cryptography
 
@@ -10,6 +10,7 @@ subcollection: ssh-keys
 
 ---
 
+{:note: .note}
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
@@ -63,7 +64,8 @@ SSH 金鑰可以用來向使用公開金鑰加密法和盤查-回應鑑別的 SS
     Now try logging into the machine, with:   "ssh 'root@10.176.18.15'"
     and check to make sure that only the key(s) you wanted were added.
 
-***附註：***ssh-copy-id 指令會將金鑰附加到遠端主機的 .ssh/authorized_key 檔案。
+ssh-copy-id 指令會將金鑰附加到遠端主機的 .ssh/authorized_key 檔案。
+{:note}
 
 ## 測試金鑰是否已正確地複製
 
