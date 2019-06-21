@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-06-11"
 
 keywords: root user, wheel group, SSH access Every Linux system
 
@@ -10,6 +10,7 @@ subcollection: ssh-keys
 
 ---
 
+{:note: .note}
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
@@ -44,7 +45,7 @@ wheel:x:10:root, user1
 # %wheel ALL=(ALL) ALL
 ```
 
-    **注:** この行をアンコメントすると、wheel グループ内のユーザーはすべてのコマンドを実行できます。
+   この行をアンコメントすると、wheel グループ内のユーザーはすべてのコマンドを実行できます。{:note}
 
 9. `:wq` コマンドを実行して変更を保存し、ファイルを終了します。
 10. コマンド・ラインで以下のコマンドを実行します。
@@ -57,7 +58,9 @@ vi /etc/pam.d/su
 #auth required pam_wheel.so use_uid
 ```
 
-    **注:** この行をアンコメントするには、ユーザーは wheel グループに所属し、すべてのコマンドを実行する権限を持っている必要があります。
+   この行をアンコメントするには、ユーザーは wheel グループに所属し、すべてのコマンドを実行する権限を持っている必要があります。
+{:note}
+   
 12. `:wq` コマンドを実行して変更を保存し、ファイルを終了します。
 13. 以下のコマンドを実行して、すべての変更を保存し、SSH を再始動します。
 ```

@@ -16,9 +16,8 @@ subcollection: ssh-keys
 # SSH 鍵について
 {: #about-ssh-keys}
 
-SSH 鍵は、公開鍵暗号方式を使用してユーザーまたはデバイスを識別するために SSH サーバーによって使用されます。 SSH 鍵は、英数字の組み合わせで構成されており、それらが割り当てられているデバイスに固有です。 許可ユーザーはいつでも、{{site.data.keyword.slportal_full}} を使用して SSH 鍵を追加、編集、または削除できます。
+SSH 鍵は、公開鍵暗号方式を使用してユーザーまたはデバイスを識別するために SSH サーバーによって使用されます。 SSH 鍵は、英数字の組み合わせで構成されており、それらが割り当てられているデバイスに固有です。 許可ユーザーはいつでも、{{site.data.keyword.cloud}} コンソールを使用して SSH 鍵を追加、編集、または削除できます。{:shortdesc}
 
-SSH 鍵は、プロビジョン中または[OS 再ロード](/docs/infrastructure/software?topic=software-reloading-the-os)中に要求できます。
-
+SSH 鍵は、プロビジョン中または[OS 再ロード](/docs/software?topic=software-reloading-the-os#reloading-the-os)中に要求できます。
 
 SSH 鍵は、デバイスで実装されている各公開鍵の、対応クライアントのパスワードを使用せずにデバイスへのアクセスを許可します。 SSH 鍵をデバイスに追加することにより、SSH 鍵を提供されたデバイスは、パスワードを使用せずに、対応する鍵のデバイスにアクセスします。

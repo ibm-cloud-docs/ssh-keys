@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2019
+lastupdated: "2019-05-06"
 
 keywords: SSH keys, remote host authentication SSH keys, public-key cryptography
 
@@ -10,6 +10,7 @@ subcollection: ssh-keys
 
 ---
 
+{:note: .note}
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
@@ -63,7 +64,7 @@ Linux サーバー上で SSH 鍵を生成するには、コマンド `ssh-keygen
     Now try logging into the machine, with:   "ssh 'root@10.176.18.15'"
     and check to make sure that only the key(s) you wanted were added.
 
-***注:*** ssh-copy-id コマンドは、リモート・ホストの .ssh/authorized_key ファイルに鍵を追加します。
+ssh-copy-id コマンドは、リモート・ホストの .ssh/authorized_key ファイルに鍵を追加します。{:note}
 
 ## 鍵が正しくコピーされたことのテスト
 
