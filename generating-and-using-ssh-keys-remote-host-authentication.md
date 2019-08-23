@@ -20,6 +20,7 @@ subcollection: ssh-keys
 SSH keys are a way to identify yourself to an SSH server that uses public-key cryptography and challenge-response authentication. An immediate advantage of this method over traditional password authentication is that you can be authenticated by the server without sending your password over the network. You can also use it with automation because it allows for unattended server communication.
 
 ## Generating SSH keys on Linux
+{: #generating-ssh-keys-on-linux}
 
 To generate an SSH key on your Linux server run the command `ssh-keygen`. The command can take flags if you would like to customize the type of key that is generated as well as the signing algorithms used to generate the key. This example generates a standard 2048-bit RSA key without a passphrase. The command prompts you for the location to store the key (default is $HOME/.ssh/) as well as a passphrase to secure the SSH key.
 
@@ -46,6 +47,7 @@ To generate an SSH key on your Linux server run the command `ssh-keygen`. The co
     +----[SHA256]-----+
 
 ## Copying the public key to remote-hosts
+{: #copying-the-public-key-to-remote-hosts}
 
 To authenticate with a remote-host using your public SSH key you will use the `ssh-copy-id` command. Use the `-i` flag to specify the public key to copy to the remote-host.
 
@@ -68,6 +70,7 @@ The ssh-copy-id command appends the keys to the remote-host’s .ssh/authorized_
 {:note}
 
 ## Testing that the key was copied correctly
+{: #testing-that-the-key-was-copied-correctly}
 
 To test that the public key was properly copied to the remote host simply ssh to the remote host.
 
@@ -90,6 +93,7 @@ To test that the public key was properly copied to the remote host simply ssh to
 As you can see, there is not a prompt for the password when ssh-ing in to the remote host.
 
 ## SSH keys with a passphrase
+{: #ssh-keys-with-a-passphrase}
 
 Providing a passphrase for your SSH key provides an additional layer of security, but it can also cause issues when you are trying to run automated scripts that require using the protected key.
 
