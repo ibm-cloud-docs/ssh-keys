@@ -32,24 +32,30 @@ cp /etc/ssh/sshd_config{,.'date +%s'}
 
 
 ## OpenSSH keywords
+{: #openssh-keywords}
 
 ### AllowGroups
+{: #allowgroups}
 
 After this keyword, include a list of group name patterns. Separate the patterns with spaces. If you specify **Login**, it is allowed only for users whose primary group or supplementary group list matches one of the patterns. You can use `"*" and "?"` as wildcards in the patterns. Only group names are valid; a numerical group ID is not recognized. By default, **Login** is allowed for all groups.
 
 ### AllowUsers
+{: #allowusers}
 
 After this keyword, include a list of user name patterns. Separate the patterns with spaces. If you specify **Login**, it is allowed only for user names that match one of the patterns. You can use `"*" and "?"` as wildcards in the patterns. Only user names are valid; a numerical user ID is not recognized. By default, **Login** is allowed for all users. If the pattern takes the form USER@HOST, then USER and HOST are separately checked, restricting logins to particular users from particular hosts.
 
 ### DenyGroups
+{: #denygroups}
 
 After this keyword, include a list of group name patterns. Separate the patterns with spaces. If you specify **Login**, it is disallowed for users whose primary group or supplementary group list matches one of the patterns. You can use `"*" and "?"` can be used as wildcards in the patterns. Only group names are valid; a numerical group ID is not recognized. By default, **Login** is allowed for all groups.
 
 ### DenyUsers
+{: #denyusers}
 
 After this keyword, include a list of user name patterns. Separate the patterns with spaces. If you specify **Login**, it is disallowed for user names that match one of the patterns. You can use`"*" and "?"` as wildcards in the patterns. Only user names are valid; a numerical user ID is not recognized. By default, **Login** is allowed for all users.  If the pattern takes the form USER@HOST, then USER and HOST are separately checked, restricting logins to particular users from particular hosts.
 
 ## Example
+{: #example}
 
 In the following example, only two specific users, `admin` and `user1` are allowed to login to the server.
 **Note:** You can use a similar method to deny groups by using the keywords `DenyGroups` and `DenyUsers`.
