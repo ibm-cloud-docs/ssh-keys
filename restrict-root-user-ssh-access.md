@@ -69,5 +69,6 @@ vi /etc/pam.d/su
 ```
 
 ## Next steps
+{: #next-steps-restricting-ssh-access}
 
 After you restrict the root user from SSH access, the root user cannot log in to SSH. If a user currently can access the server through SSH under the root user, the connection will fail after the restart of SSH in the previous procedure. All future attempts to connect to SSH through the root user fail. To reverse these changes, repeat the steps and change `PermitRootLogin` no back to `PermitRootLogin` yes.
