@@ -21,6 +21,8 @@ You can add SSH keys to your account if you are an authorized user. Each account
 {:shortdesc}
 
 ## Before you begin
+{: #before-you-begin-adding-ssh-key}
+
 First, generate your public SSH key, navigate to the device menu, and ensure you have the correct account permissions to complete the tasks.
 
 * [Generate the public SSH key ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://help.github.com/articles/generating-ssh-keys){: new_window} for your device.
@@ -30,6 +32,8 @@ First, generate your public SSH key, navigate to the device menu, and ensure you
 For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
 
 ## Adding an SSH key to your account
+{: #adding-an-ssh-key-to-your-account}
+
 Complete the following steps to add an SSH key to your account.
 
 1. From the **Devices** menu, select **Manage > SSH Keys**.
@@ -40,5 +44,6 @@ Complete the following steps to add an SSH key to your account.
 6. Click **Add** to add the SSH key. 
 
 ## Next steps
+{: #next-steps-adding-ssh-key}
 
 After you add the SSH key, it appears in the list of SSH keys. You can [edit the key details](/docs/infrastructure/ssh-keys?topic=ssh-keys-editing-details-for-an-ssh-key#editing-details-for-an-ssh-key) at any time. You can also [remove the SSH key](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key#removing-an-ssh-key) from the list. Remove obsolete SSH keys as soon as possible to ensure that space is available if you need to add more keys.
