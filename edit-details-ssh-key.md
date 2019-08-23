@@ -21,6 +21,8 @@ After [adding an SSH key](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an
 {:shortdesc}
 
 ## Before you begin
+{: #before-you-begin-editing-ssh-key-details}
+
 First, navigate to the device menu and ensure you have the correct account permissions to complete the tasks.
 
 * Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/ssh-keys?topic=virtual-servers-navigating-devices).
@@ -29,6 +31,7 @@ First, navigate to the device menu and ensure you have the correct account permi
 For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
 
 ## Editing SSH key details
+{: #editing-ssh-key-details}
 
 If you need to edit the key itself, remove the key and add the correct key to the {{site.data.keyword.cloud_notm}} console. The fingerprint that is listed with the details for the SSH key is not the key itself; it is a short sequence of bytes used in the retrieval of the key. The fingerprint might not represent the actual SSH key in any way. 
 {:note}
@@ -42,5 +45,6 @@ Complete the following steps to edit SSH key details.
 
 
 ## Next steps
+{: #next-steps-editing-ssh-key-details}
 
 SSH key details that are edited are updated immediately in the SSH keys list.
