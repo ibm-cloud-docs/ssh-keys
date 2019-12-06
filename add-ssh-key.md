@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-05-23"
+lastupdated: "2019-12-06"
 
 keywords: SSH keys, IBM Cloud infrastructure customer, public SSH key
 
@@ -25,7 +25,7 @@ You can add SSH keys to your account if you are an authorized user. Each account
 
 First, generate your public SSH key, navigate to the device menu, and ensure you have the correct account permissions to complete the tasks.
 
-* [Generate the public SSH key ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://help.github.com/articles/generating-ssh-keys){: new_window} for your device.
+* [Generate the public SSH key](/docs/vpc?topic=vpc-ssh-keys#locating-ssh-keys).
 * Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/ssh-keys?topic=virtual-servers-navigating-devices).
 * Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
