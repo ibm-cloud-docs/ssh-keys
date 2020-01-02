@@ -4,7 +4,7 @@ copyright:
   years: 2014, 2018
 lastupdated: "2018-02-23"
 
-keywords: RedHat server, main IP address of your server, default options
+keywords: Red Hat server, main IP address of your server, default options
 
 subcollection: ssh-keys
 
@@ -14,18 +14,18 @@ subcollection: ssh-keys
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Connecting to a RedHat server with SSH
+# Connecting to a Red Hat server with SSH
 {: #connecting-to-a-redhat-server-with-ssh}
 
 To complete this procedure, you need an SSH client, such as PuTTY, on your home computer. PuTTY is a widely distributed, free SSH client.
-In most cases, you can use the default options in PuTTY to successfully connect to your RedHat server for the first time.
+In most cases, you can use the default options in PuTTY to successfully connect to your Red Hat server for the first time.
 
 1. Open PuTTY and type in the main IP address of your server into the `'Hostname (or IP address)'` field and click Open.
 
   The default port for SSH is 22, but you can change it on the server after your first successful connection.
   {:note} 
   
-2. The RedHat server prompts you for a user name and password. Type your root user/pass information for the server.
+2. The Red Hat server prompts you for a user name and password. Type your root user/pass information for the server.
 3. Save the connection details (IP address and port) into Sessions by typing the IP address and port. Create a title for those connection properties such as "My Server" and click Save.
   When you connect to your server, you need to highlight only the saved session and click Open.
 
