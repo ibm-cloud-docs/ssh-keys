@@ -4,7 +4,7 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-06-11"
 
-keywords: SSH keys, SSH Keys page, Next Steps
+keywords: ssh public keys, OpenSSH, add ssh key, ssh key, manage ssh key, virtual server instance, instance, virtual servers, vsi, virtual machines, server
 
 subcollection: ssh-keys
 
