@@ -10,7 +10,7 @@ SSH Keys
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    /vsi/virtual-servers-navigating-devices
+    /virtual-servers/virtual-servers-navigating-devices
     
     {: .topicgroup}
     Managing SSH keys
@@ -37,5 +37,5 @@ SSH Keys
     {: .navgroup id="help"}
     {: .topicgroup}
     FAQs
-        /vsi/virtual-servers-faq-ssh-keys
+        /virtual-servers/virtual-servers-faq-ssh-keys
     {: .navgroup-end
