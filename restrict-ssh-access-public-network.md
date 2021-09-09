@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2021
+lastupdated: "2021-09-09"
 
 keywords: SSH access, public network SSH accessibility, private network
 
@@ -23,12 +23,12 @@ Follow these steps to restrict SSH access on the public network.
 1. Access the **Private Network** over [VPN ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.softlayer.com/vpn-access){: new_window}.
 2. Log in to the Bare Metal Server **Private IP Address** through SSH.
 3. Run the following command to open the `sshd_config` file for edits:
-  > `vi /etc/ssh/sshd_config`
+    > `vi /etc/ssh/sshd_config`
 4. Remove the **hash (#)** from one `ListenAddress` line to uncomment the line.
 5. Enter the **Private IP Address** for the Bare Metal Server in the uncommented `ListenAddress` line.
 6. Run the `:wq` command to save the changes and exit the file.
 7. Restart the sshd service
-  > `service sshd restart`
+    > `service sshd restart`
 8. Test the updates to SSH accessibility by attempting to access SSH over the Bare Metal Server's public IP address.<br><br><table border="1"><tr><th>If a connection...</th><th>Then...</th></tr><tr><td>Cannot be made</td><td>Changes made to SSH accessibility were successful. No further action is required.</td></tr><tr><td>Can be made</td><td>Changes made to SSH accessibility were unsuccessful. Repeat the previous steps to retry SSH restriction. If issues persist, contact Support.</td></tr></table>
 
 ## Next steps
