@@ -17,7 +17,7 @@ subcollection: ssh-keys
 {: #removing-an-ssh-key}
 
 When an SSH key that is stored on the {{site.data.keyword.cloud}} console is obsolete or is no longer needed, you can remove the key. Remove obsolete SSH keys as soon as possible to ensure that there is enough space for additional, valid keys.
-{:shortdesc}
+{: shortdesc}
 
 ## Before you begin
 {: #before-you-begin-removing-ssh-key}

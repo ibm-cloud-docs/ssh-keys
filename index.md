@@ -17,7 +17,7 @@ subcollection: ssh-keys
 {: #getting-started-tutorial}
 
 You can add, manage, and delete SSH keys by using the {{site.data.keyword.cloud}} console.
-{:shortdesc}
+{: shortdesc}
 
 ## Before you begin
 {: #before-you-begin-ssh-keys}

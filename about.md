@@ -17,7 +17,7 @@ subcollection: ssh-keys
 {: #about-ssh-keys}
 
 SSH keys are used by SSH servers to identify a user or device through public-key cryptography. SSH keys are made up of an alpha-numeric combination and are unique to the device to which they are assigned. At any time, authorized users can add, edit, or delete SSH keys by using the {{site.data.keyword.cloud}} console.
-{:shortdesc}
+{: shortdesc}
 
 You can request SSH keys during provisioning or through an [OS Reload](/docs/software?topic=software-reloading-the-os#reloading-the-os).
 

@@ -67,7 +67,7 @@ To authenticate with a remote-host using your public SSH key you will use the `s
     and check to make sure that only the key(s) you wanted were added.
 
 The ssh-copy-id command appends the keys to the remote-host’s .ssh/authorized_key file.
-{:note}
+{: note}
 
 ## Testing that the key was copied correctly
 {: #testing-that-the-key-was-copied-correctly}

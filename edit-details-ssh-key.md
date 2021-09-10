@@ -18,7 +18,7 @@ subcollection: ssh-keys
 {: #editing-details-for-an-ssh-key}
 
 After [adding an SSH key](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key#adding-an-ssh-key) in the {{site.data.keyword.cloud}} console, you can edit the key details. You can edit the **Label** (the short name that is used to easily identify the SSH key) and the **Notes** for the key.
-{:shortdesc}
+{: shortdesc}
 
 ## Before you begin
 {: #before-you-begin-editing-ssh-key-details}
@@ -34,7 +34,7 @@ For more information about permissions, see [Classic infrastructure permissions]
 {: #editing-ssh-key-details}
 
 If you need to edit the key itself, remove the key and add the correct key to the {{site.data.keyword.cloud_notm}} console. The fingerprint that is listed with the details for the SSH key is not the key itself; it is a short sequence of bytes used in the retrieval of the key. The fingerprint might not represent the actual SSH key in any way. 
-{:note}
+{: note}
 
 Complete the following steps to edit SSH key details.
 

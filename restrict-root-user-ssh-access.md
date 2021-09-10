@@ -18,7 +18,7 @@ subcollection: ssh-keys
 {: #restricting-the-root-user-from-ssh-access}
 
 Every Linux system on the {{site.data.keyword.cloud}} network has a root user with administrative permissions. Within Linux, you can create wheel groups, which give users similar permissions to that of the root user through "sudo" without requiring the use of root user credentials. After you create a wheel group with sudo permissions of root, you can restrict the users in that group from SSH access. By restricting users this way, you protect the device from security vulnerabilities that pertain to network accessibility. Users that are part of the wheel group can still perform administrative functions on the device at any time.
-{:shortdesc}
+{: shortdesc}
 
 Follow these steps to restrict the root user from SSH access.
 
@@ -46,7 +46,7 @@ wheel:x:10:root, user1
 ```
 
    Uncommenting this line allows users in the wheel group to run all commands.
-   {:note}
+   {: note}
 
 9. Run the `:wq` command to save changes and exit the file.
 10. Run the following command at the command line:
@@ -60,7 +60,7 @@ vi /etc/pam.d/su
 ```
 
    Uncommenting this line requires users to be part of the wheel group to have permission to run all commands.
-   {:note}
+   {: note}
    
 12. Run the `:wq` command to save changes and exit the file.
 13. Run the following command to save all changes and restart SSH:
