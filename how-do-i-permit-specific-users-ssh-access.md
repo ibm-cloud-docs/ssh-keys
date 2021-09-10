@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-09-09"
+lastupdated: "2021-09-10"
 
 keywords: list of group name patterns, SSH access, error messages
 
