@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-05-06"
+  years: 2014, 2021
+lastupdated: "2021-09-10"
 
 keywords: SSH keys, remote host authentication SSH keys, public-key cryptography
 
@@ -13,6 +13,9 @@ subcollection: ssh-keys
 {:note: .note}
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:codeblock: .codeblock}
+{:pre: .pre}
+{:screen: .screen}
 
 # Generating and using SSH keys for remote host authentication
 {: #generating-and-using-ssh-keys-for-remote-host-authentication}
@@ -24,6 +27,7 @@ SSH keys are a way to identify yourself to an SSH server that uses public-key cr
 
 To generate an SSH key on your Linux server run the command `ssh-keygen`. The command can take flags if you would like to customize the type of key that is generated as well as the signing algorithms used to generate the key. This example generates a standard 2048-bit RSA key without a passphrase. The command prompts you for the location to store the key (default is $HOME/.ssh/) as well as a passphrase to secure the SSH key.
 
+    ```
     root@bck2:/etc# ssh-keygen
     Generating public/private rsa key pair.
     Enter file in which to save the key (/root/.ssh/id_rsa):
@@ -45,12 +49,15 @@ To generate an SSH key on your Linux server run the command `ssh-keygen`. The co
     |      .o+ +      |
     |       +o.       |
     +----[SHA256]-----+
+    ```
+    {: codeblock}
 
 ## Copying the public key to remote-hosts
 {: #copying-the-public-key-to-remote-hosts}
 
 To authenticate with a remote-host using your public SSH key you will use the `ssh-copy-id` command. Use the `-i` flag to specify the public key to copy to the remote-host.
 
+    ```
     root@bck2: # ssh-copy-id -i /root/.ssh/id_rsa.pub root@10.176.18.15
     /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
     The authenticity of host '10.176.18.15 (10.176.18.15)' can't be established.
@@ -65,6 +72,8 @@ To authenticate with a remote-host using your public SSH key you will use the `s
 
     Now try logging into the machine, with:   "ssh 'root@10.176.18.15'"
     and check to make sure that only the key(s) you wanted were added.
+    ```
+    {: codeblock}
 
 The ssh-copy-id command appends the keys to the remote-host’s .ssh/authorized_key file.
 {: note}
@@ -74,6 +83,7 @@ The ssh-copy-id command appends the keys to the remote-host’s .ssh/authorized_
 
 To test that the public key was properly copied to the remote host simply ssh to the remote host.
 
+    ```
     root@bck2:/etc# ssh root@10.176.18.15
     Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-53-generic x86_64)
 
@@ -89,6 +99,8 @@ To test that the public key was properly copied to the remote host simply ssh to
 
     Last login: Fri Feb 10 16:51:51 2017 from 169.46.3.91
     root@bck1:~#
+    ```
+    {: codeblock}
 
 As you can see, there is not a prompt for the password when ssh-ing in to the remote host.
 
@@ -99,16 +111,29 @@ Providing a passphrase for your SSH key provides an additional layer of security
 
 The ssh-agent can manage your keys for you. You enter the passphrase once. The ssh-agent keeps your key in its memory and pulls it up when needed. To have ssh-agent manage your keys issue the following command:
 
+    ```sh
     eval $(ssh-agent)
+    ```
+    {: pre}
 
 After the program starts using the ssh-add command to add your public key to the agent, the ssh-add utility searches for default keynames, of which id_rsa is one, and adds them to the ssh-agent. After you type your password, the "unlocked" key is stored with ssh-agent and can be used to authenticate against other servers.
 
+    ```
     root@bck1:~# ssh-add
     Enter passphrase for /root/.ssh/id_rsa:
     Identity added: /root/.ssh/id_rsa (/root/.ssh/id_rsa)
     root@bck1:~#
+    ```
+    {: codeblock}
 
 Each time you open a new terminal session you will be prompted for the keys passphrase. Consider running the following commands to append your `.bash_profile` file so that ssh-agent starts with every bash session and your key is added.
 
+    ```sh
     echo ‘eval $(ssh-agent)’ >> ~/.bash_profile
+    ```
+    {: pre}
+    
+    ```sh
     echo ‘ssh-add’ >> ~/.bash_profile
+    ```
+    {: pre}
