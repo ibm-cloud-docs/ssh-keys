@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-02-23"
+  years: 2014, 2021
+lastupdated: "2021-09-09"
 
 keywords: list of group name patterns, SSH access, error messages
 
@@ -12,6 +12,9 @@ subcollection: ssh-keys
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:pre: .pre}
+{:screen: .screen}
+{:note: .note}
 
 # Granting SSH access to a user
 {: #granting-ssh-access-to-a-user}
@@ -19,14 +22,18 @@ subcollection: ssh-keys
 Follow these steps to grant SSH access to one or more users. These steps demonstrate how to configure this file:
 
 1. Locate the following OpenSSH file:
-```
-/etc/ssh/sshd_config
-```
+
+    ```
+    /etc/ssh/sshd_config
+    ```
+    {: screen}
 
 2. Make a backup of this file so you can revert if necessary. For example:
-```
-cp /etc/ssh/sshd_config{,.'date +%s'}
-```
+
+    ```
+    cp /etc/ssh/sshd_config{,.'date +%s'}
+    ```
+    {: pre}
 
 3. Edit the file by using the OpenSSH keywords.
 
@@ -58,50 +65,66 @@ After this keyword, include a list of user name patterns. Separate the patterns 
 {: #example}
 
 In the following example, only two specific users, `admin` and `user1` are allowed to login to the server.
-**Note:** You can use a similar method to deny groups by using the keywords `DenyGroups` and `DenyUsers`.
-```
+
+You can use a similar method to deny groups by using the keywords `DenyGroups` and `DenyUsers`.
+{: note}
+
+```sh
 AllowUsers admin user1
 ```
+{: pre}
 
 To prepare for future expansion of users, you can create a Group on the server that can log into the server. You can add individual users as needed (replace *`username`* with the actual user):
 
 1. In shell, add a user group, such as sshusers:
-```
-groupadd –r sshusers
-```
+
+    ```sh
+    groupadd –r sshusers
+    ```
+    {: pre}
 
 2. In shell, add users to the group:
-```
-usermod –a –G sshusers admin
-```
-```
-usermod -a -G sshusers user1
-```
+
+    ```sh
+    usermod –a –G sshusers admin
+    ```
+    {: pre}
+    
+    ```sh
+    usermod -a -G sshusers user1
+    ```
+    {: pre}
 
 3. In the sshd_config file, give access to the sshusers group:
-```
-AllowGroups sshusers
-```
+
+    ```sh
+    AllowGroups sshusers
+    ```
+    {: pre}
 
 4. Verify that sshd reads the new configuration without breaking:
-```
-/usr/sbin/sshd –t
-```
 
-```
-echo $?
-```
+    ```sh
+    /usr/sbin/sshd –t
+    ```
+    {: pre}
 
-  If you get a `0` following the `echo $?` command, the new configuration is correct.
+    ```sh
+    echo $?
+    ```
+    {: pre}
 
-  You can also get error messages similar to the following examples:
-```
-sshd_config: line 112: Bad configuration option: allowuser
-```
+    If you get a `0` following the `echo $?` command, the new configuration is correct.
+    
+    You can also get error messages similar to the following examples:
+  
+    ```sh
+    sshd_config: line 112: Bad configuration option: allowuser
+    ```
 
-```
-sshd_config: terminating, 1 bad configuration options
-```
+    ```sh
+    sshd_config: terminating, 1 bad configuration options
+    ```
 
 5. After you fix all errors and have a correct configuration, restart sshd. The following is an example command in a sysv-compatible system:
   /etc/init.d/sshd restart
