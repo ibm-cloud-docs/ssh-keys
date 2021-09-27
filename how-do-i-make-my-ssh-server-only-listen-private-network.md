@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-06-11"
+  years: 2014, 2021
+lastupdated: "2021-09-27"
 
 keywords: IP address, service sshd restart, private network
 
