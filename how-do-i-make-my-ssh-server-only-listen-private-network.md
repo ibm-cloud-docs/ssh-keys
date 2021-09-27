@@ -19,12 +19,15 @@ subcollection: ssh-keys
 You can further secure your server by running SSHd only on the backend network. Therefore, you need to connect to the VPN every time you need to access SSH.
 
 1. Locate the following file. Use this file to define the IP address for `sshd`.
+
 ```
 # nano /etc/ssh/sshd_config
 ```
 
 2. Locate the line containing `ListenAddress 0.0.0.0`. If it begins with a '#' character, remove this character. Set the IP address to the IP you would like it to listen on. You can find your internal IP address by selecting *Hardware* from the {{site.data.keyword.cloud}} console.
+
 3. After you make the change, restart the SSH service:
+
 ```
 # service sshd restart
 ```
