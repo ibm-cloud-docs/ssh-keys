@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-06-11"
+  years: 2014, 2021
+lastupdated: "2021-09-27"
 
 keywords: root user, wheel group, SSH access Every Linux system
 
@@ -23,44 +23,50 @@ Every Linux system on the {{site.data.keyword.cloud}} network has a root user wi
 Follow these steps to restrict the root user from SSH access.
 
 1. Open the 'etc/group' file and see whether it contains a line that defines a wheel group:
+
 ```
 wheel:x:10:root
 ```
 
-    If this line is not in the file, create it.
+If this line is not in the file, create it.
 
 2. Add at least one user to the wheel group line:
+
 ```
 wheel:x:10:root, user1
 ```
 
-    Users added to the wheel group have identical permissions to the root user, but they use their unique user name when they access the system.
+Users added to the wheel group have identical permissions to the root user, but they use their unique user name when they access the system.
+
 3. Run the `:wq` command to save changes and exit the file.
 4. Open the `/etc/ssh/sshd_config`.
 5. Change the `PermitRootLogin yes` line to read `PermitRootLogin no`.
 6. Run the `:wq` command to save changes and exit the file.
 7. Type `visudo` at the **Command Line** to generate command permissions.
 8. Remove the **hash (#)** from the following line to uncomment the line:
+
 ```
 # %wheel ALL=(ALL) ALL
 ```
 
-   Uncommenting this line allows users in the wheel group to run all commands.
-   {: note}
+Uncommenting this line allows users in the wheel group to run all commands.
+{: note}
 
 9. Run the `:wq` command to save changes and exit the file.
 10. Run the following command at the command line:
+
 ```
 vi /etc/pam.d/su
 ```
 
 11. Remove the **hash (#)** from the following line to uncomment the line:
+
 ```
 #auth required pam_wheel.so use_uid
 ```
 
-   Uncommenting this line requires users to be part of the wheel group to have permission to run all commands.
-   {: note}
+Uncommenting this line requires users to be part of the wheel group to have permission to run all commands.
+{: note}
    
 12. Run the `:wq` command to save changes and exit the file.
 13. Run the following command to save all changes and restart SSH:
