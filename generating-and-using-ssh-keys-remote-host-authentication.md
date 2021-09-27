@@ -27,7 +27,7 @@ SSH keys are a way to identify yourself to an SSH server that uses public-key cr
 
 To generate an SSH key on your Linux server run the command `ssh-keygen`. The command can take flags if you would like to customize the type of key that is generated as well as the signing algorithms used to generate the key. This example generates a standard 2048-bit RSA key without a passphrase. The command prompts you for the location to store the key (default is $HOME/.ssh/) as well as a passphrase to secure the SSH key.
 
-```
+```text
 root@bck2:/etc# ssh-keygen
 Generating public/private rsa key pair.
 Enter file in which to save the key (/root/.ssh/id_rsa):
@@ -57,7 +57,7 @@ The key's randomart image is:
 
 To authenticate with a remote-host using your public SSH key you will use the `ssh-copy-id` command. Use the `-i` flag to specify the public key to copy to the remote-host.
 
-```
+```text
 root@bck2: # ssh-copy-id -i /root/.ssh/id_rsa.pub root@10.176.18.15
 /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
 The authenticity of host '10.176.18.15 (10.176.18.15)' can't be established.
@@ -83,7 +83,7 @@ The ssh-copy-id command appends the keys to the remote-host’s .ssh/authorized_
 
 To test that the public key was properly copied to the remote host simply ssh to the remote host.
 
-```
+```text
 root@bck2:/etc# ssh root@10.176.18.15
 Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-53-generic x86_64)
 
@@ -107,18 +107,18 @@ As you can see, there is not a prompt for the password when ssh-ing in to the re
 ## SSH keys with a passphrase
 {: #ssh-keys-with-a-passphrase}
 
-Providing a passphrase for your SSH key provides an additional layer of security, but it can also cause issues when you are trying to run automated scripts that require using the protected key.
+Providing a passphrase for your SSH key provides an additional layer of security, but it can also cause issues when you are trying to run automated scripts that require using the protected key. 
 
 The ssh-agent can manage your keys for you. You enter the passphrase once. The ssh-agent keeps your key in its memory and pulls it up when needed. To have ssh-agent manage your keys issue the following command:
 
-```sh 
+```text
 eval $(ssh-agent)
 ```
 {: pre}
 
 After the program starts using the ssh-add command to add your public key to the agent, the ssh-add utility searches for default keynames, of which id_rsa is one, and adds them to the ssh-agent. After you type your password, the "unlocked" key is stored with ssh-agent and can be used to authenticate against other servers.
 
-```
+```text
 root@bck1:~# ssh-add
 Enter passphrase for /root/.ssh/id_rsa:
 Identity added: /root/.ssh/id_rsa (/root/.ssh/id_rsa)
@@ -128,12 +128,12 @@ root@bck1:~#
 
 Each time you open a new terminal session you will be prompted for the keys passphrase. Consider running the following commands to append your `.bash_profile` file so that ssh-agent starts with every bash session and your key is added.
 
-```sh
+```text
 echo ‘eval $(ssh-agent)’ >> ~/.bash_profile
 ```
 {: pre}
     
-```sh
+```text
 echo ‘ssh-add’ >> ~/.bash_profile
 ```
 {: pre}
