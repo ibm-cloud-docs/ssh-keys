@@ -67,29 +67,29 @@ Follow these steps to restrict the root user from SSH access.
 
 10. Run the following command at the command line:
 
-   ```
-   vi /etc/pam.d/su
-   ```
-   {: pre}
+    ```
+    vi /etc/pam.d/su
+    ```
+    {: pre}
 
 11. Remove the **hash (#)** from the following line to uncomment the line:
 
-   ```
-   #auth required pam_wheel.so use_uid
-   ```
-   {: pre}
+    ```
+    #auth required pam_wheel.so use_uid
+    ```
+    {: pre}
    
-   Uncommenting this line requires users to be part of the wheel group to have permission to run all commands.
-   {: note}
+    Uncommenting this line requires users to be part of the wheel group to have permission to run all commands.
+    {: note}
    
 12. Run the `:wq` command to save changes and exit the file.
 
 13. Run the following command to save all changes and restart SSH:
 
-   ```
-   # etc/init.d/ssh restart
-   ```
-   {: pre}
+    ```
+    # etc/init.d/ssh restart
+    ```
+    {: pre}
 
 ## Next steps
 {: #next-steps-restricting-ssh-access}
