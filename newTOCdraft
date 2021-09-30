@@ -1,0 +1,58 @@
+#  Name your file `toc.yaml`
+#  Make sure you include all nav file coding requirements, as defined in https://test.cloud.ibm.com/docs/writing?topic=writing-code-nav
+#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
+---
+toc:
+  properties:
+    subcollection: ssh-keys
+    category: compute_classic
+    audience: platform
+    href: "/docs/ssh-keys?topic=ssh-keys-getting-started-tutorial"
+    console-page: "/classic"
+    product-page: "https://www.ibm.com/cloud/virtual-servers"
+    path: ssh-keys
+    label: SSH Keys
+#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group. See https://test.cloud.ibm.com/docs/writing?topic=writing-navigation for more details on the toc design.
+  entries: 
+  - navgroup: 
+      id: learn
+      topics:
+      - topicgroup: 
+          label: Learn
+          topics:
+          - index.md
+          - about.md
+          
+  - navgroup: 
+      id: howto
+      topics:
+      - /virtual-servers/virtual-servers-navigating-devices
+      - topicgroup: 
+          label: Managing SSH keys
+          topics: 
+          - add-ssh-key.md
+          - edit-details-ssh-key.md
+          - remove-ssh-key.md         
+      - topicgroup: 
+          label: Configuring SSH
+          topics: 
+          - how-do-i-force-ssh-run-non-standard-port.md
+          - how-do-i-make-my-ssh-server-only-listen-private-network.md
+          - configuring-ssh-listen-ipv6-addresses.md          
+      - topicgroup: 
+          label: Restricting SSH access
+          topics: 
+          - restrict-root-user-ssh-access.md
+          - restrict-ssh-access-public-network.md
+      - how-do-i-permit-specific-users-ssh-access.md
+      - generating-and-using-ssh-keys-remote-host-authentication.md
+      - how-do-i-connect-redhat-server-ssh.md
+
+  - navgroup:
+      id: help
+      topics: 
+      - topicgroup: 
+          label: FAQs
+          topics: 
+          - /virtual-servers/virtual-servers-faq-ssh-keys
+      
