@@ -15,11 +15,8 @@ toc:
   - navgroup: 
       id: learn
       topics:
-      - topicgroup: 
-          label: Learn
-          topics:
-          - index.md
-          - about.md
+      - index.md
+      - about.md
           
   - navgroup: 
       id: howto
