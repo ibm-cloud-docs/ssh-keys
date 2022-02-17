@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-06-11"
+  years: 2014, 2022
+lastupdated: "2022-02-17"
 
 keywords: ssh public keys, OpenSSH, add ssh key, ssh key, manage ssh key, virtual server instance, instance, virtual servers, vsi, virtual machines, server
 
@@ -16,7 +16,7 @@ subcollection: ssh-keys
 # Getting started with SSH keys
 {: #getting-started-tutorial}
 
-You can add, manage, and delete SSH keys by using the {{site.data.keyword.cloud}} console.
+You can add, manage, and delete SSH keys on the {{site.data.keyword.cloud}} Classic infrastructure by using the {{site.data.keyword.cloud}} console.
 {: shortdesc}
 
 ## Before you begin
@@ -28,5 +28,4 @@ You can add, manage, and delete SSH keys by using the {{site.data.keyword.cloud}
 ## Next steps
 {: #next-steps-getting-started-ssh-keys}
 
-After you ensure that you have the right access to view and manage SSH keys, you can [add SSH keys](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key#adding-an-ssh-key), [edit labels and notes](/docs/infrastructure/ssh-keys?topic=ssh-keys-editing-details-for-an-ssh-key#editing-details-for-an-ssh-key), and [remove SSH keys](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key#removing-an-ssh-key). No more than 100 SSH keys can be associated with an account at any time.
-
+After you make sure that you have the right access to view and manage SSH keys, you can [add SSH keys](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key#adding-an-ssh-key), [edit labels and notes](/docs/infrastructure/ssh-keys?topic=ssh-keys-editing-details-for-an-ssh-key#editing-details-for-an-ssh-key), and [remove SSH keys](/docs/infrastructure/ssh-keys?topic=ssh-keys-removing-an-ssh-key#removing-an-ssh-key). No more than 100 SSH keys can be associated with an account at any time.
