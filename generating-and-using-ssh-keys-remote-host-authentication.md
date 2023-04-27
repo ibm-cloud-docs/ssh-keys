@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2021
-lastupdated: "2021-09-10"
+  years: 2014, 2023
+lastupdated: "2023-04-27"
 
 keywords: SSH keys, remote host authentication SSH keys, public-key cryptography
 
@@ -10,12 +10,7 @@ subcollection: ssh-keys
 
 ---
 
-{:note: .note}
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
+{{site.data.keyword.attribute-definition-list}}
 
 # Generating and using SSH keys for remote host authentication
 {: #generating-and-using-ssh-keys-for-remote-host-authentication}
@@ -25,7 +20,7 @@ SSH keys are a way to identify yourself to an SSH server that uses public-key cr
 ## Generating SSH keys on Linux
 {: #generating-ssh-keys-on-linux}
 
-To generate an SSH key on your Linux server run the command `ssh-keygen`. The command can take flags if you would like to customize the type of key that is generated as well as the signing algorithms used to generate the key. This example generates a standard 2048-bit RSA key without a passphrase. The command prompts you for the location to store the key (default is $HOME/.ssh/) as well as a passphrase to secure the SSH key.
+To generate an SSH key on your Linux server, run the command `ssh-keygen`. The command can take flags if you would like to customize the type of key that is generated and the signing algorithms that are used to generate the key. This example generates a standard 2048-bit RSA key without a passphrase. The command prompts you for the location to store the key (default is $HOME/.ssh/) and a passphrase to secure the SSH key.
 
 ```text
 root@bck2:/etc# ssh-keygen
@@ -55,7 +50,7 @@ The key's randomart image is:
 ## Copying the public key to remote-hosts
 {: #copying-the-public-key-to-remote-hosts}
 
-To authenticate with a remote-host using your public SSH key you will use the `ssh-copy-id` command. Use the `-i` flag to specify the public key to copy to the remote-host.
+To authenticate with a remote-host by using your public SSH key to use the `ssh-copy-id` command. Use the `-i` flag to specify the public key to copy to the remote-host.
 
 ```text
 root@bck2: # ssh-copy-id -i /root/.ssh/id_rsa.pub root@10.176.18.15
@@ -75,13 +70,13 @@ and check to make sure that only the key(s) you wanted were added.
 ```
 {: codeblock}
 
-The ssh-copy-id command appends the keys to the remote-host’s .ssh/authorized_key file.
+The ssh-copy-id command appends the keys to the remote-host `.ssh/authorized_key` file.
 {: note}
 
 ## Testing that the key was copied correctly
 {: #testing-that-the-key-was-copied-correctly}
 
-To test that the public key was properly copied to the remote host simply ssh to the remote host.
+To test that the public key was properly copied to the remote host, ssh to the remote host.
 
 ```text
 root@bck2:/etc# ssh root@10.176.18.15
@@ -102,21 +97,21 @@ root@bck1:~#
 ```
 {: codeblock}
 
-As you can see, there is not a prompt for the password when ssh-ing in to the remote host.
+You aren't prompted for the password when you ssh in to the remote host.
 
 ## SSH keys with a passphrase
 {: #ssh-keys-with-a-passphrase}
 
-Providing a passphrase for your SSH key provides an additional layer of security, but it can also cause issues when you are trying to run automated scripts that require using the protected key. 
+Providing a passphrase for your SSH key provides an extra layer of security, but it can also cause issues when you are run automated scripts that require the protected key.
 
-The ssh-agent can manage your keys for you. You enter the passphrase once. The ssh-agent keeps your key in its memory and pulls it up when needed. To have ssh-agent manage your keys issue the following command:
+The ssh-agent can manage your keys. You enter the passphrase once. The ssh-agent keeps your key in its memory and pulls it up when needed. If you want the ssh-agent manage your keys, issue the following command:
 
 ```text
 eval $(ssh-agent)
 ```
 {: pre}
 
-After the program starts using the ssh-add command to add your public key to the agent, the ssh-add utility searches for default keynames, of which id_rsa is one, and adds them to the ssh-agent. After you type your password, the "unlocked" key is stored with ssh-agent and can be used to authenticate against other servers.
+After the program starts the ssh-add command to add your public key to the agent, the ssh-add utility searches for default keynames, of which `id_rsa` is one, and adds them to the ssh-agent. After you type your password, the "unlocked" key is stored with ssh-agent and can be used to authenticate against other servers.
 
 ```text
 root@bck1:~# ssh-add
@@ -126,13 +121,13 @@ root@bck1:~#
 ```
 {: codeblock}
 
-Each time you open a new terminal session you will be prompted for the keys passphrase. Consider running the following commands to append your `.bash_profile` file so that ssh-agent starts with every bash session and your key is added.
+Each time that you open a new terminal session, you are prompted for the key passphrase. Consider running the following commands to append your `.bash_profile` file so that ssh-agent starts with every bash session and adds your key.
 
 ```text
 echo ‘eval $(ssh-agent)’ >> ~/.bash_profile
 ```
 {: pre}
-    
+
 ```text
 echo ‘ssh-add’ >> ~/.bash_profile
 ```
