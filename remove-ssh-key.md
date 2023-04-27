@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-06-11"
+  years: 2014, 2023
+lastupdated: "2023-04-27"
 
 keywords: SSH Key, Remove icon, obsolete SSH keys
 
@@ -10,22 +10,21 @@ subcollection: ssh-keys
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{{site.data.keyword.attribute-definition-list}}
 
 # Removing an SSH key
 {: #removing-an-ssh-key}
 
-When an SSH key that is stored on the {{site.data.keyword.cloud}} console is obsolete or is no longer needed, you can remove the key. Remove obsolete SSH keys as soon as possible to ensure that there is enough space for additional, valid keys.
+When an SSH key that is stored on the {{site.data.keyword.cloud}} console is obsolete or is no longer needed, you can remove the key. Remove obsolete SSH keys as soon as possible to make sure that enough space is available for more, valid keys.
 {: shortdesc}
 
 ## Before you begin
 {: #before-you-begin-removing-ssh-key}
 
-First, navigate to the device menu and ensure you have the correct account permissions to complete the tasks.
+First, go to the device menu and makre sure that you have the correct account permissions to complete the tasks.
 
-* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/ssh-keys?topic=virtual-servers-navigating-devices).
-* Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
+* Go to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/ssh-keys?topic=virtual-servers-navigating-devices).
+* Make sure that you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
 For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
 
@@ -34,7 +33,7 @@ For more information about permissions, see [Classic infrastructure permissions]
 
 1. From the **Devices** menu, select **Manage > SSH Keys**.
 2. Click the **Remove** icon next to the SSH key that you want to remove.
-3. Click **Yes** to confirm. 
+3. Click **Yes** to confirm.
 
 ## Next steps
 {: #next-steps-removing-ssh-key}
