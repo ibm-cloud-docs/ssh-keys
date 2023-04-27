@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2023
 lastupdated: "2018-08-15"
 
 keywords: SSH keys, public-key cryptography, SSH
@@ -10,8 +10,7 @@ subcollection: ssh-keys
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{{site.data.keyword.attribute-definition-list}}
 
 # About SSH keys
 {: #about-ssh-keys}
