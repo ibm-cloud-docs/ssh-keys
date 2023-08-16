@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2023
-lastupdated: "2023-04-27"
+lastupdated: "2023-08-16"
 
 keywords: SSH access, public network SSH accessibility, private network
 
@@ -33,7 +33,7 @@ Use the following steps to restrict SSH access on the public network.
    | If a connection | Then... |
    |------|---------|
    | Can't be made | Changes that were made to SSH accessibility were successful. No further action is required.|
-   | Can be made | Changes that were made to SSH accessibility were unsuccessful. Repeat the previous steps to retry SSH restriction. If issues persist, [contact Support](docs/get-support?topic=get-support-using-avatar). |
+   | Can be made | Changes that were made to SSH accessibility were unsuccessful. Repeat the previous steps to retry SSH restriction. If issues persist, [contact Support](/docs/get-support?topic=get-support-using-avatar). |
 
 ## Next steps
 {: #next-steps-restricting-access-public-network}
