@@ -20,7 +20,7 @@ toc:
   - navgroup: 
       id: howto
       topics:
-      - /virtual-servers/virtual-servers-navigating-devices
+      - include: ../virtual-servers/virtual-servers-navigating-devices.md
       - topicgroup: 
           label: Managing SSH keys
           topics: 
@@ -48,5 +48,5 @@ toc:
       - topicgroup: 
           label: FAQs
           topics: 
-          - /virtual-servers/virtual-servers-faq-ssh-keys
+          - include: ../virtual-servers/virtual-servers-faq-ssh-keys.md
       
