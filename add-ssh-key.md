@@ -21,7 +21,7 @@ You can add SSH keys to your account if you are an authorized user. Each account
 ## Before you begin
 {: #before-you-begin-adding-ssh-key}
 
-First, generate your public SSH key, go to the device menu, and makre sure that you have the correct account permissions to complete the tasks.
+First, generate your public SSH key, go to the device menu, and make sure that you have the correct account permissions to complete the tasks.
 
 * [Generate the public SSH key](/docs/vpc?topic=vpc-ssh-keys#locating-ssh-keys).
 * Go to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/ssh-keys?topic=virtual-servers-navigating-devices).
