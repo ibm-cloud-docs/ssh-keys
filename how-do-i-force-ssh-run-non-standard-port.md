@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2023
-lastupdated: "2023-04-27"
+  years: 2014, 2024
+lastupdated: "2024-06-06"
 
 keywords: non-standard port, SSH, text editor
 
@@ -15,7 +15,7 @@ subcollection: ssh-keys
 # Configuring SSH to run on a nonstandard port
 {: #configuring-ssh-to-run-on-a-non-standard-port}
 
-Use the following steps to force SSH to run on a nonstandard port:
+Use the following steps to force SSH to run on a nonstandard port.
 
 1. Open `/etc/ssh/sshd_config` in a text editor. The following example is for vi editor.
 
@@ -24,7 +24,7 @@ Use the following steps to force SSH to run on a nonstandard port:
    ```
    {: pre}
 
-2. BrowGose to the following line:
+2. Go to the following line:
 
    _# Port 22_
 
