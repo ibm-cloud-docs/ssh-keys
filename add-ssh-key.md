@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2023
-lastupdated: "2019-12-06"
+lastupdated: "2019-12-15"
 
 keywords: SSH keys, IBM Cloud infrastructure customer, public SSH key
 
