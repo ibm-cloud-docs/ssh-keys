@@ -25,6 +25,8 @@ When an SSH key that is stored on the {{site.data.keyword.cloud}} console is obs
 
 * Make sure that you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage users** Classic infrastructure permission, can adjust the permissions.
 
+For more information about permissions, see [Classic infrastructure permissions](/docs/virtual-servers?topic=virtual-servers-mngclassicinfra#how-classic-infra-permissions-work) and [Managing device access](/docs/virtual-servers?topic=virtual-servers-managing-device-access).
+
 ## Removing an SSH key
 {: #removing-ssh-key}
 
