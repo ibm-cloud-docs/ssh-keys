@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2024
-lastupdated: "2024-06-06"
+  years: 2020, 2024
+lastupdated: "2024-07-08"
 
 keywords: SSH access, public network SSH accessibility, private network
 
@@ -20,7 +20,7 @@ SSH accessibility provides users with the ability to securely access a device th
 
 Use the following steps to restrict SSH access on the public network.
 
-1. Access the **Private Network** over [VPN](http://www.softlayer.com/vpn-access){: external}.
+1. Access the **Private Network** over [VPN](https://www.ibm.com/products/vpn-access){: external}.
 2. Log in to the Bare Metal Server **Private IP address** through SSH.
 3. Run the following command to open the `sshd_config` file for edits.
 
