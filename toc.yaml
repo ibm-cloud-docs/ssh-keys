@@ -21,7 +21,7 @@ toc:
   - navgroup: 
       id: howto
       topics:
-      - include: ../virtual-servers/virtual-servers-navigating-devices.md
+      - include: ../virtual-servers/logging-in-to-console.md
       - topicgroup: 
           label: Managing SSH keys
           topics: 
@@ -48,4 +48,4 @@ toc:
       - topicgroup: 
           label: FAQs
           topics: 
-          - include: ../virtual-servers/virtual-servers-faq-ssh-keys.md
+          - include: ../virtual-servers/ssh-keys-faq.md
