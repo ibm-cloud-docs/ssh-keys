@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-07-08"
+lastupdated: "2024-07-09"
 
 keywords: SSH key, key details, IBM Cloud infrastructure customer
 
@@ -15,7 +15,7 @@ subcollection: ssh-keys
 # Editing details for an SSH key
 {: #editing-details-for-an-ssh-key}
 
-After you [add an SSH key](/docs/infrastructure/ssh-keys?topic=ssh-keys-adding-an-ssh-key#adding-an-ssh-key) in the {{site.data.keyword.cloud}} console, you can edit the key details. You can edit the **Label** (the short name that is used to easily identify the SSH key) and the **Notes** for the key.
+After you [add an SSH key](/docs/ssh-keys?topic=ssh-keys-adding-an-ssh-key) in the {{site.data.keyword.cloud}} console, you can edit the key details. You can edit the **Label** (the short name that is used to easily identify the SSH key) and the **Notes** for the key.
 {: shortdesc}
 
 ## Before you begin
