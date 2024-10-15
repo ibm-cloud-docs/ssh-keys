@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "title": "SSH Keys for Classic",
+  "introduction": "SSH keys are used by SSH servers to identify a user or device through public-key cryptography.",
+  "product_page": "https://www.ibm.com/products/virtual-servers",
+  "console_page": "/classic",
+  "section_topics": {
+    "links": [
+      {
+        "title": "Getting started with SSH keys",
+        "href": "/docs/ssh-keys?topic=ssh-keys-getting-started-tutorial"
+      },
+      {
+        "title": "Navigating to devices",
+        "href": "/docs/ssh-keys?topic=ssh-keys-navigating-devices"
+      },
+      {
+        "title": "Adding an SSH key",
+        "href": "/docs/ssh-keys?topic=ssh-keys-adding-an-ssh-key"
+      },
+      {
+        "title": "Configuring SSH to run on a nonstandard port",
+        "href": "/docs/ssh-keys?topic=ssh-keys-configuring-ssh-to-run-on-a-non-standard-port"
+      },
+      {
+        "title": "Configuring SSH to listen only on a private network",
+        "href": "/docs/ssh-keys?topic=ssh-keys-configuring-ssh-to-listen-only-on-a-private-network"
+      },
+      {
+        "title": "Configuring SSH to listen on IPv6 addresses",
+        "href": "/docs/ssh-keys?topic=ssh-keys-configuring-ssh-to-listen-on-ipv6-addresses"
+      },
+      {
+        "title": "FAQs: SSH keys",
+        "href": "/docs/ssh-keys?topic=ssh-keys-faq-ssh-keys"
+      }
+    ]
+  },
+  "section_highlights": [
+    {
+      "title": "IBM Cloud Virtual Servers on IBM Cloud Classic Infrastructure",
+      "description": "IBM Cloud Virtual Servers are public and dedicated virtual servers that provision and scale on demand, with monthly and hourly billing options.",
+      "href": "https://www.ibm.com/products/virtual-servers-classic",
+      "type": "blog"
+    },
+    {
+      "title": "IBM Cloud Bare Metal Servers on VPC Infrastructure",
+      "description": "Discover the deployment options associated with IBM Cloud Bare Metal Servers.",
+      "href": "https://www.ibm.com/products/bare-metal-servers/vpc",
+      "type": "blog"
+    }
+  ],
+  "section_devtools": {
+    "api": "https://sldn.softlayer.com/reference/softlayerapi/",
+    "cli": "/docs/cli?topic=cli-sl-manage-security-keys",
+    "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/compute_ssh_key"
+  }
+}
+
