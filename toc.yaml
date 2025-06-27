@@ -12,31 +12,34 @@ toc:
     product-page: "https://www.ibm.com/products/virtual-servers"
     path: ssh-keys
     label: SSH Keys for Classic
-  entries: 
-  - navgroup: 
+  entries:
+  - navgroup:
       id: learn
       topics:
        - index.md
        - about.md
-  - navgroup: 
+  - navgroup:
       id: howto
       topics:
       - include: ../virtual-servers/logging-in-to-console.md
-      - topicgroup: 
+      - topicgroup:
+          id: managind-ssh-keys
           label: Managing SSH keys
-          topics: 
+          topics:
           - add-ssh-key.md
           - edit-details-ssh-key.md
-          - remove-ssh-key.md         
-      - topicgroup: 
+          - remove-ssh-key.md
+      - topicgroup:
+          id: configuring-ssh
           label: Configuring SSH
-          topics: 
+          topics:
           - how-do-i-force-ssh-run-non-standard-port.md
           - how-do-i-make-my-ssh-server-only-listen-private-network.md
-          - configuring-ssh-listen-ipv6-addresses.md          
-      - topicgroup: 
+          - configuring-ssh-listen-ipv6-addresses.md
+      - topicgroup:
+          id: restricting-ssh-access
           label: Restricting SSH access
-          topics: 
+          topics:
           - restrict-root-user-ssh-access.md
           - restrict-ssh-access-public-network.md
       - how-do-i-permit-specific-users-ssh-access.md
@@ -44,8 +47,9 @@ toc:
       - how-do-i-connect-redhat-server-ssh.md
   - navgroup:
       id: help
-      topics: 
-      - topicgroup: 
-          label: FAQs
-          topics: 
+      topics:
+      - topicgroup:
+          id: faq
+          label: FAQ
+          topics:
           - include: ../virtual-servers/ssh-keys-faq.md
