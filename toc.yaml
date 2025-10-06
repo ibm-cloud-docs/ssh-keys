@@ -1,23 +1,19 @@
-#  Name your file `toc.yaml`
-#  Make sure you include all nav file coding requirements, as defined in https://test.cloud.ibm.com/docs/writing?topic=writing-code-nav
-#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
----
 toc:
   properties:
     subcollection: ssh-keys
     version: 2
     audience: platform
     href: /docs/ssh-keys
-    console-page: "/classic"
-    product-page: "https://www.ibm.com/products/virtual-servers"
+    console-page: /classic
+    product-page: https://www.ibm.com/products/virtual-servers
     path: ssh-keys
     label: SSH Keys for Classic
   entries:
   - navgroup:
       id: learn
       topics:
-       - index.md
-       - about.md
+      - index.md
+      - about.md
   - navgroup:
       id: howto
       topics:

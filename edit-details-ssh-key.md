@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-07-09"
+  years: 2020, 2025
+lastupdated: "2025-10-06"
 
 keywords: SSH key, key details, IBM Cloud infrastructure customer
 
@@ -31,7 +31,7 @@ For more information about permissions, see [Classic infrastructure permissions]
 ## Editing SSH key details
 {: #editing-ssh-key-details}
 
-If you need to edit the key, remove the key and add the correct key to the {{site.data.keyword.cloud_notm}} console. The fingerprint that is listed with the details for the SSH key is not the key. The fingerprint is a short sequence of bytes that are used in the retrieval of the key.
+If you need to edit an SSH key, remove the key and add the correct key to the {{site.data.keyword.cloud_notm}} console. The fingerprint that is listed with the details for the SSH key is not the key. The fingerprint is a short sequence of bytes that are used in the retrieval of the key.
 
 The fingerprint might not represent the actual SSH key.
 {: note}
