@@ -4,8 +4,8 @@ toc:
     version: 2
     audience: platform
     href: /docs/ssh-keys
-    console-page: /classic
-    product-page: https://www.ibm.com/products/virtual-servers
+    console-page: "/classic"
+    product-page: "https://www.ibm.com/products/virtual-servers"
     path: ssh-keys
     label: SSH Keys for Classic
   entries:

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-07-09"
+  years: 2020, 2026
+lastupdated: "2026-04-14"
 
 keywords: SSH keys, IBM Cloud infrastructure customer, public SSH key
 
@@ -44,4 +44,4 @@ Complete the following steps to add an SSH key to your account.
 ## Next steps
 {: #next-steps-adding-ssh-key}
 
-After you add the SSH key, it appears in the list of SSH keys. You can [edit the key details](//docs/ssh-keys?topic=ssh-keys-editing-details-for-an-ssh-key#editing-details-for-an-ssh-key) at any time. You can also [remove the SSH key](/docs/ssh-keys?topic=ssh-keys-removing-an-ssh-key) from the list. Remove obsolete SSH keys as soon as possible to ensure that space is available if you need to add more keys.
+After you add the SSH key, it appears in the list of SSH keys. You can [edit the key details](/docs/ssh-keys?topic=ssh-keys-editing-details-for-an-ssh-key#editing-details-for-an-ssh-key) at any time. You can also [remove the SSH key](/docs/ssh-keys?topic=ssh-keys-removing-an-ssh-key) from the list. Remove obsolete SSH keys as soon as possible to ensure that space is available if you need to add more keys.
