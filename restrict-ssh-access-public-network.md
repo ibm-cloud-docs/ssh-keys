@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-07-08"
+  years: 2020, 2026
+lastupdated: "2026-04-14"
 
 keywords: SSH access, public network SSH accessibility, private network
 
@@ -37,7 +37,7 @@ Use the following steps to restrict SSH access on the public network.
    | If a connection | Then... |
    |------|---------|
    | Can't be made... | Changes that were made to SSH accessibility were successful. No further action is required.|
-   | Can be made... | Changes that were made to SSH accessibility were unsuccessful. Repeat the previous steps to retry the SSH restriction. If issues persist, [contact Support](/docs/get-support?topic=get-support-using-avatar). |
+   | Can be made... | Changes that were made to SSH accessibility were unsuccessful. Repeat the previous steps to retry the SSH restriction. If issues persist, [contact Support](/docs/support?topic=support-open-case&interface=ui). |
 
 ## Next steps
 {: #next-steps-restricting-access-public-network}
