@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-07-08"
+  years: 2020, 2026
+lastupdated: "2026-10-12"
 
 keywords: ssh public keys, OpenSSH, add ssh key, ssh key, manage ssh key, virtual server instance, instance, virtual servers, vsi, virtual machines, server
 
@@ -10,8 +10,7 @@ subcollection: ssh-keys
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{{site.data.keyword.attribute-definition-list}}
 
 # Getting started with SSH keys
 {: #getting-started-tutorial}
@@ -23,7 +22,7 @@ You can add, manage, and delete SSH keys on the {{site.data.keyword.cloud}} Clas
 {: #before-you-begin-ssh-keys}
 
 1. Learn more about [SSH keys](/docs/ssh-keys?topic=ssh-keys-about-ssh-keys).
-2. Make sure that you have the necessary account permissions and device access so you can view and manage SSH keys. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions. For more information about permissions, see [Classic infrastructure permissions](/docs/virtual-servers?topic=virtual-servers-mngclassicinfra#how-classic-infra-permissions-work) and [Managing device access](/docs/virtual-servers?topic=virtual-servers-managing-device-access).
+2. Make sure that you have the necessary account permissions and device access so you can view and manage SSH keys. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions. For more information about permissions, see [Managing device access](/docs/virtual-servers?topic=virtual-servers-managing-device-access).
 
 ## Next steps
 {: #next-steps-getting-started-ssh-keys}
